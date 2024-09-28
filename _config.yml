@@ -11,7 +11,7 @@ locale                   : "en-US"
 title                    : "Julia V.E. Kim"
 title_separator          : "-"
 name                     : &name "Julia V.E. Kim"
-description              : &description "personal description"
+description              : &description "Masters Student at Cambridge."
 url                      : https://juliavekim.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "academicpages/academicpages.github.io"
@@ -25,18 +25,18 @@ author:
   name             : "Julia V.E. Kim"
   pronouns         : # example: "she/her"  
   bio              : "Short biography for the left-hand sidebar"
-  location         : "Earth"
+  location         : "Trinity College, Cambridge, UK"
   employer         : "University of Cambridge"
   uri              : # URL
   email            : "jk955@cam.ac.uk" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : #
   impactstory      : # URL
-  orcid            : "http://orcid.org/yourorcidurl"
+  orcid            : #
   semantic         : # URL
-  pubmed           : "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
+  pubmed           : # 
   researchgate     : # URL
 
   # Repositories and software development
@@ -57,7 +57,7 @@ author:
   keybase          : # Username
   instagram        : # Username
   lastfm           : # Username
-  linkedin         : # Username
+  linkedin         : juliavekim
   mastodon         : # URL
   medium           : # URL
   pinterest        : # Username

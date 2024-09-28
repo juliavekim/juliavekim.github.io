@@ -16,9 +16,6 @@ main:
     
   - title: "Portfolio"
     url: /portfolio/
-
-  - title: "Courses"
-    url: /courses/
     
   - title: "CV"
     url: /cv/

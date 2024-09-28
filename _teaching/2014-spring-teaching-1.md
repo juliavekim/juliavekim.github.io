@@ -1,9 +1,9 @@
 ---
-title: "SCTM-2003: Introduction to Astronomy: Scales & Structures"
+title: "Teaching experience 1"
 collection: teaching
 type: "Undergraduate course"
-venue: "OCAD University, Astronomy Department"
-date: 2023
-location: "Toronto, Canada"
+permalink: /teaching/2014-spring-teaching-1
+venue: "University 1, Department"
+date: 2014-01-01
+location: "City, Country"
 ---
-

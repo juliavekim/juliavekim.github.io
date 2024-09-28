@@ -16,12 +16,10 @@ main:
     
   - title: "Portfolio"
     url: /portfolio/
-        
-  - title: "Blog Posts"
-    url: /year-archive/
+
+  - title: "Courses"
+    url: /courses/
     
   - title: "CV"
     url: /cv/
     
-  - title: "Guide"
-    url: /markdown/

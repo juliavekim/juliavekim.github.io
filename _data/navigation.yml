@@ -8,11 +8,11 @@ main:
   - title: "Research"
     url: /publications/
 
-  - title: "Teaching"
-    url: /teaching/    
+  - title: "Projects"
+    url: /projects/    
 
-  - title: "Courses"
-    url: /talks/    
+ - title: "Teaching"
+    url: /teaching/    
     
   - title: "CV"
     url: /files/Julia_Kim_Resumé (6).pdf

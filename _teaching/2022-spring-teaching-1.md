@@ -1,5 +1,5 @@
 ---
-title: "MAT137Y1: Calculus!"
+title: "MAT137Y1: Calculus! TA"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2022-spring-teaching-1

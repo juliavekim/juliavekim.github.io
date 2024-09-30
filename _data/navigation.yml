@@ -5,17 +5,17 @@
 # prevent it from being included in the site.
 
 main:
-  - title: "Publications"
+  - title: "Research"
     url: /publications/
-
-  - title: "Talks"
-    url: /talks/    
 
   - title: "Teaching"
     url: /teaching/    
     
-  - title: "Portfolio"
+  - title: "Projects"
     url: /portfolio/
+
+  - title: "Courses"
+    url: /talks/    
     
   - title: "CV"
     url: /files/Julia_Kim_Resumé (6).pdf

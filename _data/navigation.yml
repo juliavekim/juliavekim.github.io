@@ -10,9 +10,6 @@ main:
 
   - title: "Teaching"
     url: /teaching/    
-    
-  - title: "Projects"
-    url: /portfolio/
 
   - title: "Courses"
     url: /talks/    

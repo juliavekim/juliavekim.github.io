@@ -1,54 +1,43 @@
 ---
-title: "An example preprint / working paper"
+title: "Applying Contrastive Learning to Stellar Spectra"
+slug: "contrastive-learning-stellar-spectra" 
+
 authors:
 - admin
-date: "2019-04-07T00:00:00Z"
+- nathan_sandford
+date: "2025-05-01T00:00:00Z"
 
 # Schedule page publish date (NOT publication's date).
-publishDate: "2017-01-01T00:00:00Z"
+publishDate: ""2025-05-01T00:00:00Z"
 
 # Publication type.
 # Accepts a single type but formatted as a YAML list (for Hugo requirements).
 # Enter a publication type from the CSL standard.
-publication_types: ["article"]
+publication_types: ["thesis"]
 
 # Publication name and optional abbreviated publication name.
-publication: ""
-publication_short: ""
+publication: "Part III Essay, University of Cambridge"
+publication_short: "Part III Essay"
 
-abstract: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+abstract: With its wide range of spectroscopic capabilities, the Near Infrared Spectrograph (NIRSpec) on the \textit{James Webb} Space Telescope (JWST) is expected to usher in a new era of crowded-field extragalactic stellar spectroscopy. However, small sample sizes and limited overlap with ground-based surveys, such as APOGEE, pose challenges for NIRSpec data analysis. In this work, we present \textsc{StarCLIP}: a contrastive self-supervised learning framework that embeds observed APOGEE and \textit{ab initio} NIRSpec spectra into a unified, physically meaningful latent space. Our approach consists of training convolutional neural networks (CNNs) to recover twenty fundamental stellar properties from single-modal spectroscopic data. We then adopt these pre-trained CNNs as encoders, aligning them via contrastive loss. To simulate realistic NIRSpec observations, we construct semi-empirical, stochastic NIRSpec catalogs and embed them into the shared latent space using \textsc{MockStarCLIP}, a modified CLIP-based framework. Both models enable seamless transfer to downstream tasks, including cosine similarity search and stellar property recovery. Notably, a linear regressor applied to \textsc{StarCLIP} embeddings recovers all twenty stellar properties of interest with $r^2$ scores typically exceeding $0.88$, including $T_{\text{eff}}$ (with uncertainty $\lesssim$ 200 K), $\log g$ ($\lesssim$0.07 dex) and [Fe/H] ($\lesssim$0.03 dex) for RBG-like stars. Applying the regressor on \textsc{MockStarCLIP} embeddings yields modestly reduced precision---approximately 450 K for $T_{\text{eff}}$, 0.11 dex for $\log g$ and 0.06 dex for [Fe/H]. Ultimately, our approach demonstrates that foundation models for NIRSpec and other spectral surveys with similar constraints is well within reach.  
 
 # Summary. An optional shortened abstract.
-summary: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum.
+summary: We present StarCLIP, a contrastive learning framework aligning APOGEE and JWST/NIRSpec spectra into a unified latent space, enabling accurate stellar property recovery and demonstrating the feasibility of foundation models for future spectroscopic surveys. 
 
 tags:
-- Large Language Models
+- Self Supervised Learning
+- Astrophysics 
 
 featured: true
 
-hugoblox:
-  ids:
-    arxiv: 1512.04133v1
-
 links:
-- type: preprint
-  provider: arxiv
-  id: 1512.04133v1
-- type: code
-  url: https://github.com/HugoBlox/hugo-blox-builder
-- type: slides
-  url: https://www.slideshare.net/
-- type: dataset
-  url: "#"
-- type: poster
-  url: "#"
-- type: source
-  url: "#"
-- type: video
-  url: https://youtube.com
-- type: custom
-  label: Custom Link
-  url: http://example.org
+  - type: pdf
+    name: "Full text"
+    url: "/publication/applying-contrastive-learning/index.pdf"   # place your essay PDF as index.pdf
+  - type: code
+    url: "https://github.com/juliavekim/StarCLIP" 
+  - type: poster
+    url: "/publication/applying-contrastive-learning/poster.pdf"  # or external link
 
 # Featured image
 # To use, add an image named `featured.jpg/png` to your page's folder. 
@@ -57,26 +46,4 @@ image:
   focal_point: ""
   preview_only: false
 
-# Associated Projects (optional).
-#   Associate this publication with one or more of your projects.
-#   Simply enter your project's folder or file name without extension.
-#   E.g. `internal-project` references `content/project/internal-project/index.md`.
-#   Otherwise, set `projects: []`.
-projects:
-- internal-project
-
-# Slides (optional).
-#   Associate this publication with Markdown slides.
-#   Simply enter your slide deck's filename without extension.
-#   E.g. `slides: "example"` references `content/slides/example/index.md`.
-#   Otherwise, set `slides: ""`.
-slides: ""
 ---
-
-This work is driven by the results in my [previous paper](/publication/conference-paper/) on LLMs.
-
-{{% callout note %}}
-Create your slides in Markdown - click the *Slides* button to check out the example.
-{{% /callout %}}
-
-Add the publication's **full text** or **supplementary notes** here. You can use rich formatting such as including [code, math, and images](https://docs.hugoblox.com/content/writing-markdown-latex/).

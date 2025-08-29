@@ -58,7 +58,7 @@ sections:
   - block: collection
     id: talks
     content:
-      title: Recent & Upcoming Talks
+      title: Recent & Upcoming Talks [COMING SOON]
       filters:
         folders:
           - event
@@ -66,9 +66,9 @@ sections:
       view: article-grid
       columns: 1
   - block: collection
-    id: teaching
+    id: teaching 
     content:
-      title: Teaching
+      title: Teaching [COMING SOON]
       filters:
         folders:
           - teaching 

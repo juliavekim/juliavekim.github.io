@@ -36,8 +36,6 @@ featured: true
 #     doi: 
 
 links:
-  - type: pdf
-    url: ""   # put a direct PDF link if you have it
   - type: url
     name: "ADS Abstract"
     url: "https://ui.adsabs.harvard.edu/abs/2022JAVSO..50..178K/abstract"

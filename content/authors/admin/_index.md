@@ -47,7 +47,11 @@ interests:
 education:
   - area: PhD Operations Research
     institution: Massachusetts Institute of Technology 
-    date_start: 2024-09-01
+    date_start: 2025-09-01
+  - area: Advanced Study in Mathematics
+    institution: University of Cambridge
+    date_start: 2024-10-01
+    date_end: 2025-07-30
   - area: HBSc Mathematics & Physics 
     institution: University of Toronto 
     date_start: 2019-09-01

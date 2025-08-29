@@ -34,6 +34,9 @@ social:
   - icon: phone
     icon_pack: fas
     link: "tel:+14169782577"
+  - icon: linkedin
+    icon_pack: fab
+    link: "https://linkedin.com/in/john-percy-354a806a"
   - icon: envelope
     icon_pack: fas
     link: "mailto:percy@astro.utoronto.ca"

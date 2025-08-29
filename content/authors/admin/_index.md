@@ -28,7 +28,7 @@ organizations:
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:julia225@mit.ledu'
+    url: 'mailto:julia225@mit.edu'
     label: E-mail Me
   - icon: brands/instagram
     url: https://www.instagram.com/juliave225

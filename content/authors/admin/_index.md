@@ -58,6 +58,6 @@ education:
 ## About Me
 
 Hi! I’m an incoming PhD candidate at the MIT Operations Research Center, where I am most fortunate to be advised by Professor [Dimitris Bertsimas](https://www.dbertsim.mit.edu/). My research interests lie in  multimodal and generative AI, with applications to healthcare and education. Following the philosophy of Professor Bertsimas, my research is conducted with the ultimate view of:
-- Improving the human condition,
-- Positively affecting the lives of people,
-- Increasing understanding of how the world works.
+1. Improving the human condition,
+2. Positively affecting the lives of people,
+3. Increasing understanding of how the world works.

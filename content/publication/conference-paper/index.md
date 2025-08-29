@@ -3,7 +3,7 @@ title: 'Pulsating Red Giants in a Globular Cluster: omega Centauri'
 
 authors:
   - admin
-  - John Percy
+  - john_percy
 
 author_notes:
   - 'Primary author'

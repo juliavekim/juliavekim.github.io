@@ -57,6 +57,23 @@ education:
     date_start: 2019-09-01
     date_end: 2024-05-30
 
+social:
+  - icon: github
+    icon_pack: fab
+    link: "https://github.com/juliavekim"
+  - icon: linkedin
+    icon_pack: fab
+    link: "https://www.linkedin.com/in/juliavekim/"
+  - icon: google-scholar
+    icon_pack: ai
+    link: "https://scholar.google.com/citations?user=lL9RzNcAAAAJ&hl=en"
+  - icon: orcid
+    icon_pack: ai
+    link: "https://orcid.org/0009-0003-5787-1990"
+  - icon: envelope
+    icon_pack: fas
+    link: "mailto:julia225@mit.edu"
+
 ---
 
 ## About Me

@@ -1,6 +1,9 @@
 ---
 title: "Authors"
-_build:
-  render: true
-  list: true
+cascade:
+  _target:
+    path: /authors/**
+  _build:
+    render: true
+    list: true
 ---

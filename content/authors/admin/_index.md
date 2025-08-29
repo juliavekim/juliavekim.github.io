@@ -22,7 +22,7 @@ role: MIT ORC PhD Candidate
 # Organizations/Affiliations to display in Biography blox
 organizations:
   - name: MIT ORC 
-    url: [https://openai.com/](https://orc.mit.edu/)
+    url: https://orc.mit.edu/
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.

@@ -28,10 +28,10 @@ featured: true
 
 links:
   - type: pdf
-    name: "Full text"
-    url: "/publication/contrastive-learning-stellar-spectra/index.pdf"
+    name: "PDF"
+    url: "/publication/contrastive-learning-stellar-spectra/paper.pdf"
   - type: poster
     url: "/publication/contrastive-learning-stellar-spectra/poster.pdf"
   - type: code
-    url: "https://github.com/yourusername/StarCLIP"
+    url: "https://github.com/juliavekim/StarCLIP"
 ---

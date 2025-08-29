@@ -1,20 +1,14 @@
 ---
 # Display name
-title: 吳健雄
-
-# Name pronunciation (optional)
-name_pronunciation: Chien Shiung Wu
+title: Julia Kim
 
 # Full name (for SEO)
-first_name: Shiung Wu
-last_name: Chien
-
-# Pronouns (optional)
-pronouns: she/her
+first_name: Julia 
+last_name: Kim
 
 # Status emoji
 status:
-  icon: ☕️
+  icon: 🦊
 
 # Is this the primary user of the site?
 superuser: true
@@ -23,27 +17,25 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Chief Scientist
+role: MIT ORC PhD Candidate
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: OpenAI
-    url: https://openai.com/
+  - name: MIT ORC 
+    url: [https://openai.com/](https://orc.mit.edu/)
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: 'mailto:julia225@mit.ledu'
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/GetResearchDev
   - icon: brands/instagram
-    url: https://www.instagram.com/
+    url: https://www.instagram.com/juliave225
   - icon: brands/github
-    url: https://github.com/gcushen
+    url: https://github.com/juliavekim
   - icon: brands/linkedin
-    url: https://www.linkedin.com/
+    url: https://www.linkedin.com/in/juliavekim/
   - icon: academicons/google-scholar
     url: https://scholar.google.com/
   - icon: academicons/orcid

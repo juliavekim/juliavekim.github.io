@@ -78,7 +78,12 @@ social:
 
 ## About Me
 
-Hi! I’m an incoming PhD candidate at the MIT Operations Research Center, where I am most fortunate to be advised by Professor [Dimitris Bertsimas](https://www.dbertsim.mit.edu/). My research interests lie in  multimodal and generative AI, with applications to healthcare and education. Following the philosophy of Professor Bertsimas, my research is conducted with the ultimate view of:
-1. Improving the human condition,
-2. Positively affecting the lives of people,
-3. Increasing understanding of how the world works.
+Hi! I’m an incoming second-year PhD student at the [MIT Operations Research Center](https://orc.mit.edu/). My research lies at the intersection of AI safety, evaluation, and optimisation, with a particular interest in multimodal and generative AI.
+
+My current research interests span three broad directions:
+
+1. **Non-generative safety evaluation:** developing methods to identify harmful model capabilities without producing harmful content, with applications to child sexual abuse material (CSAM), non-consensual intimate imagery (NCII), and biological misuse.
+2. **Epistemic harms from AI:** studying how hallucinations, sycophancy, homogenisation, and overreliance on AI-generated information affect what people know, believe, imagine, and regard as possible.
+3. **Efficient and responsible machine learning:** reducing the computational and energy demands of modern AI systems without compromising their safety or reliability.
+
+Across these directions, I hope to develop rigorous methods that improve the human condition, positively affect people’s lives, and deepen our understanding of how increasingly powerful AI systems behave and influence the world.

@@ -55,26 +55,6 @@ sections:
         exclude_featured: false
     design:
       view: citation
-  - block: collection
-    id: talks
-    content:
-      title: Recent & Upcoming Talks [COMING SOON]
-      filters:
-        folders:
-          - event
-    design:
-      view: article-grid
-      columns: 1
-  - block: collection
-    id: teaching 
-    content:
-      title: Teaching [COMING SOON]
-      filters:
-        folders:
-          - teaching 
-    design:
-      view: article-grid
-      columns: 2
   - block: cta-card
     demo: true # Only display this section in the Hugo Blox Builder demo site
     content:

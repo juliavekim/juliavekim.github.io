@@ -3,7 +3,7 @@ const { chromium } = require('playwright');
 const fs = require('node:fs');
 const assert = require('node:assert/strict');
 (async () => {
-  const browser = await chromium.launch({headless:true});
+  const browser = await chromium.launch({headless:true, ...(process.env.CHROME_PATH ? {executablePath:process.env.CHROME_PATH} : {})});
   fs.mkdirSync('qa-screenshots', {recursive:true});
   for (const [name,width,height] of [['desktop',1440,1000],['mobile',390,844],['narrow',320,740]]) {
     const page = await browser.newPage({viewport:{width,height}});

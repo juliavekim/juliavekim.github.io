@@ -1,4 +1,5 @@
 ---
+draft: true
 title: 🧠 Sharpen your thinking with a second brain
 summary: Create a personal knowledge base and share your knowledge with your peers.
 date: 2023-10-26
@@ -136,3 +137,4 @@ A Markdown aside is useful for displaying notices, hints, or definitions to your
 {{% /callout %}}
 
 ## Did you find this page helpful? Consider sharing it 🙌
+

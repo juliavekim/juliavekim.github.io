@@ -1,23 +1,9 @@
 ---
 title: Teaching
-summary: My courses
-type: landing
-
-cascade:
-  - _target:
-      kind: page
-    params:
-      show_breadcrumb: true
-
-sections:
-  - block: collection
-    id: teaching
-    content:
-      title: Teaching
-      filters:
-        folders:
-          - teaching
-    design:
-      view: article-grid
-      columns: 2
 ---
+
+- **University of Cambridge:** Examinations Invigilator, October 2024–present (as listed in my CV).
+- **University of Toronto:** MAT137Y1: Calculus! Teaching Assistant, September 2020–May 2021.
+- **University of Toronto:** MAT233: Linear Algebra I Workbook Editor, May–July 2020.
+
+[View my complete CV](/cv/#teaching).

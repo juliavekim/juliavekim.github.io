@@ -27,16 +27,6 @@ sections:
         position: center
         parallax: false
 - block: collection
-  id: projects
-  content:
-    title: Projects
-    filters:
-      folders:
-      - project
-  design:
-    view: article-grid
-    columns: 2
-- block: collection
   id: papers
   content:
     title: Featured Publications

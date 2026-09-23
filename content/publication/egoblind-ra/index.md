@@ -4,7 +4,7 @@ slug: "egoblind-ra"
 
 authors:
   - admin
-  - Xander Backus
+  - xander-backus
 
 author_notes:
   - 'Equal contribution'

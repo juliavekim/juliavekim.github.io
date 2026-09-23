@@ -109,22 +109,75 @@ awards:
   awarder: MIT
   date: '2026-01-01'
   summary: '2026'
+- title: University of Toronto Dean’s List Scholar
+  awarder: University of Toronto
+  date: '2024-06-01'
+  summary: '2020–2024'
 - title: Rose Sheinin Award
   awarder: University of Toronto
   date: '2024-06-01'
-  summary: Top female student in science
+  summary: 'Top female student in science'
+- title: St Michael’s College Achievement Award in Maths and Physical Sciences
+  awarder: University of Toronto
+  date: '2024-06-01'
+  summary: ''
+- title: Governor General Silver Medal Nominee
+  awarder: University of Toronto
+  date: '2024-06-01'
+  summary: ''
+- title: University of Toronto Excellence Award
+  awarder: University of Toronto
+  date: '2024-06-01'
+  summary: '2023 and 2024'
 - title: Trinity Studentship in Mathematics
   awarder: University of Cambridge
   date: '2024-04-01'
   summary: ''
+- title: John J. Sebisty Scholarship
+  awarder: University of Toronto
+  date: '2024-03-01'
+  summary: ''
+- title: David and Louise Fraser Scholarship
+  awarder: University of Toronto
+  date: '2024-03-01'
+  summary: ''
+- title: Hymie and Roslyn Mida Student Award in Theoretical Physics
+  awarder: University of Toronto
+  date: '2024-03-01'
+  summary: ''
 - title: Stirling Prize Graduate Fellowship
   awarder: Yale University
   date: '2024-02-01'
-  summary: Declined
+  summary: 'Declined'
+- title: Lucia Colavita Memorial Scholarship
+  awarder: University of Toronto
+  date: '2023-06-01'
+  summary: ''
+- title: Jackman Scholars-in-Residence Award
+  awarder: Victoria College, University of Toronto
+  date: '2023-06-01'
+  summary: ''
+- title: The 3T0 M.&P. and Associates Scholarship
+  awarder: University of Toronto
+  date: '2023-02-01'
+  summary: '2021 and 2023'
+- title: Patricia Massel 5T1 Bursary
+  awarder: University of Toronto
+  date: '2022-06-01'
+  summary: ''
 - title: NSERC USRA and University of Toronto Chair Scholar
   awarder: NSERC / University of Toronto
   date: '2022-05-01'
   summary: ''
+- title: St Michael’s College In-Course Scholarship
+  awarder: University of Toronto
+  date: '2022-03-01'
+  summary: ''
+- title: University of Toronto In-Course Scholarship
+  awarder: University of Toronto
+  date: '2021-09-01'
+  summary: ''
+
 ---
 
 ## About Me
@@ -135,4 +188,4 @@ My work includes generative AI for personalised instruction and multimodal AI ev
 
 Previously, I worked in The Trade Desk’s AI Lab and conducted research applying machine learning and statistical methods to astrophysics, biophysics and particle physics.
 
-[Explore my projects](/projects/) · [Experience and education](/experience/) · [Download my CV](/uploads/resume.pdf)
+[Research and publications](/#papers) · [View my CV](/cv/)

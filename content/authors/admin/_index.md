@@ -87,3 +87,5 @@ My current research interests span three broad directions:
 3. **Efficient and responsible machine learning:** reducing the computational and energy demands of modern AI systems without compromising their safety or reliability.
 
 Across these directions, I hope to develop rigorous methods that improve the human condition, positively affect people’s lives, and deepen our understanding of how increasingly powerful AI systems behave and influence the world.
+
+[Read my full CV](/cv/) for professional experience, publications, projects, awards, teaching, talks, and outreach.

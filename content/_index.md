@@ -55,6 +55,8 @@ sections:
       folders:
       - publication
       exclude_featured: false
+    count: 0
   design:
     view: citation
 ---
+

@@ -3,7 +3,7 @@ title: An Offline Architecture for Assessment-Driven Remediation Videos
 authors:
 - dimitris-bertsimas
 - admin
-- Romain Puech
+- romain-puech
 date: '2026-09-23'
 publication: Manuscript in preparation
 publication_types:
@@ -22,7 +22,7 @@ links:
   url: https://github.com/juliavekim/personalized_instruction
 image:
   filename: offline-architecture.jpg
-  caption: "Annotated image-analysis example associated with the project."
+  caption: ""
   focal_point: Center
   preview_only: false
 ---

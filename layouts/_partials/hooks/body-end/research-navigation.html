@@ -1,0 +1,11 @@
+<script>
+(function () {
+  function routeResearch() {
+    if (window.location.pathname === '/' && window.location.hash === '#papers') {
+      window.location.replace('/research/');
+    }
+  }
+  routeResearch();
+  window.addEventListener('hashchange', routeResearch);
+})();
+</script>

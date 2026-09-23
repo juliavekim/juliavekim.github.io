@@ -5,6 +5,7 @@ last_name: Kim
 status:
   icon: 🦊
 superuser: true
+website: /author/julia-kim/
 highlight_name: true
 role: PhD Student · MIT Operations Research Center
 organizations:
@@ -187,5 +188,3 @@ Hi! I’m a second-year PhD student at the [MIT Operations Research Center](http
 My work includes generative AI for personalised instruction and multimodal AI evaluation. I’m also exploring how AI investigators can reconstruct incidents from incomplete evidence when participants may have incentives to conceal or distort information.
 
 Previously, I worked in The Trade Desk’s AI Lab and conducted research applying machine learning and statistical methods to astrophysics, biophysics and particle physics.
-
-[Research and publications](/#papers) · [View my CV](/cv/)

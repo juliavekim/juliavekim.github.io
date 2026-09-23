@@ -1,0 +1,15 @@
+{{ if and .Params.authors (ne .Params.profile false) }}
+<section class="paper-authors" aria-label="All authors">
+<h2>Authors</h2>
+<div class="paper-author-grid">
+{{ range .GetTerms "authors" }}
+<a class="paper-author" href="{{ .RelPermalink }}">
+  {{ with (.Resources.ByType "image").GetMatch "*avatar*" }}
+  {{ $img := .Fill "112x112 Center webp" }}<img src="{{ $img.RelPermalink }}" width="56" height="56" alt="" loading="lazy">
+  {{ else }}<span class="author-initial" aria-hidden="true">{{ substr .Title 0 1 }}</span>{{ end }}
+  <span><strong>{{ .Title }}</strong>{{ with .Params.role }}<small>{{ . }}</small>{{ end }}</span>
+</a>
+{{ end }}
+</div>
+</section>
+{{ end }}

@@ -1,4 +1,6 @@
 ---
+superuser: false
+website: /author/nathan-sandford/
 # Display name
 title: "Nathan Sandford"
 

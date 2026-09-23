@@ -1,4 +1,6 @@
 ---
+superuser: false
+website: /author/xander-backus/
 title: Xander Backus
 first_name: Xander
 last_name: Backus

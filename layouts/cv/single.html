@@ -1,0 +1,40 @@
+{{ define "main" }}
+{{ $person := site.GetPage "/authors/admin" }}
+<main class="cv-page">
+<header class="cv-hero">
+  <div><p class="cv-eyebrow">Curriculum vitae</p><h1>Julia V.E. Kim<span>MIT · Operations Research</span></h1>
+  <p class="cv-intro">AI agents for automated research, generative AI, and machine learning.</p>
+  <a class="cv-email" href="mailto:julia225@mit.edu">julia225@mit.edu ↗</a></div>
+  <a class="cv-download" href="/uploads/resume.pdf">Download CV <span aria-hidden="true">↓</span><small>PDF · 2 pages</small></a>
+</header>
+<div class="cv-layout">
+<nav class="cv-nav" aria-label="CV sections"><span>On this page</span>
+<a href="#education">Education</a><a href="#experience">Experience</a><a href="#skills">Skills & Languages</a><a href="#awards">Awards & Honours</a>
+<a href="/research/" class="cv-research-link">Research & Publications ↗</a>
+</nav>
+<div class="cv-content">
+<section id="education" class="cv-section"><div class="cv-heading"><span>01</span><h2>Education</h2></div>
+{{ range $person.Params.education }}
+<article class="cv-entry"><div class="cv-entry-heading"><h3>{{ .institution }}</h3><p class="cv-date">{{ time.Format "2006" .date_start }} — {{ with .date_end }}{{ time.Format "2006" . }}{{ else }}Present{{ end }}</p></div>
+<p class="cv-role">{{ .area }}</p><p class="cv-detail">{{ .summary }}</p></article>
+{{ end }}</section>
+<section id="experience" class="cv-section"><div class="cv-heading"><span>02</span><h2>Experience</h2></div>
+{{ range $person.Params.work }}
+<article class="cv-entry"><div class="cv-entry-heading"><h3>{{ .position }}</h3><p class="cv-date">{{ time.Format "Jan 2006" .date_start }} — {{ with .date_end }}{{ time.Format "Jan 2006" . }}{{ else }}Present{{ end }}</p></div>
+<p class="cv-role">{{ .company_name }}</p><p class="cv-detail">{{ .summary }}</p></article>
+{{ end }}</section>
+<section id="skills" class="cv-section"><div class="cv-heading"><span>03</span><h2>Skills & Languages</h2></div>
+<div class="cv-skills">{{ range $person.Params.skills }}<div><h3>{{ .name }}</h3><div class="cv-chips">{{ range .items }}<span>{{ .name }}</span>{{ end }}</div></div>{{ end }}
+<div><h3>Languages</h3><div class="cv-languages">{{ range $person.Params.languages }}<p>{{ .name }}</p>{{ end }}</div></div></div>
+</section>
+<section id="awards" class="cv-section"><div class="cv-heading"><span>04</span><h2>Awards & Honours</h2></div>
+{{ $years := slice }}{{ range $person.Params.awards }}{{ $year := time.Format "2006" .date }}{{ if not (in $years $year) }}{{ $years = $years | append $year }}{{ end }}{{ end }}
+{{ range $year := $years }}
+<div class="cv-award-group"><h3>{{ $year }}</h3><ul>
+{{ range $person.Params.awards }}{{ if eq (time.Format "2006" .date) $year }}
+<li><strong>{{ .title }}</strong><p>{{ .awarder }}{{ with .summary }}{{ if ne . $year }}<span class="cv-award-note"> · {{ . }}</span>{{ end }}{{ end }}</p></li>
+{{ end }}{{ end }}</ul></div>
+{{ end }}</section>
+<div class="cv-end"><p>Explore the work behind the CV.</p><a href="/research/">View research & publications ↗</a></div>
+</div></div></main>
+{{ end }}

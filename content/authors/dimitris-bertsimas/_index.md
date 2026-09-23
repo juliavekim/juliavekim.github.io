@@ -1,4 +1,6 @@
 ---
+superuser: false
+website: /author/dimitris-bertsimas/
 title: Dimitris Bertsimas
 first_name: Dimitris
 last_name: Bertsimas

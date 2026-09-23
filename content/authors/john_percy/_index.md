@@ -1,4 +1,6 @@
 ---
+superuser: false
+website: /author/john-r-percy/
 # Display name
 title: "John R Percy"
 

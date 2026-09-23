@@ -2,7 +2,7 @@
 {{ $person := site.GetPage "/authors/admin" }}
 {{ $sections := slice "Contact Information" "Education" "Professional Experience" "Projects" "Skills" "Publications" "Leadership" "Teaching" "Awards & Honours" }}
 <main class="cv-document">
-<header class="cv-doc-header"><div><h1>CV</h1><p>Julia V.E. Kim</p></div><a class="cv-pdf" href="/uploads/resume.pdf">Download CV <span aria-hidden="true">↓</span><small>PDF · 2 pages</small></a></header>
+<header class="cv-doc-header"><h1>CV</h1><a class="cv-pdf" href="/uploads/resume.pdf">Download CV</a></header>
 <div class="cv-doc-layout">
 <nav class="cv-doc-nav" aria-label="CV sections">{{ range $sections }}<a href="#{{ . | anchorize }}">{{ . }}</a>{{ end }}</nav>
 <div class="cv-doc-main">
@@ -11,6 +11,7 @@
 </dl></section>
 <section class="cv-panel" id="education"><h2>Education</h2>
 {{ range $i, $e := $person.Params.education }}<article class="cv-row"><div class="cv-date-col"><span>{{ time.Format "2006" .date_start }} – {{ with .date_end }}{{ time.Format "2006" . }}{{ else }}Present{{ end }}</span><small>{{ if eq $i 0 }}Cambridge, US{{ else if eq $i 1 }}Cambridge, UK{{ else }}Toronto, CA{{ end }}</small></div><div class="cv-row-body"><h3>{{ .area }}</h3><p class="cv-institution">{{ .institution }}</p><p>{{ .summary }}</p>{{ if eq $i 0 }}<p><strong>Research interests:</strong> {{ delimit $person.Params.interests ", " }}.</p>{{ end }}</div></article>{{ end }}
+<article class="cv-row"><div class="cv-date-col"><span>Current</span><small>Cambridge, US</small></div><div class="cv-row-body"><h3>Turkish language coursework</h3><p class="cv-institution">Harvard University</p><p>Intermediate Turkish.</p></div></article>
 </section>
 <section class="cv-panel" id="professional-experience"><h2>Professional Experience</h2>
 {{ range $i, $e := $person.Params.work }}<article class="cv-row"><div class="cv-date-col"><span>{{ time.Format "Jan 2006" .date_start }} – {{ time.Format "Jan 2006" .date_end }}</span><small>{{ if eq $i 0 }}London, UK{{ else }}Toronto, CA{{ end }}</small></div><div class="cv-row-body"><h3>{{ .position }}</h3><p class="cv-institution">{{ .company_name }}</p><p>{{ .summary }}</p></div></article>{{ end }}

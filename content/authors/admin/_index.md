@@ -192,3 +192,5 @@ Hi! I’m a second-year PhD student at the [MIT Operations Research Center](http
 My work includes generative AI for personalised instruction and multimodal AI evaluation. I’m also exploring how AI investigators can reconstruct incidents from incomplete evidence when participants may have incentives to conceal or distort information.
 
 Previously, I worked in The Trade Desk’s AI Lab and conducted research applying machine learning and statistical methods to astrophysics, biophysics and particle physics.
+
+{{< opportunity >}}

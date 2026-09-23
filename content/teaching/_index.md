@@ -1,23 +1,11 @@
 ---
 title: Teaching
-summary: My courses
-type: landing
-
-cascade:
-  - _target:
-      kind: page
-    params:
-      show_breadcrumb: true
-
-sections:
-  - block: collection
-    id: teaching
-    content:
-      title: Teaching
-      filters:
-        folders:
-          - teaching
-    design:
-      view: article-grid
-      columns: 2
 ---
+
+## MIT Universal AI
+**Course Content Development · May 2026–Present**
+
+Developing educational content for MIT Universal AI. My related work on automated, personalised instruction is described in [Projects](/project/personalised-instruction/).
+
+## University of Toronto
+**Teaching Assistant, MAT137Y1: Calculus · September 2020–May 2021**

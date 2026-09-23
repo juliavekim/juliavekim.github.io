@@ -1,5 +1,6 @@
 ---
 title: Romain Puech
+layout: author-profile
 first_name: Romain
 last_name: Puech
 superuser: false

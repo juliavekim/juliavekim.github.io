@@ -1,0 +1,56 @@
+projects:
+- title: Personalised Instruction with Generative AI
+  institution: MIT · PhD Research
+  url: https://github.com/juliavekim/personalized_instruction
+  points:
+  - Developed a generative AI system for automated educational content creation and
+    personalised instruction at MIT.
+  - Designed a multi-stage LLM workflow for automated assessment authoring and personalised
+    video generation.
+  - Designed content reuse and precomputation, projecting 46% lower generation time
+    from measured runtimes.
+- title: 'EgoBlind-RA: Risk-Adaptive Visual Assistance'
+  institution: MIT · Machine Learning Course Project
+  url: https://github.com/juliavekim/EgoBlind-RA
+  points:
+  - Trained a CLIP urgency classifier for visual assistance to blind users, achieving
+    0.905 test ROC-AUC.
+  - Fine-tuned Kimi-VL with LoRA, reducing composite loss by 38% versus baseline on
+    1,283 test examples.
+  - Evaluated SFT and DPO training strategies, analysing preference-pair design and
+    robustness to routing errors.
+leadership:
+- title: Graduate Community Fellow
+  institution: MIT OGE
+  dates: Aug 2026 – Present
+- title: Student Seminar Organiser
+  institution: MIT ORC
+  dates: Aug 2026 – Present
+- title: Vice President
+  institution: MIT Student INFORMS Chapter
+  dates: Sep 2025 – Present
+- title: APPD Programme Assistant
+  institution: Trinity College Cambridge
+  dates: Oct 2024 – May 2025
+- title: Vice President of Content
+  institution: Girls in STEAM
+  dates: Jan 2023 – May 2024
+- title: Academic Coordinator
+  institution: University of Toronto Machine Intelligence Team
+  dates: Jan 2023 – May 2024
+teaching:
+- title: Course Content Development
+  institution: MIT Universal AI
+  dates: May 2026 – Present
+- title: 'Teaching Assistant · MAT137Y1: Calculus'
+  institution: University of Toronto
+  dates: Sep 2020 – May 2021
+skills:
+- name: Programming
+  text: Python, SQL, R, MATLAB, Julia, Bash
+- name: ML & Data
+  text: PyTorch, TensorFlow, scikit-learn, Hugging Face, PySpark, pandas, NumPy
+- name: Tools
+  text: Git, AWS S3, SLURM
+- name: Languages
+  text: English and French (native); Turkish (intermediate; coursework at Harvard)

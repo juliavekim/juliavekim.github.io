@@ -38,9 +38,6 @@ featured: true
 #     doi: 
 
 links:
-  - type: pdf
-    name: Published article
-    url: https://app.aavso.org/media/jaavso/3835_Skfwez7.pdf
   - type: url
     name: "ADS Abstract"
     url: "https://ui.adsabs.harvard.edu/abs/2022JAVSO..50..178K/abstract"
@@ -53,4 +50,3 @@ image:
 projects: []
 slides: ""
 ---
-

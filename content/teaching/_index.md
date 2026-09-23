@@ -2,8 +2,6 @@
 title: Teaching
 ---
 
-- **University of Cambridge:** Examinations Invigilator, October 2024–present (as listed in my CV).
-- **University of Toronto:** MAT137Y1: Calculus! Teaching Assistant, September 2020–May 2021.
-- **University of Toronto:** MAT233: Linear Algebra I Workbook Editor, May–July 2020.
-
-[View my complete CV](/cv/#teaching).
+- **Examinations Invigilator** — University of Cambridge  Oct. 2024–present 
+- **MAT137Y1: Calculus! Teaching Assistant** — University of Toronto  Sept. 2020–May 2021 
+- **MAT233: Linear Algebra I Workbook Editor** — University of Toronto  May–Jul. 2020

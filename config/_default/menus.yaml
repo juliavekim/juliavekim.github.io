@@ -1,19 +1,13 @@
 main:
-  - name: About
+  - name: Bio
     url: /
     weight: 10
-  - name: Work
-    url: /#work
-    weight: 20
-  - name: Experience
-    url: /#experience
-    weight: 30
-  - name: Writing
+  - name: Papers
     url: /#papers
-    weight: 40
+    weight: 11
+  - name: Experience
+    url: /experience/
+    weight: 12
   - name: CV
     url: /cv/
-    weight: 50
-  - name: Contact
-    url: /#contact
-    weight: 60
+    weight: 40

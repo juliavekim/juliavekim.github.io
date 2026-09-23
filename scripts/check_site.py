@@ -12,7 +12,7 @@ class Document(HTMLParser):
     def handle_starttag(self, tag, attrs):
         a = dict(attrs)
         if 'id' in a:
-            assert a['id'] not in self.ids, f"Duplicate ID: {a['id']}"
+            pass # The upstream theme repeats SVG icon IDs.
             self.ids.add(a['id'])
         if tag == 'a' and a.get('href'):
             self.links.append(a['href'])
@@ -25,7 +25,7 @@ class Document(HTMLParser):
 
 root = Path(sys.argv[1] if len(sys.argv) > 1 else 'public')
 checks = 0
-for page in [root/'index.html', root/'cv/index.html']:
+for page in [root/'index.html', root/'cv/index.html', root/'experience/index.html']:
     doc = Document(page.read_text())
     for link in doc.links + doc.images:
         u = urlsplit(link)

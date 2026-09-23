@@ -14,7 +14,7 @@ marketing:
     site_type: Person
     local_business_type: ''
     org_name: 'MIT Operations Research Center'
-    description: 'Julia Kim – MIT ORC PhD student. Research in applied AI, multimodal learning, model evaluation, and scientific machine learning.'
+    description: 'Julia Kim – MIT ORC PhD Candidate. Research in optimisation, machine learning, and decision analytics.'
     twitter: ''   # replace with your own handle if you want
   analytics:
     google_analytics: ''
@@ -61,4 +61,3 @@ features:
 
 # Favicon
 favicon: "favicon.png"
-

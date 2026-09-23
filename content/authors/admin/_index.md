@@ -32,6 +32,10 @@ education:
   institution: Massachusetts Institute of Technology
   date_start: '2025-09-01'
   summary: 'GPA: 5.0/5.0'
+- area: Turkish language coursework
+  institution: Harvard University
+  date_start: '2025-09-01'
+  summary: Intermediate Turkish.
 - area: Graduate Studies in Mathematics
   institution: University of Cambridge, Trinity College
   date_start: '2024-10-01'

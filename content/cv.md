@@ -39,3 +39,4 @@ sections:
       **University of Cambridge, Trinity College** — Graduate Studies in Mathematics, 2024–2025 · Trinity Studentship in Mathematics
 
       **University of Toronto** — BSc (Honours), Physics, Mathematics & Statistics, 2019–2024 · GPA: 4.00/4.00; average: 97.6%
+---

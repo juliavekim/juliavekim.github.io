@@ -1,0 +1,337 @@
+\documentclass[10pt, letterpaper]{article}
+
+% Packages:
+\usepackage[
+    ignoreheadfoot, % set margins without considering header and footer
+    top=0.8 cm, % seperation between body and page edge from the top
+    bottom=0.5 cm, % seperation between body and page edge from the bottom
+    left=1 cm, % seperation between body and page edge from the left
+    right=1 cm, % seperation between body and page edge from the right
+]{geometry} % for adjusting page geometry
+\usepackage[explicit]{titlesec} % for customizing section titles
+\usepackage{tabularx} % for making tables with fixed width columns
+\usepackage{array} % tabularx requires this
+\usepackage[dvipsnames]{xcolor} % for coloring text
+\definecolor{primaryColor}{RGB}{0, 62, 114} % define primary color
+\usepackage{enumitem} % for customizing lists
+\usepackage{fontawesome5} % for using icons
+\usepackage{amsmath} % for math
+\usepackage[
+    pdftitle={Julia Kim's CV},
+    pdfauthor={Julia Kim},
+    pdfcreator={LaTeX with RenderCV},
+    colorlinks=true,
+    urlcolor=primaryColor
+]{hyperref} % for links, metadata and bookmarks
+\usepackage[pscoord]{eso-pic} % for floating text on the page
+\usepackage{calc} % for calculating lengths
+\usepackage{bookmark} % for bookmarks
+\usepackage{lastpage} % for getting the total number of pages
+\usepackage{changepage} % for one column entries (adjustwidth environment)
+\usepackage{paracol} % for two and three column entries
+\usepackage{ifthen} % for conditional statements
+\usepackage{needspace} % for avoiding page brake right after the section title
+\usepackage{iftex} % check if engine is pdflatex, xetex or luatex
+
+% Ensure that generate pdf is machine readable/ATS parsable:
+\ifPDFTeX
+    \input{glyphtounicode}
+    \pdfgentounicode=1
+    \usepackage[T1]{fontenc}
+    \usepackage[utf8]{inputenc}
+    \usepackage{lmodern}
+\fi
+
+\usepackage[default, type1]{sourcesanspro}
+
+% Some settings:
+\AtBeginEnvironment{adjustwidth}{\partopsep0pt} % remove space before adjustwidth environment
+\pagestyle{empty} % no header or footer
+\setcounter{secnumdepth}{0} % no section numbering
+\setlength{\parindent}{0pt} % no indentation
+\setlength{\topskip}{0pt} % no top skip
+\setlength{\columnsep}{0.1cm} % set column seperation
+\makeatletter
+\makeatother
+
+\titleformat{\section}{
+    % avoid page braking right after the section title
+    \needspace{4\baselineskip}
+    % make the font size of the section title large and color it with the primary color
+    \Large\color{primaryColor}
+}{
+}{
+}{
+    % print bold title, give 0.15 cm space and draw a line of 0.8 pt thickness
+    % from the end of the title to the end of the body
+    \textbf{#1}\hspace{0.15cm}\titlerule[0.8pt]\hspace{-0.1cm}
+}[] % section title formatting
+
+\titlespacing{\section}{
+    % left space:
+    -1pt
+}{
+    % top space:
+    0.3 cm
+}{
+    % bottom space:
+    0.2 cm
+} % section title spacing
+
+% \renewcommand\labelitemi{$\vcenter{\hbox{\small$\bullet$}}$} % custom bullet points
+\newenvironment{highlights}{
+    \begin{itemize}[
+        topsep=0 cm,
+        parsep=0cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=0.4 cm + 10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights
+
+\newenvironment{highlightsforbulletentries}{
+    \begin{itemize}[
+        topsep=0.05 cm,
+        parsep=0.01 cm,
+        partopsep=0pt,
+        itemsep=0pt,
+        leftmargin=10pt
+    ]
+}{
+    \end{itemize}
+} % new environment for highlights for bullet entries
+
+
+\newenvironment{onecolentry}{
+    \begin{adjustwidth}{
+    }{
+    }
+}{
+    \end{adjustwidth}
+} % new environment for one column entries
+
+\newenvironment{twocolentry}[2][]{
+    \onecolentry
+    \def\secondColumn{#2}
+    \setcolumnwidth{\fill, 4.5 cm}
+    \begin{paracol}{2}
+}{
+    \switchcolumn \raggedleft \secondColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for two column entries
+
+\newenvironment{threecolentry}[3][]{
+    \onecolentry
+    \def\thirdColumn{#3}
+    \setcolumnwidth{1 cm, \fill, 4.5 cm}
+    \begin{paracol}{3}
+    {\raggedright #2} \switchcolumn
+}{
+    \switchcolumn \raggedleft \thirdColumn
+    \end{paracol}
+    \endonecolentry
+} % new environment for three column entries
+
+\newenvironment{header}{
+    \setlength{\topsep}{0pt}\par\kern\topsep\centering\color{primaryColor}\linespread{1.5}
+}{
+    \par\kern\topsep
+} % new environment for the header
+
+% save the original href command in a new command:
+\let\hrefWithoutArrow\href
+
+% new command for external links:
+\renewcommand{\href}[2]{\hrefWithoutArrow{#1}{\ifthenelse{\equal{#2}{}}{ }{#2 }\raisebox{.15ex}{\footnotesize \faExternalLink*}}}
+
+\newcommand{\lightfont}[1]{{\fontseries{l}\selectfont #1}}
+
+\begin{document}
+    \newcommand{\AND}{\unskip
+        \cleaders\copy\ANDbox\hskip\wd\ANDbox
+        \ignorespaces
+    }
+    \newsavebox\ANDbox
+    \sbox\ANDbox{}
+
+    \begin{header}
+        \fontsize{30 pt}{30 pt}
+        \textbf{Julia V.E. Kim}
+
+        \vspace{0.1 cm}
+
+        \normalsize
+        \mbox{\hrefWithoutArrow{mailto:julia225@mit.edu}{{\footnotesize\faEnvelope[regular]}\hspace*{0.13cm}julia225@mit.edu}}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+        \mbox{\hrefWithoutArrow{tel:(+1) 857 331 9105}{{\footnotesize\faPhone*}\hspace*{0.13cm}(+1) 857 331 9105}}%
+        \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+         \mbox{\hrefWithoutArrow{https://github.com/juliavekim}{{\footnotesize\faGithub}\hspace*{0.13cm}juliavekim}}%
+         \kern 0.25 cm%
+        \AND%
+        \kern 0.25 cm%
+    \mbox{\hrefWithoutArrow{https://www.linkedin.com/in/juliavekim/}{{\footnotesize\faLinkedinIn}\hspace*{0.13cm}juliavekim}}%
+    \end{header}
+
+
+    \vspace{0.3 cm - 0.3 cm}
+    \section{Education}
+    \begin{onecolentry}
+            \textbf{Massachusetts Institute of Technology} \hfill \textit{Cambridge, US}\\
+            \textsc{Ph.D. Operations Research}  \hfill \textit{\lightfont{Sept. 2025--Present}}
+            \begin{highlightsforbulletentries}
+            \item \textbf{Cumulative GPA}: 5.0/5.0
+            \item \textbf{Research Interests}: AI agents for automated research, ML and optimisation, data-driven decision-making
+            \end{highlightsforbulletentries}
+        \end{onecolentry}
+\vspace{0.2 cm}
+\begin{onecolentry}
+    \textbf{University of Cambridge, Trinity College} \hfill \textit{Cambridge, UK}\\
+    \textsc{Graduate Studies in Mathematics} \hfill \textit{\lightfont{Oct. 2024--Jun. 2025}}
+    \begin{highlightsforbulletentries}
+    \item \textbf{Scholarship}: Trinity Studentship in Mathematics
+    \item \textbf{Thesis}: Applying Contrastive Learning to Stellar Spectra
+    \end{highlightsforbulletentries}
+\end{onecolentry}
+      \vspace{0.2 cm}
+        \begin{onecolentry}
+            \textbf{University of Toronto} \hfill \textit{Toronto, CA}\\
+            \textsc{BSc (Honours), Physics, Mathematics \& Statistics}  \hfill \textit{\lightfont{Sep. 2019--Jun. 2024}}
+             \begin{highlightsforbulletentries}
+             \item \textbf{Cumulative GPA: 4.00/4.00}, \textbf{Average: 97.6\%}
+             \item \textbf{Scholarship}: Rose Sheinin Award for \textit{top female student} in science at UofT
+             \end{highlightsforbulletentries}
+        \end{onecolentry}
+         \vspace{-0.1cm}
+    \section{Professional Experience}
+     \textbf{Data Science Intern} \hfill \textit{London, UK} \\
+            \textsc{The Trade Desk: AI Lab} \hfill \textit{\lightfont{Jun. 2025--Aug. 2025}}
+            \begin{highlightsforbulletentries}
+                \item Built end-to-end GPID validation and scoring pipeline in \textbf{PySpark} on \textbf{AWS S3}, processing $5.3$M+ bidstream records for ad targeting
+                \item Designed signal validation and data quality workflows for ad targeting, supporting marketplace quality research
+            \end{highlightsforbulletentries}
+             \vspace{0.2 cm}
+        \begin{onecolentry}
+            \textbf{Astrophysics Machine Learning Researcher} \hfill \textit{Toronto, CA} \\
+            \textsc{University of Toronto} \hfill \textit{\lightfont{May 2024--May 2025}}
+            \begin{highlightsforbulletentries}
+                \item Designed and trained  convolutional neural networks in \textbf{PyTorch} to estimate stellar parameters from spectra, achieving $R^2 > 0.95$
+                \item Developed self-supervised contrastive learning models
+    to align data from different modalities in a shared latent space
+            \end{highlightsforbulletentries}
+        \end{onecolentry}
+
+        \vspace{0.2 cm}
+
+        \begin{onecolentry}
+            \textbf{Biophysics Machine Learning Researcher} \hfill
+        \textit{Toronto, CA} \\
+        \textsc{University of Toronto} \hfill
+        \textit{\lightfont{May 2023--May 2024}}
+            \begin{highlightsforbulletentries}
+                \item Built a stochastic model in \textbf{TensorFlow} to simulate receptor signalling pathways with cross-talk and pleiotropy
+                \item Applied information theory and statistical inference to investigate the impact of feedback and molecular noise on signalling specificity
+            \end{highlightsforbulletentries}
+        \end{onecolentry}
+\vspace{0.2 cm}
+\begin{onecolentry}
+            \textbf{Dark Matter Particle Physics Researcher} \hfill
+        \textit{Toronto, CA} \\
+        \textsc{SuperCDMS SNOLAB \& University of Toronto} \hfill \textit{\lightfont{Sep. 2021--Apr. 2022}}
+        \begin{highlightsforbulletentries}
+                \item Developed likelihood-based statistical models in
+    \textbf{C++}, \textbf{RooFit} and \textbf{RooStats}
+    to estimate detector sensitivity to dark matter signals
+                \item Ran 1,000+ Monte Carlo simulations to construct
+    test-statistic distributions and estimate signal upper
+    limits at 95\% confidence level
+        \end{highlightsforbulletentries}
+\end{onecolentry}
+\section{Projects}
+ \begin{onecolentry}
+    \textbf{Personalised Instruction with Generative AI}
+    \hfill \textit{MIT}\\
+    \textsc{PhD Research}
+    \hfill \href{https://github.com/juliavekim/personalized_instruction}{GitHub}
+    \begin{highlightsforbulletentries}
+    \item Developed a \textbf{Generative AI} system for automated educational content creation and personalised instruction at MIT
+    \item Designed a multi-stage \textbf{LLM workflow} for automated assessment authoring and personalised video generation
+    \item Designed content reuse and precomputation, projecting \textbf{46\% lower generation time} from measured runtimes
+\end{highlightsforbulletentries}
+        \end{onecolentry}
+\vspace{0.2cm}
+\begin{onecolentry}
+    \textbf{EgoBlind-RA: Risk-Adaptive Visual Assistance}
+    \hfill \textit{MIT}\\
+    \textsc{Machine Learning Course Project}
+    \hfill \href{https://github.com/juliavekim/EgoBlind-RA}{GitHub}
+    \begin{highlightsforbulletentries}
+    \item Trained a \textbf{CLIP} urgency classifier for visual assistance to blind users, achieving \textbf{0.905 test ROC-AUC}
+    \item Fine-tuned \textbf{Kimi-VL} with \textbf{LoRA}, reducing composite loss by \textbf{38\%} versus baseline on 1,283 test examples
+    \item Evaluated \textbf{SFT and DPO} training strategies, analysing preference-pair design and robustness to routing errors
+\end{highlightsforbulletentries}
+\end{onecolentry}
+\vspace{-0.1cm}
+        \section{Skills}
+        \begin{onecolentry}
+    \textbf{Programming:} Python, SQL, R, MATLAB, Julia, Bash \\
+    \textbf{ML \& Data:} PyTorch, TensorFlow, scikit-learn,
+    Hugging Face, PySpark, pandas, NumPy \\
+    \textbf{Tools:} Git, AWS S3, SLURM \\
+    \textbf{Languages:} English and French (native),
+    Turkish (intermediate; coursework at \textbf{Harvard})
+\end{onecolentry}
+\vspace{-0.1cm}
+    \section{Publications}
+    \begin{enumerate}[noitemsep, topsep=0pt, leftmargin=15pt]
+    \item Dimitris Bertsimas, \textbf{Julia Kim}, and Romain Puech.
+``An Offline Architecture for Assessment-Driven Remediation Videos.''
+\textit{Manuscript in preparation}, 2026.
+    \item \textbf{Julia V.E. Kim} \& John R. Percy, ``Pulsating Red Giants in a Globular Cluster: $\omega$ Centauri'', 2022, JAAVSO, 50, 2. \href{https://app.aavso.org/media/jaavso/3835\_Skfwez7.pdf}{Link}.
+    %\item Julia V.E. Kim \& Nathan R. Sandford. `A Contrastive Deep Learning Approach for the Analysis of Stellar Spectra.' (\lightfont{in progress})
+    \item Natasha Leclerc, \textbf{Julia V.E. Kim} et al. `Ba Depletion in Coastal Waters Points to Planktonic Phytoplankton Intensification'. (\lightfont{in progress})
+    \item \textbf{Julia V.E. Kim}. `Patterns and Trends in Endangered Species Listing Heavily Biased Towards Imperiled Vertebrates with High Utility Value to Humans.' Featured in Alexander, R. (2024) \textit{Telling Stories with Data with Applications in R}. Milton: CRC Press LLC. \href{https://github.com/julia-ve-kim/US_Climate_Change_Biodiversity/blob/main/paper/paper.pdf}{Link.}
+    \item \textbf{Julia V.E. Kim}. `Significant Declines in Standardised Test Scores due to COVID-19 School Closures Disproportionately Affect Vulnerable Students.' Featured in Alexander, R. (2024) \textit{Telling Stories with Data with Applications in R}. Milton: CRC Press LLC. \href{https://github.com/juliavekim/COVID19_School_Closures/blob/main/paper/paper.pdf}{Link.}
+    \end{enumerate}
+\vspace{-0.1cm}
+\section{Leadership}
+\begin{onecolentry}
+\textbf{MIT OGE}, Graduate Community Fellow \hfill Aug. 2026--Present\\
+\textbf{MIT ORC}, Student Seminar Organiser \hfill Aug. 2026--Present\\
+\textbf{MIT Student INFORMS Chapter}, Vice President \hfill Sep. 2025--Present\\
+\textbf{Trinity College Cambridge}, APPD Programme Assistant \hfill{Oct. 2024--May 2025} \\
+\textbf{Girls in STEAM}, Vice President of Content \hfill Jan. 2023--May 2024 \\
+\textbf{University of Toronto Machine Intelligence Team}, Academic Coordinator \hfill Jan. 2023--May 2024 \\
+\end{onecolentry}
+\vspace{-0.4cm}
+\section{Teaching}
+\begin{onecolentry}
+    \textbf{MIT Universal AI}, Course Content Development \hfill \textit{May 2026--Present} \\
+    \textbf{University of Toronto}, Teaching Assistant,
+    MAT137Y1: Calculus
+    \hfill \textit{Sept. 2020--May 2021}
+\end{onecolentry}
+\vspace{-0.1cm}
+\section{Selected Awards \& Honours}
+\begin{onecolentry}
+    \textbf{Jonathan Whitney Fund}, MIT \hfill 2026 \\
+    \textbf{Rose Sheinin Award}, University of Toronto \hfill Jun. 2024 \\
+    \textbf{Trinity Studentship in Mathematics}, University of Cambridge \hfill Apr. 2024 \\
+    \textbf{Stirling Prize Graduate Fellowship}, Yale University (declined) \hfill Feb. 2024 \\
+    \textbf{NSERC USRA and University of Toronto Chair Scholar} \hfill May 2022
+\end{onecolentry}
+
+
+
+
+
+
+
+
+\end{document}

@@ -1,89 +1,138 @@
 ---
-# Display name
 title: Julia Kim
-
-# Full name (for SEO)
-first_name: Julia 
+first_name: Julia
 last_name: Kim
-
-# Status emoji
 status:
   icon: 🦊
-
-# Is this the primary user of the site?
 superuser: true
-
-# Highlight the author in author lists? (true/false)
 highlight_name: true
-
-# Role/position/tagline
-role: MIT ORC PhD Candidate
-
-# Organizations/Affiliations to display in Biography blox
+role: PhD Student · MIT Operations Research Center
 organizations:
-  - name: MIT ORC 
-    url: https://orc.mit.edu/
-
-# Social network links
-# Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
+- name: MIT ORC
+  url: https://orc.mit.edu/
 profiles:
-  - icon: at-symbol
-    url: 'mailto:julia225@mit.edu'
-    label: E-mail Me
-  - icon: brands/github
-    url: https://github.com/juliavekim
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/in/juliavekim/
-  - icon: academicons/google-scholar
-    url: https://scholar.google.com/citations?user=lL9RzNcAAAAJ&hl=en&citsig=ACUpqDc83_t7iZ71sm8m4sK811gD
-  - icon: academicons/orcid
-    url: https://orcid.org/0009-0003-5787-1990
-
+- icon: at-symbol
+  url: mailto:julia225@mit.edu
+  label: E-mail Me
+- icon: brands/github
+  url: https://github.com/juliavekim
+- icon: brands/linkedin
+  url: https://www.linkedin.com/in/juliavekim/
+- icon: academicons/google-scholar
+  url: https://scholar.google.com/citations?user=lL9RzNcAAAAJ&hl=en&citsig=ACUpqDc83_t7iZ71sm8m4sK811gD
+- icon: academicons/orcid
+  url: https://orcid.org/0009-0003-5787-1990
 interests:
-  - Optimisation
-  - Machine Learning
-  - Decision Analytics 
-
+- AI agents for automated research
+- Machine learning and optimisation
+- Data-driven decision-making
 education:
-  - area: PhD Operations Research
-    institution: Massachusetts Institute of Technology 
-    date_start: 2025-09-01
-  - area: Advanced Study in Mathematics
-    institution: University of Cambridge
-    date_start: 2024-10-01
-    date_end: 2025-07-30
-  - area: HBSc Mathematics & Physics 
-    institution: University of Toronto 
-    date_start: 2019-09-01
-    date_end: 2024-05-30
-
+- area: PhD in Operations Research (in progress)
+  institution: Massachusetts Institute of Technology
+  date_start: '2025-09-01'
+  summary: 'GPA: 5.0/5.0'
+- area: Graduate Studies in Mathematics
+  institution: University of Cambridge, Trinity College
+  date_start: '2024-10-01'
+  date_end: '2025-06-30'
+  summary: 'Trinity Studentship in Mathematics. Research: Applying Contrastive Learning to Stellar Spectra.'
+- area: BSc (Honours), Physics, Mathematics & Statistics
+  institution: University of Toronto
+  date_start: '2019-09-01'
+  date_end: '2024-06-30'
+  summary: 'GPA: 4.00/4.00 · Average: 97.6%. Rose Sheinin Award for the top female student in science.'
 social:
-  - icon: github
-    icon_pack: fab
-    link: "https://github.com/juliavekim"
-  - icon: linkedin
-    icon_pack: fab
-    link: "https://www.linkedin.com/in/juliavekim/"
-  - icon: google-scholar
-    icon_pack: ai
-    link: "https://scholar.google.com/citations?user=lL9RzNcAAAAJ&hl=en"
-  - icon: orcid
-    icon_pack: ai
-    link: "https://orcid.org/0009-0003-5787-1990"
-  - icon: envelope
-    icon_pack: fas
-    link: "mailto:julia225@mit.edu"
-
+- icon: github
+  icon_pack: fab
+  link: https://github.com/juliavekim
+- icon: linkedin
+  icon_pack: fab
+  link: https://www.linkedin.com/in/juliavekim/
+- icon: google-scholar
+  icon_pack: ai
+  link: https://scholar.google.com/citations?user=lL9RzNcAAAAJ&hl=en
+- icon: orcid
+  icon_pack: ai
+  link: https://orcid.org/0009-0003-5787-1990
+- icon: envelope
+  icon_pack: fas
+  link: mailto:julia225@mit.edu
+work:
+- position: Data Science Intern
+  company_name: 'The Trade Desk: AI Lab'
+  date_start: '2025-06-01'
+  date_end: '2025-08-31'
+  summary: Built a GPID validation and scoring pipeline using PySpark and AWS S3, processing over 5.3 million bidstream
+    records. Designed signal validation and data quality workflows for advertising marketplace research.
+- position: Astrophysics Machine Learning Researcher
+  company_name: University of Toronto
+  date_start: '2024-05-01'
+  date_end: '2025-05-31'
+  summary: Trained convolutional neural networks in PyTorch to estimate stellar parameters from spectra, achieving
+    R² > 0.95. Developed self-supervised contrastive learning models to align modalities in a shared latent space.
+- position: Biophysics Machine Learning Researcher
+  company_name: University of Toronto
+  date_start: '2023-05-01'
+  date_end: '2024-05-31'
+  summary: Built stochastic models in TensorFlow for receptor signalling. Applied information theory and statistical
+    inference to study feedback, molecular noise and signalling specificity.
+- position: Dark Matter Particle Physics Researcher
+  company_name: SuperCDMS SNOLAB & University of Toronto
+  date_start: '2021-09-01'
+  date_end: '2022-04-30'
+  summary: Developed likelihood-based models in C++, RooFit and RooStats. Ran over 1,000 Monte Carlo simulations
+    to estimate detector sensitivity and signal upper limits at the 95% confidence level.
+skills:
+- name: Programming
+  items:
+  - name: Python
+  - name: SQL
+  - name: R
+  - name: MATLAB
+  - name: Julia
+  - name: Bash
+- name: ML & Data
+  items:
+  - name: PyTorch · TensorFlow · scikit-learn
+  - name: Hugging Face · PySpark
+  - name: pandas · NumPy
+  - name: Git · AWS S3 · SLURM
+languages:
+- name: English — native
+  percent: 100
+- name: French — native
+  percent: 100
+- name: Turkish — intermediate; coursework at Harvard
+  percent: 50
+awards:
+- title: Jonathan Whitney Fund
+  awarder: MIT
+  date: '2026-01-01'
+  summary: '2026'
+- title: Rose Sheinin Award
+  awarder: University of Toronto
+  date: '2024-06-01'
+  summary: Top female student in science
+- title: Trinity Studentship in Mathematics
+  awarder: University of Cambridge
+  date: '2024-04-01'
+  summary: ''
+- title: Stirling Prize Graduate Fellowship
+  awarder: Yale University
+  date: '2024-02-01'
+  summary: Declined
+- title: NSERC USRA and University of Toronto Chair Scholar
+  awarder: NSERC / University of Toronto
+  date: '2022-05-01'
+  summary: ''
 ---
 
 ## About Me
 
-Hi! I’m an incoming second-year PhD student at the [MIT Operations Research Center](https://orc.mit.edu/). My research lies at the intersection of AI safety, evaluation, and optimisation, with a particular interest in multimodal and generative AI.
+Hi! I’m a second-year PhD student at the [MIT Operations Research Center](https://orc.mit.edu/). I’m interested in AI agents for automated research, machine learning and optimisation, and data-driven decision-making.
 
-My current research interests span three broad directions:
+My work includes generative AI for personalised instruction and multimodal AI evaluation. I’m also exploring how AI investigators can reconstruct incidents from incomplete evidence when participants may have incentives to conceal or distort information.
 
-1. **Non-generative safety evaluation:** developing methods to identify harmful model capabilities without producing harmful content, with applications to child sexual abuse material (CSAM), non-consensual intimate imagery (NCII), and biological misuse.
-2. **Epistemic harms from AI:** studying how hallucinations, sycophancy, homogenisation, and overreliance on AI-generated information affect what people know, believe, imagine, and regard as possible.
-3. **Efficient and responsible machine learning:** reducing the computational and energy demands of modern AI systems without compromising their safety or reliability.
+Previously, I worked in The Trade Desk’s AI Lab and conducted research applying machine learning and statistical methods to astrophysics, biophysics and particle physics.
 
-Across these directions, I hope to develop rigorous methods that improve the human condition, positively affect people’s lives, and deepen our understanding of how increasingly powerful AI systems behave and influence the world.
+[Explore my projects](/projects/) · [Experience and education](/experience/) · [Download my CV](/uploads/resume.pdf)

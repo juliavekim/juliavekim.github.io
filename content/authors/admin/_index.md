@@ -193,4 +193,3 @@ My work includes generative AI for personalised instruction and multimodal AI ev
 
 Previously, I worked in The Trade Desk’s AI Lab and conducted research applying machine learning and statistical methods to astrophysics, biophysics and particle physics.
 
-{{< opportunity >}}

@@ -17,7 +17,11 @@
     item.state.title = active ? 'Pause animation' : 'Play animation';
     if (item.video) {
       item.video.muted = true;
-      if (active) item.video.play().catch(() => {});
+      if (active) item.video.play().catch(() => {
+        item.state.innerHTML = playIcon;
+        item.state.setAttribute('aria-label', `Play animation: ${item.label}`);
+        item.state.title = 'Play animation';
+      });
       else item.video.pause();
     }
   };
@@ -39,6 +43,7 @@
   const mount = root => root.querySelectorAll('.project-media').forEach(card => {
     if (items.has(card)) return;
     const video = card.querySelector('video');
+    if(video){video.muted=true;video.defaultMuted=true;video.playsInline=true;}
     const label = card.getAttribute('aria-label') || 'Project animation';
     const shell = document.createElement('div'); shell.className='media-shell';
     card.before(shell); shell.append(card);
@@ -47,10 +52,10 @@
     const item = {card, video, label, state, shell, visible:false, manualPause:reduced.matches, entered:false, started:false};
     item.click = () => {
       if (card.dataset.openProject) return;
-      item.manualPause=!item.manualPause; sync(item);
+      item.manualPause=item.video ? !item.video.paused : !item.manualPause; sync(item);
     };
     card.addEventListener('click',item.click);
-    state.addEventListener('click',event=>{event.stopPropagation(); item.manualPause=!item.manualPause; sync(item);});
+    state.addEventListener('click',event=>{event.stopPropagation(); item.manualPause=item.video ? !item.video.paused : !item.manualPause; sync(item);});
     items.set(card,item); observer.observe(card);
   });
   const unmount = root => {

@@ -250,3 +250,7 @@ html[data-theme=dark] .news-cue{color:var(--ink)}
  html{scroll-padding-top:calc(var(--navigation-height,74px) + 16px)}
  .wrap>header nav{width:100%}
 }
+
+/* Expand/collapse is intentionally instant, including newly revealed cards. */
+.research-more,.research-more:hover,.research-more:focus-visible{animation:none!important;transition:none!important;transform:none!important}
+.project-grid>article.project:nth-child(n+5).arriving{animation:none!important}

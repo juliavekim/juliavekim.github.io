@@ -120,3 +120,12 @@ html.project-open{overflow:hidden;scrollbar-gutter:stable}.expandable-project{cu
 .research-cue svg{width:60px;height:130px;flex:none}
 html[data-theme=dark] .research-cue{color:var(--ink)}
 @media(max-width:760px){.research-cue{display:none}}
+
+/* Warm and cool accents inspired by the StudyFetch pastel palette. */
+.intro-heading .social a[aria-label="Email"]{--social-tone:#b86b36;--social-night:#ffce9e}
+.intro-heading .social a[aria-label="LinkedIn"]{--social-tone:#517e8c;--social-night:#bad9e2}
+.intro-heading .social a[aria-label="Google Scholar"]{--social-tone:#91812e;--social-night:#eee8ad}
+.intro-heading .social a[aria-label="GitHub"]{--social-tone:#67815c;--social-night:#c6d9b8}
+.intro-heading .social a{color:var(--social-tone);transition:color .18s ease,transform .18s ease}
+.intro-heading .social a:hover,.intro-heading .social a:focus-visible{color:var(--social-tone);transform:translateY(-2px)}
+html[data-theme=dark] .intro-heading .social a{color:var(--social-night)}

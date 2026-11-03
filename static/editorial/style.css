@@ -115,7 +115,7 @@ html.project-open{overflow:hidden;scrollbar-gutter:stable}.expandable-project{cu
 
 /* Annotation floats in the heading margin without moving the research content. */
 #research{position:relative}
-.research-cue{position:absolute;right:0;top:-31px;display:flex;align-items:center;gap:5px;margin:0;color:#191919;pointer-events:none}
+.research-cue{position:absolute;right:0;top:-31px;display:flex;align-items:center;gap:1px;margin:0;color:#191919;pointer-events:none}
 .research-cue span{font-family:Bitter,serif;font-style:italic;font-size:16px;font-weight:300;line-height:1.4}
 .research-cue svg{width:60px;height:130px;flex:none}
 html[data-theme=dark] .research-cue{color:var(--ink)}

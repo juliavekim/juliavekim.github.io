@@ -54,7 +54,7 @@ for i,(folder,slug) in enumerate(projects):
 
 
  if i==0:
-  sample='<section class="sample-lesson"><h2>Sample lesson</h2><iframe src="https://drive.google.com/file/d/1tGeG1S_m_zp2i6NwL7OwxmaXTkCWftxB/preview" title="Full linear-regression sample lesson" loading="lazy" allow="fullscreen" allowfullscreen></iframe><a class="portfolio-link" href="https://drive.google.com/file/d/1tGeG1S_m_zp2i6NwL7OwxmaXTkCWftxB/view" target="_blank" rel="noopener">Watch on Google Drive ↗</a></section>'
+  sample='<section class="sample-lesson"><h2>Sample lesson</h2><iframe src="https://drive.google.com/file/d/1DHM5dTsuE7cnx48Y00cAGCp10BTtB_6m/preview" title="Single-question remediation sample lesson" loading="lazy" allow="fullscreen" allowfullscreen></iframe><a class="portfolio-link" href="https://drive.google.com/file/d/1DHM5dTsuE7cnx48Y00cAGCp10BTtB_6m/view" target="_blank" rel="noopener">Watch on Google Drive ↗</a></section>'
   body=body.replace('</main>',sample+'</main>')
  if i==4: body=body.replace('<h2>Abstract</h2>','<h2>Overview</h2>')
  catalog[slug]={'title':html.unescape(title),'html':re.sub(r'^<main[^>]*>.*?</a>|</main>$','',body,flags=re.S)}

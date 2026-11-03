@@ -286,3 +286,6 @@ nav>a:nth-of-type(6n+6){--marker:var(--marker-peach)}
 }
 .project-grid>article.project:focus-within,.gallery-open:focus-visible{border-color:var(--card-accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--card-accent) 65%,transparent)}
 @media(prefers-reduced-motion:reduce){.project-grid>article.project,.gallery-open{transition:none}.project-grid>article.project:hover,.gallery-open:hover{transform:none}}
+
+/* Optional narration stays beside the subtitle, outside the portrait grid. */
+.intro-subtitle-row{grid-column:1/-1;grid-row:2;display:flex;align-items:baseline;gap:16px;flex-wrap:wrap;margin-bottom:24px}.intro-subtitle-row .subtitle{margin-bottom:0}.bio-listen{width:auto;height:auto;min-height:36px;display:inline-flex;align-items:center;gap:6px;padding:4px 8px;border:1px solid transparent;border-radius:7px;background:transparent;color:var(--ink);font:400 12px/1.4 ui-monospace,monospace;cursor:pointer}.bio-listen svg{width:18px;height:18px;flex-shrink:0;fill:none}.bio-listen:hover,.bio-listen[aria-pressed="true"]{background:var(--marker-blue);color:#222}.bio-listen:focus-visible{outline:2px solid currentColor;outline-offset:3px}@media(max-width:600px){.intro-subtitle-row{gap:6px 12px}.bio-listen{padding:4px}}

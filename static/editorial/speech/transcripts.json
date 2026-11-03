@@ -1,0 +1,10 @@
+{
+  "service": "Inworld",
+  "voice": "Sarah",
+  "model": "inworld-tts-2",
+  "text": {
+    "en": "Hi, I’m Julia! I’m a second-year PhD student at the MIT Operations Research Center, advised by Professor John Horton. My research interests include multimodal AI, automated research, and AI for financial decision-making. I’m currently working with John Horton and The Carlyle Group on AI agents that reconstruct and evaluate investment decisions using the information available at the time.\n\nBefore MIT, I studied mathematics at Cambridge and physics, mathematics, and statistics at the University of Toronto. I’ve also worked in The Trade Desk’s AI Lab. You can find more information in my CV.",
+    "fr": "Bonjour, je suis Julia ! Je suis doctorante en deuxième année au MIT Operations Research Center, sous la direction de John Horton. Mes recherches portent sur l’IA multimodale, la recherche automatisée, et l’IA pour la prise de décision financière. Je travaille actuellement avec John Horton et The Carlyle Group sur des agents d’IA qui reconstituent et évaluent des décisions d’investissement à partir des informations disponibles à l’époque.\n\nAvant le MIT, j’ai étudié les mathématiques à Cambridge, la physique, les mathématiques et les statistiques à l’Université de Toronto. J’ai également travaillé au laboratoire d’IA de The Trade Desk. Vous trouverez plus d’informations dans mon CV.",
+    "tr": "Merhaba, ben Julia! Doktoramın ikinci yılındayım: MIT Operations Research Center, danışmanım Profesör John Horton. Araştırma ilgi alanlarım: çok modlu yapay zekâ, otomatikleştirilmiş araştırma ve finansal karar verme için yapay zekâ. Şu anda John Horton ve The Carlyle Group ile, yatırım kararlarını o dönemde mevcut bilgilerle yeniden oluşturan ve değerlendiren yapay zekâ ajanları üzerine çalışıyorum.\n\nMIT’den önce Cambridge’de matematik; Toronto Üniversitesi’nde fizik, matematik ve istatistik okudum. The Trade Desk’in yapay zekâ laboratuvarında da çalıştım. Daha fazla bilgi için özgeçmişime bakabilirsiniz: Özgeçmiş."
+  }
+}

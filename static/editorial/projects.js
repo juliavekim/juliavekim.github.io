@@ -2,7 +2,7 @@
   const grid = document.querySelector('.project-grid');
   if (!grid || !window.HTMLDialogElement) return;
   let catalogPromise;
-  const catalog = () => catalogPromise ||= fetch('/editorial/projects.json?v=public-video-20261103', {cache:'no-store'}).then(r => {
+  const catalog = () => catalogPromise ||= fetch('/editorial/projects.json?v=omega-3d-36', {cache:'no-store'}).then(r => {
     if (!r.ok) throw Error('Project details unavailable');
     return r.json();
   }).catch(error => {catalogPromise = null; throw error;});
@@ -59,7 +59,7 @@
       pushed = true;
     }
     window.SiteMotion?.mount(content);
-    if (slug === 'pulsating-red-giants') clusterCleanup = window.createClusterView?.(content);
+
     dialog.querySelector('.dialog-close').focus({preventScroll:true});
     notify();
   };

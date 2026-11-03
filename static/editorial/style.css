@@ -235,3 +235,11 @@ html[data-theme=dark] .news-cue{color:var(--ink)}
  .links a{min-height:38px}
  .research-more{min-height:44px}
 }
+
+/* Stable button fill; never track hover position or slide under the cursor. */
+.research-more,.research-more:hover,.research-more:focus-visible,.research-more[aria-expanded=true]{background-image:none;background-color:var(--blush-wash);color:var(--blush-ink);transition:none}
+.research-more::before{display:none!important}
+.fox-status:hover .fox-wink{animation:none;opacity:1}
+.fox-status:hover .fox-badge-image{transform:rotate(-8deg) scale(1.15)}
+.astro-credit{font:10px/1.5 'Open Sans',sans-serif;margin:3px 0 8px;color:var(--muted)}
+.astro-credit a{text-decoration:underline;text-underline-offset:2px}

@@ -273,3 +273,16 @@ nav>a:nth-of-type(6n+6){--marker:var(--marker-peach)}
 
 .gallery-full-size{display:inline-flex;align-items:center;gap:7px;font:400 13px/1.5 ui-monospace,monospace;letter-spacing:0;color:var(--accent)}
 .gallery-full-size svg{width:14px;height:14px;fill:none;stroke:currentColor;stroke-width:1.3;stroke-linecap:round;stroke-linejoin:round}
+
+/* Palette accents surround cards rather than their text. */
+.project-grid>article.project,.gallery-open{--card-accent:var(--marker-blue);transition:transform .22s ease,border-color .22s ease,box-shadow .22s ease}
+.project-grid>article.project:nth-child(6n+2),.gallery-piece:nth-child(6n+2) .gallery-open{--card-accent:var(--marker-lavender)}
+.project-grid>article.project:nth-child(6n+3),.gallery-piece:nth-child(6n+3) .gallery-open{--card-accent:var(--marker-lime)}
+.project-grid>article.project:nth-child(6n+4),.gallery-piece:nth-child(6n+4) .gallery-open{--card-accent:var(--marker-pink)}
+.project-grid>article.project:nth-child(6n+5),.gallery-piece:nth-child(6n+5) .gallery-open{--card-accent:var(--marker-peach)}
+.project-grid>article.project:nth-child(6n+6),.gallery-piece:nth-child(6n+6) .gallery-open{--card-accent:var(--marker-lemon)}
+@media(hover:hover){
+ .project-grid>article.project:hover,.gallery-open:hover{transform:translateY(-4px);border-color:var(--card-accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--card-accent) 65%,transparent),0 12px 28px color-mix(in srgb,var(--card-accent) 35%,transparent)}
+}
+.project-grid>article.project:focus-within,.gallery-open:focus-visible{border-color:var(--card-accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--card-accent) 65%,transparent)}
+@media(prefers-reduced-motion:reduce){.project-grid>article.project,.gallery-open{transition:none}.project-grid>article.project:hover,.gallery-open:hover{transform:none}}

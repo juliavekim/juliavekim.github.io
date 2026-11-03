@@ -1,0 +1,17 @@
+/* Optional guided narration: complements, never replaces, native screen readers. */
+.voice-guide-button{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;border:1px solid currentColor;border-radius:50%;background:transparent;color:inherit;cursor:pointer;opacity:.8}
+.voice-guide-button:hover,.voice-guide-button:focus-visible{opacity:1}
+.voice-guide-button svg{width:18px;height:18px;fill:none;stroke:currentColor;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.voice-guide-button:focus-visible,.voice-guide-panel button:focus-visible,.voice-guide-panel select:focus-visible{outline:3px solid #4d88cc;outline-offset:3px}
+.voice-guide-panel[hidden]{display:none!important}
+.voice-guide-panel{position:fixed;z-index:9999;top:clamp(70px,12vh,110px);right:16px;width:min(370px,calc(100vw - 32px));max-height:75vh;overflow:auto;padding:20px;border:1px solid currentColor;border-radius:14px;background:var(--bg,#fff);color:inherit;box-shadow:0 12px 38px rgba(0,0,0,.16);font:14px/1.6 system-ui,sans-serif}
+.voice-guide-panel h2{font-size:18px;margin:0}
+.voice-guide-panel p{margin:8px 0}
+.voice-guide-head{display:flex;justify-content:space-between;gap:12px;align-items:center}
+.voice-guide-actions{display:flex;flex-wrap:wrap;gap:8px;margin:12px 0}
+.voice-guide-panel button,.voice-guide-panel select{font:inherit;min-height:36px;border:1px solid currentColor;border-radius:7px;padding:5px 10px;background:transparent;color:inherit;cursor:pointer}
+.voice-guide-panel button:disabled{opacity:.4;cursor:default}
+.voice-guide-panel label{display:inline-flex;align-items:center;gap:9px}
+.voice-guide-panel output{display:block;font-weight:600}
+.voice-guide-panel .voice-guide-transcript{font-size:13px;line-height:1.65;max-height:140px;overflow:auto;margin-top:8px;padding:10px;border:1px solid currentColor;border-radius:7px;opacity:.9}
+@media (prefers-reduced-motion:reduce){.voice-guide-panel *{scroll-behavior:auto!important;transition:none!important}}

@@ -143,3 +143,5 @@ html[data-theme=dark] .news-cue{color:var(--ink)}
 
 /* Match the optical gap beside the larger research arrow. */
 .news-cue{gap:20px}
+
+.research-cue span{margin-right:-8px}

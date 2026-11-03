@@ -180,3 +180,58 @@ html[data-theme=dark] .news-cue{color:var(--ink)}
 .fox-wink{opacity:0}.fox-status:hover .fox-wink{animation:fox-wink .9s ease both}.fox-status:hover .fox-badge-image{transform:rotate(-8deg)}
 @keyframes fox-wink{0%,100%{opacity:0}15%,80%{opacity:1}}
 @media(prefers-reduced-motion:reduce){.fox-status:hover .fox-wink{animation:none;opacity:1}.fox-status:hover .fox-badge-image{transform:none}}
+
+/* Phone layouts, including wide but short landscape viewports. */
+@media(max-width:960px){
+ html{-webkit-text-size-adjust:100%;text-size-adjust:100%}
+ .wrap{padding-left:max(22px,env(safe-area-inset-left));padding-right:max(22px,env(safe-area-inset-right))}
+ header{height:auto;min-height:58px;padding:8px 0;margin-bottom:28px}
+ nav{flex-wrap:wrap;justify-content:center;gap:4px 18px}
+ nav>a{display:inline-flex;align-items:center;min-height:36px}
+ nav a:hover{font-weight:400}
+ nav #theme,.language-picker summary{min-width:36px;min-height:36px;display:grid;place-items:center}
+ .intro-heading,.bio-copy,.project,.news-row p{min-width:0}
+ .project h3,.authors,.dialog-content,.footer{overflow-wrap:anywhere}
+ .project-grid{gap:18px}
+ .dialog-content{padding:0 22px 24px}
+ .project-dialog{max-height:calc(100dvh - 24px);overflow-y:auto;-webkit-overflow-scrolling:touch}
+ .dialog-close{width:44px;height:44px;flex-shrink:0}
+ .dialog-toolbar{height:52px}
+ .art-dialog{max-height:calc(100dvh - 24px);overflow-y:auto}
+ .photo-credit>span{white-space:normal;width:min(260px,70vw)}
+ .footer{padding-bottom:max(25px,env(safe-area-inset-bottom))}
+}
+@media(orientation:landscape) and (max-height:540px) and (max-width:960px){
+ header{margin-bottom:18px}
+ .intro{grid-template-columns:minmax(0,1fr) clamp(145px,22vw,190px);column-gap:28px;padding-bottom:35px}
+ .portrait{align-self:start;height:245px;max-height:70svh}
+ .portrait>img{height:100%;object-position:50% 38%}
+ .intro-heading h1{font-size:30px}
+ .intro .subtitle{margin-bottom:18px}
+ .bio-copy p{font-size:14px;line-height:1.7}
+ .research-cue,.news-cue{display:none}
+ .project-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .project{padding:13px}.project h3{font-size:16px}
+ .news{margin-top:40px}
+ .news-row{grid-template-columns:75px minmax(0,1fr);gap:8px 16px}
+ .news-tag{grid-column:2;justify-self:start}
+ .project-dialog{width:calc(100vw - max(36px,env(safe-area-inset-left)) - max(36px,env(safe-area-inset-right)))}
+ .dialog-content .project-heading h1{font-size:23px}
+ .dialog-content .detail-figure,.dialog-content .media-shell{max-width:420px}
+ .art-dialog{padding:22px 28px}.art-layout{gap:22px}.art-layout img{max-height:70dvh}
+}
+@media(max-width:520px){
+ nav{gap:2px 12px;font-size:12px}
+ .intro-heading{flex-wrap:wrap;row-gap:10px}
+ .intro-heading .social{gap:14px}
+ .intro-heading .social a{min-width:30px;min-height:36px;justify-content:center}
+ .footer{flex-wrap:wrap;gap:18px}
+ .footer-actions{align-items:flex-start}
+ .project-dialog{width:calc(100vw - 16px)}
+ .dialog-content{padding:0 16px 22px}
+}
+@media(hover:none) and (pointer:coarse){
+ .motion-control{width:40px;height:40px}
+ .links a{min-height:38px}
+ .research-more{min-height:44px}
+}

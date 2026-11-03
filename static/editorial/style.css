@@ -160,9 +160,9 @@ html[data-theme=dark] .news-cue{color:var(--ink)}
 .gallery-grid .gallery-open img{width:100%;height:100%;max-height:100%;object-fit:contain;display:block}
 
 /* Marker strokes and small editorial gestures. */
-.bio-copy a,.bio-copy strong,.news-row p a,.misc-list a,nav>a,.project h3 a{--marker:#ffdab5;background-image:linear-gradient(174deg,transparent 25%,var(--marker) 27%,var(--marker) 83%,transparent 86%);background-size:0% 100%;background-repeat:no-repeat;transition:background-size .35s ease,color .2s;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.bio-copy a,.bio-copy strong,.news-row p a,.misc-list a,nav>a{--marker:#ffdab5;background-image:linear-gradient(174deg,transparent 25%,var(--marker) 27%,var(--marker) 83%,transparent 86%);background-size:0% 100%;background-repeat:no-repeat;transition:background-size .35s ease,color .2s;box-decoration-break:clone;-webkit-box-decoration-break:clone}
 .bio-copy a:nth-of-type(2n),nav>a:nth-of-type(2n){--marker:#d9e9ec}.bio-copy strong{--marker:#f1edb9}.misc-list a,.news-row p a{--marker:#dfe9cf}
-.bio-copy a:hover,.bio-copy strong:hover,.news-row p a:hover,.misc-list a:hover,nav>a:hover,.project h3 a:hover{background-size:100% 100%;color:#292929}
+.bio-copy a:hover,.bio-copy strong:hover,.news-row p a:hover,.misc-list a:hover,nav>a:hover{background-size:100% 100%;color:#292929}
 .research-more{background-image:linear-gradient(105deg,#ffdab5,#f1edb9);background-repeat:no-repeat;background-size:0% 100%;transition:background-size .4s ease,color .2s}
 .research-more:hover,.research-more:focus-visible,.research-more[aria-expanded=true]{background-size:100% 100%;color:#292929;background-color:var(--bg)}
 .research-more::before{display:none}
@@ -254,3 +254,8 @@ html[data-theme=dark] .news-cue{color:var(--ink)}
 /* Expand/collapse is intentionally instant, including newly revealed cards. */
 .research-more,.research-more:hover,.research-more:focus-visible{animation:none!important;transition:none!important;transform:none!important}
 .project-grid>article.project:nth-child(n+5).arriving{animation:none!important}
+
+/* StudyFetch pastel tokens; marker colours are assigned evenly across text links. */
+:root{--marker-pink:#f9e7ff;--marker-lavender:#e4bef0;--marker-blue:#caf2f3;--marker-peach:#ffe3c8;--marker-lemon:#feffcd;--marker-lime:#ebffda}
+.project h3 a,.project h3 a:hover{background-image:none;background-size:auto;transition:color .2s}
+.project h3 a:hover{color:var(--accent)}

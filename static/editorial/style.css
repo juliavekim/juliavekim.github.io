@@ -243,3 +243,10 @@ html[data-theme=dark] .news-cue{color:var(--ink)}
 .portrait:hover .fox-badge-image{transform:rotate(-8deg) scale(1.15)}
 .astro-credit{font:10px/1.5 'Open Sans',sans-serif;margin:3px 0 8px;color:var(--muted)}
 .astro-credit a{text-decoration:underline;text-underline-offset:2px}
+
+/* Keep navigation accessible when moving between sections on phones. */
+@media(max-width:960px){
+ .wrap>header{position:sticky;top:0;z-index:40;background:var(--bg);padding-top:max(8px,env(safe-area-inset-top));box-shadow:0 3px 9px #00000005}
+ html{scroll-padding-top:calc(var(--navigation-height,74px) + 16px)}
+ .wrap>header nav{width:100%}
+}

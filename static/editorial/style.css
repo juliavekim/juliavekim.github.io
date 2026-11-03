@@ -131,8 +131,8 @@ html[data-theme=dark] .research-cue{color:var(--ink)}
 html[data-theme=dark] .intro-heading .social a{color:var(--social-night)}
 
 #news{position:relative}
-.news-cue{position:absolute;left:340px;top:-32px;display:flex;align-items:center;gap:1px;color:#191919;pointer-events:none}
+.news-cue{position:absolute;left:0;top:-56px;display:flex;align-items:center;gap:1px;color:#191919;pointer-events:none}
 .news-cue span{font:italic 300 16px/1.4 Bitter,serif;white-space:nowrap}
-.news-cue svg{width:60px;height:130px;flex:none;transform:scaleX(-1)}
+.news-cue svg{width:29px;height:62px;flex:none;transform:scaleX(-1)}
 html[data-theme=dark] .news-cue{color:var(--ink)}
 @media(max-width:760px){.news-cue{display:none}}

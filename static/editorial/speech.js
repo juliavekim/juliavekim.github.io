@@ -1,13 +1,13 @@
 (() => {
- const button=document.querySelector('.bio-listen'); if(!button)return;
+ const buttons=[...document.querySelectorAll('.bio-listen')];if(!buttons.length)return;
  const audio=new Audio();audio.preload='none';
- const labels={en:{play:'Listen',pause:'Pause',label:'Listen to my bio',stop:'Pause narration',error:'Try again'},fr:{play:'Écouter',pause:'Pause',label:'Écouter ma présentation',stop:'Mettre en pause',error:'Réessayer'},tr:{play:'Dinle',pause:'Duraklat',label:'Biyografimi dinle',stop:'Seslendirmeyi duraklat',error:'Tekrar dene'}};
- let lang='',failed=false;
+ const labels={en:{play:'Listen',pause:'Pause',stop:'Pause narration',error:'Try again',sections:{bio:'my bio',research:'research highlights',news:'news and updates',misc:'a few things about me'},prefix:'Listen to '},fr:{play:'Écouter',pause:'Pause',stop:'Mettre en pause',error:'Réessayer',sections:{bio:'ma présentation',research:'mes recherches',news:'les actualités',misc:'quelques mots sur moi'},prefix:'Écouter '},tr:{play:'Dinle',pause:'Duraklat',stop:'Seslendirmeyi duraklat',error:'Tekrar dene',sections:{bio:'Biyografimi',research:'Araştırmalarımı',news:'Haberleri',misc:'Hakkımda birkaç bilgiyi'},prefix:''}};
  const speaker='<path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/>';
- function render(){const l=labels[lang];const playing=!audio.paused;button.querySelector('span').textContent=failed?l.error:playing?l.pause:l.play;button.setAttribute('aria-label',playing?l.stop:l.label);button.setAttribute('aria-pressed',String(playing));button.querySelector('svg').innerHTML=playing?'<path d="M8 5v14M16 5v14" stroke-width="3"/>':speaker;}
- function sync(){const next=(document.documentElement.lang||'en').split('-')[0];const target=labels[next]?next:'en';if(target===lang)return;audio.pause();lang=target;failed=false;audio.src='/editorial/speech/bio-'+lang+'.mp3';render();}
- button.addEventListener('click',async()=>{if(!audio.paused){audio.pause();return;}failed=false;try{await audio.play()}catch(e){failed=true;render()}});
- ['play','pause','ended'].forEach(e=>audio.addEventListener(e,render));audio.addEventListener('error',()=>{failed=true;render()});
- new MutationObserver(sync).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});sync();
- window.addEventListener('pagehide',()=>audio.pause());
+ let lang='',active=null,failed=false,request=0;
+ const section=b=>b.dataset.speech||'bio';
+ function render(){const l=labels[lang];buttons.forEach(b=>{const playing=b===active&&!audio.paused;const name=l.prefix+l.sections[section(b)]+(lang==='tr'?' dinle':'');b.querySelector('span').textContent=b===active&&failed?l.error:playing?l.pause:l.play;b.setAttribute('aria-label',playing?l.stop:name);b.setAttribute('aria-pressed',String(playing));b.querySelector('svg').innerHTML=playing?'<path d="M8 5v14M16 5v14" stroke-width="3"/>':speaker;});}
+ function sync(){const next=(document.documentElement.lang||'en').split('-')[0];const target=labels[next]?next:'en';if(target===lang)return;if(target!==lang){++request;audio.pause();audio.removeAttribute('src');audio.load();active=null;failed=false;lang=target;}render();}
+ buttons.forEach(b=>b.addEventListener('click',async()=>{if(b===active&&!audio.paused){++request;audio.pause();return;}const ticket=++request;if(b!==active){audio.pause();active=b;audio.src='/editorial/speech/'+section(b)+'-'+lang+'.mp3';}failed=false;render();try{await audio.play();}catch(e){if(ticket===request){failed=true;render();}}}));
+ ['play','pause','ended'].forEach(e=>audio.addEventListener(e,render));audio.addEventListener('error',()=>{if(audio.getAttribute('src')){failed=true;render();}});
+ new MutationObserver(sync).observe(document.documentElement,{attributes:true,attributeFilter:['lang']});sync();window.addEventListener('pagehide',()=>audio.pause());
 })();

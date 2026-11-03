@@ -1,0 +1,22 @@
+{
+  "service": "Inworld",
+  "voice": "Sarah",
+  "model": "inworld-tts-2",
+  "text": {
+    "research": {
+      "en": "I develop and evaluate AI systems for learning and decision-making. Here are some of my recent projects. Select a card to learn more.",
+      "fr": "Je développe et évalue des systèmes d’intelligence artificielle pour l’apprentissage et la prise de décision. Voici quelques-uns de mes projets récents. Sélectionnez une carte pour en savoir plus.",
+      "tr": "Öğrenme ve karar verme için yapay zekâ sistemleri geliştiriyor ve değerlendiriyorum. İşte son projelerimden bazıları. Daha fazla bilgi için bir proje kartını seçebilirsiniz."
+    },
+    "news": {
+      "en": "Here’s what I’ve been up to. As of November 2026, I’m working with Professor John Horton and The Carlyle Group on AI for investment decision-making. I began my PhD at MIT’s Operations Research Center in September 2025.",
+      "fr": "Voici quelques nouvelles. En novembre 2026, je travaille avec le professeur John Horton et The Carlyle Group sur l’intelligence artificielle appliquée aux décisions d’investissement. J’ai commencé mon doctorat au centre de recherche opérationnelle du MIT en septembre 2025.",
+      "tr": "Benden birkaç haber. Kasım 2026 itibarıyla Profesör John Horton ve The Carlyle Group ile yatırım kararlarında yapay zekâ kullanımı üzerine çalışıyorum. Eylül 2025’te MIT’nin Yöneylem Araştırması Merkezi’nde doktorama başladım."
+    },
+    "misc": {
+      "en": "A few things about me beyond research: I enjoy learning languages. I’m fluent in French and learning Turkish. I’m also interested in fitness, skincare, beauty, and digital design.",
+      "fr": "Quelques mots sur moi en dehors de la recherche : j’aime apprendre des langues. Je parle couramment français et j’apprends le turc. Je m’intéresse aussi au sport, aux soins de la peau, à la beauté et au design numérique.",
+      "tr": "Araştırma dışında beni biraz tanımak isterseniz: dil öğrenmeyi seviyorum. Akıcı bir şekilde Fransızca konuşuyorum ve Türkçe öğreniyorum. Ayrıca spor, cilt bakımı, güzellik ve dijital tasarımla ilgileniyorum."
+    }
+  }
+}

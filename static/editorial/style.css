@@ -295,3 +295,5 @@ nav>a:nth-of-type(6n+6){--marker:var(--marker-peach)}
 .assist-media .assist-walking{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center;display:block;z-index:0}
 
 .learning-inspiration{background:#000!important}.learning-inspiration video{object-fit:contain!important;padding-bottom:24px}.inspiration-credit{position:absolute;bottom:6px;left:10px;color:#eee;background:#000;font:400 10px/1.3 ui-monospace,monospace;z-index:2;pointer-events:none}
+
+.section-heading{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.section-listen{flex-shrink:0}

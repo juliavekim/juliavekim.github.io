@@ -158,3 +158,20 @@ html[data-theme=dark] .news-cue{color:var(--ink)}
 
 .gallery-grid .gallery-open{display:flex;width:100%;aspect-ratio:3/4;align-items:center;justify-content:center;padding:14px;background:var(--wash);box-sizing:border-box}
 .gallery-grid .gallery-open img{width:100%;height:100%;max-height:100%;object-fit:contain;display:block}
+
+/* Marker strokes and small editorial gestures. */
+.bio-copy a,.bio-copy strong,.news-row p a,.misc-list a,nav>a,.project h3 a{--marker:#ffdab5;background-image:linear-gradient(174deg,transparent 25%,var(--marker) 27%,var(--marker) 83%,transparent 86%);background-size:0% 100%;background-repeat:no-repeat;transition:background-size .35s ease,color .2s;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.bio-copy a:nth-of-type(2n),nav>a:nth-of-type(2n){--marker:#d9e9ec}.bio-copy strong{--marker:#f1edb9}.misc-list a,.news-row p a{--marker:#dfe9cf}
+.bio-copy a:hover,.bio-copy strong:hover,.news-row p a:hover,.misc-list a:hover,nav>a:hover,.project h3 a:hover{background-size:100% 100%;color:#292929}
+.research-more{background-image:linear-gradient(105deg,#ffdab5,#f1edb9);background-repeat:no-repeat;background-size:0% 100%;transition:background-size .4s ease,color .2s}
+.research-more:hover,.research-more:focus-visible,.research-more[aria-expanded=true]{background-size:100% 100%;color:#292929;background-color:var(--bg)}
+.research-more::before{display:none}
+.portrait{position:relative;overflow:visible}.portrait .portrait-crown{position:absolute;width:100px;height:76px;left:50%;top:-40px;transform:translateX(-50%) rotate(-9deg) scale(.8);opacity:0;pointer-events:none;z-index:3;transition:opacity .2s,transform .35s cubic-bezier(.2,.8,.3,1.4)}
+.portrait:hover .portrait-crown{opacity:1;transform:translateX(-50%) rotate(-9deg) scale(1)}
+.portrait-crown path{fill:none;stroke:#e8b727;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.portrait-crown .crown-shape{fill:#ffe693}
+.portrait:hover .crown-rays{animation:crown-rays .7s ease-in-out infinite alternate;transform-origin:center}
+@keyframes crown-rays{to{transform:scale(1.08);opacity:.55}}
+.cue-ready path{stroke-dasharray:240;stroke-dashoffset:240}.cue-ready span{clip-path:inset(0 100% 0 0)}
+.cue-ready.cue-visible path{animation:ink-draw 1.1s ease forwards}.cue-ready.cue-visible span{animation:caption-type 1.3s steps(26,end) .35s forwards}
+@keyframes ink-draw{to{stroke-dashoffset:0}}@keyframes caption-type{to{clip-path:inset(0 0 0 0)}}
+@media(prefers-reduced-motion:reduce){.cue-ready path{stroke-dashoffset:0}.cue-ready span{clip-path:none}.cue-ready.cue-visible path,.cue-ready.cue-visible span,.portrait:hover .crown-rays{animation:none}.research-more,.bio-copy a,.bio-copy strong,nav>a{transition:none}}

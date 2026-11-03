@@ -153,3 +153,5 @@ html[data-theme=dark] .news-cue{color:var(--ink)}
 .research-more.is-wiping::before{animation:button-wipe .65s cubic-bezier(.22,.7,.3,1) both}
 @keyframes button-wipe{0%{transform:translateX(-105%)}48%{transform:translateX(0)}100%{transform:translateX(105%)}}
 @media(prefers-reduced-motion:reduce){.research-more.is-wiping::before{animation:none}}
+
+.design-page .back-research{font-family:ui-monospace,monospace;font-size:13px;font-weight:400;font-style:normal}

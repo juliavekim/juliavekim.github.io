@@ -155,3 +155,6 @@ html[data-theme=dark] .news-cue{color:var(--ink)}
 @media(prefers-reduced-motion:reduce){.research-more.is-wiping::before{animation:none}}
 
 .design-page .back-research{font-family:ui-monospace,monospace;font-size:13px;font-weight:400;font-style:normal}
+
+.gallery-grid .gallery-open{display:flex;width:100%;aspect-ratio:3/4;align-items:center;justify-content:center;padding:14px;background:var(--wash);box-sizing:border-box}
+.gallery-grid .gallery-open img{width:100%;height:100%;max-height:100%;object-fit:contain;display:block}

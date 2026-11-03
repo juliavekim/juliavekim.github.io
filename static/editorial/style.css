@@ -259,3 +259,9 @@ html[data-theme=dark] .news-cue{color:var(--ink)}
 :root{--marker-pink:#f9e7ff;--marker-lavender:#e4bef0;--marker-blue:#caf2f3;--marker-peach:#ffe3c8;--marker-lemon:#feffcd;--marker-lime:#ebffda}
 .project h3 a,.project h3 a:hover{background-image:none;background-size:auto;transition:color .2s}
 .project h3 a:hover{color:var(--accent)}
+nav>a:nth-of-type(6n+1){--marker:var(--marker-pink)}
+nav>a:nth-of-type(6n+2){--marker:var(--marker-blue)}
+nav>a:nth-of-type(6n+3){--marker:var(--marker-lemon)}
+nav>a:nth-of-type(6n+4){--marker:var(--marker-lavender)}
+nav>a:nth-of-type(6n+5){--marker:var(--marker-lime)}
+nav>a:nth-of-type(6n+6){--marker:var(--marker-peach)}

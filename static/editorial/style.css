@@ -147,3 +147,9 @@ html[data-theme=dark] .news-cue{color:var(--ink)}
 .research-cue span{margin-right:-8px}
 
 .gallery-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:40px;align-items:start}.gallery-grid .gallery-piece{width:100%;max-width:350px;margin:24px auto}.gallery-grid .gallery-open img{width:100%;height:auto;object-fit:contain}@media(max-width:600px){.gallery-grid{grid-template-columns:1fr;gap:12px}}
+
+.research-more{position:relative;isolation:isolate;overflow:hidden}
+.research-more::before{content:"";position:absolute;inset:0;z-index:-1;background:#e8b9cd;transform:translateX(-105%);pointer-events:none}
+.research-more.is-wiping::before{animation:button-wipe .65s cubic-bezier(.22,.7,.3,1) both}
+@keyframes button-wipe{0%{transform:translateX(-105%)}48%{transform:translateX(0)}100%{transform:translateX(105%)}}
+@media(prefers-reduced-motion:reduce){.research-more.is-wiping::before{animation:none}}

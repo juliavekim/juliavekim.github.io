@@ -1,4 +1,5 @@
 ---
+layout: editorial-egoblind-ra
 title: "EgoBlind-RA: Towards Safer Egocentric Assistive AI for Blind Users via Risk-Adaptive Routing"
 slug: "egoblind-ra"
 

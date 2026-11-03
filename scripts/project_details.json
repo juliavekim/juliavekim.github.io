@@ -1,0 +1,124 @@
+[
+  {
+    "type": "Research manuscript",
+    "lead": "Reusable lessons, with explanations that respond to a learner’s mistakes.",
+    "question": "How can we personalize instructional support without generating a new narrated video for every learner?",
+    "approach": [
+      [
+        "Prepare the shared material",
+        "Course materials are mapped to learning objectives and assessment questions. Reusable explanations, worked examples, and corrective annotations are authored and reviewed before delivery."
+      ],
+      [
+        "Select a lesson from assessment evidence",
+        "The questions a learner misses determine which remediation lesson to retrieve. Their selected incorrect answers determine which clarifications appear during playback."
+      ],
+      [
+        "Adapt the annotations",
+        "Optional AskTIM tutoring dialogue can inform additional notes. The underlying video and narration stay unchanged, so personalization does not require rendering another video."
+      ]
+    ],
+    "findings_title": "Production benchmark",
+    "findings_intro": "Nine synthetic learner cases across three learning objectives compared shared production with a separately generated video for each case. Shared production created three videos rather than nine.",
+    "comparison": [
+      [
+        "Recorded API cost",
+        "$5.36",
+        "$14.80"
+      ],
+      [
+        "Cumulative production execution",
+        "46.1 minutes",
+        "175.1 minutes"
+      ],
+      [
+        "Narrated videos",
+        "3",
+        "9"
+      ]
+    ],
+    "findings": [
+      "Shared production reduced recorded API costs by 63.8%. Excluding unsuccessful production attempts, the reduction was 48.2%. Independent production took 3.80 times as much cumulative execution time; this measures execution across production stages, not elapsed learner-facing delivery time.",
+      "The production benchmark excludes human labor, local computing, hosting, storage, final annotation-placement and timing checks, and online adaptation. Learner and instructional-quality results remain pending; these production measurements do not establish learning gains."
+    ],
+    "demo_text": "Explore a remediation video, the AskTIM tutor, and annotations matched to assessment responses in the interactive demonstration.",
+    "caption": "An excerpt from the original animated Python lesson on squared prediction errors."
+  },
+  {
+    "type": "Research project",
+    "lead": "A visual assistant should respond differently when a situation is urgent.",
+    "question": "Can a lightweight urgency classifier route visual-assistance requests to a response policy that better matches their safety stakes?",
+    "approach": [
+      [
+        "Estimate urgency",
+        "A lightweight CLIP-based classifier labels egocentric query–video pairs as urgent or non-urgent."
+      ],
+      [
+        "Route the response",
+        "We compare separate urgent and non-urgent LoRA adapters with a single prompt-tag-conditioned adapter, using Kimi-VL-A3B-Instruct on the EgoBlind benchmark."
+      ],
+      [
+        "Evaluate the training choices",
+        "Supervised fine-tuning and direct preference optimization are compared across both architectures, including tests with noisy classifier routing."
+      ]
+    ],
+    "findings_title": "Findings",
+    "findings_intro": "The urgency classifier achieved 0.905 ROC-AUC on the held-out test set.",
+    "findings": [
+      "Urgency-conditioned supervised fine-tuning improved over a uniform-policy baseline in both architectures. Preference optimization helped the bifurcated architecture, whose best combination used an SFT urgent adapter and a DPO non-urgent adapter, but regressed the unified model’s SFT results.",
+      "The unified adapter matched oracle composite loss despite 21.5% test-time tag flips. The results suggest that both the value of preference alignment and sensitivity to routing errors depend on the architecture."
+    ],
+    "caption": "An illustrative camera view for risk-adaptive visual assistance; the overlay is a website animation, not model output."
+  },
+  {
+    "type": "Part III essay",
+    "lead": "Connecting stellar spectra across instruments through a shared representation.",
+    "question": "How can spectra with different instrumental characteristics be aligned when observations are scarce and survey overlap is limited?",
+    "approach": [
+      [
+        "Learn stellar features",
+        "Convolutional encoders are first trained to recover twenty stellar properties from single-instrument spectra."
+      ],
+      [
+        "Align the representations",
+        "StarCLIP uses contrastive learning to bring APOGEE and ab initio JWST/NIRSpec spectra into a shared latent space."
+      ],
+      [
+        "Test realistic observations",
+        "MockStarCLIP uses semi-empirical, stochastic NIRSpec catalogs to study a more realistic observation setting. The representations support similarity search and stellar-property recovery."
+      ]
+    ],
+    "findings_title": "Stellar-property recovery",
+    "findings_intro": "A linear regressor on StarCLIP embeddings recovered twenty stellar properties, with R² scores typically above 0.88.",
+    "findings": [
+      "For RGB-like stars, reported uncertainties were at most approximately 200 K for effective temperature, 0.07 dex for surface gravity, and 0.03 dex for metallicity. MockStarCLIP gave lower precision: approximately 450 K, 0.11 dex, and 0.06 dex, respectively.",
+      "The work explores the feasibility of transferable representations for NIRSpec and other spectral surveys with limited data overlap."
+    ],
+    "caption": "Webb’s view of IC 348 provides astronomical context; it is not a visualization of the StarCLIP model or its dataset."
+  },
+  {
+    "type": "Journal article",
+    "lead": "Tracing the changing brightness of red giants in Omega Centauri.",
+    "question": "Do red giants in this globular cluster show the same complex variability seen in other stellar populations?",
+    "approach": [
+      [
+        "Measure light curves",
+        "We studied sixteen pulsating red giants using observations from ASAS-SN and the AAVSO VStar analysis software."
+      ],
+      [
+        "Identify periodic behavior",
+        "Light-curve and time-series analyses measured pulsation periods, secondary periods, long secondary periods, and changes in amplitude."
+      ],
+      [
+        "Compare stellar populations",
+        "The sample was augmented with stars from the literature to examine period–luminosity relations and compare Omega Centauri with other stellar systems."
+      ]
+    ],
+    "findings_title": "Patterns in the variability",
+    "findings_intro": "Pulsation periods were determined for all sixteen stars, and long secondary periods were found in eight.",
+    "findings": [
+      "Pulsation amplitudes varied by as much as a factor of 3.4 on a median timescale of eighteen pulsation periods. Ratios of long secondary periods to pulsation periods clustered around four and eight.",
+      "Sequences for long secondary, fundamental, and first-overtone periods were visible. The results show that the complex variability of Omega Centauri’s red giants resembles that in other stellar systems and in the field."
+    ],
+    "caption": "A 3D visualization of Omega Centauri, the cluster studied in this paper; the animation does not show the measured light curves."
+  }
+]

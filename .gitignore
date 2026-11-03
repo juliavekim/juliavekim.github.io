@@ -75,3 +75,8 @@ Desktop.ini
 
 *.log
 npm-debug.log*
+
+/preview/
+
+__pycache__/
+*.pyc

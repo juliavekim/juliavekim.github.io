@@ -1,4 +1,5 @@
 ---
+layout: editorial-contrastive-learning-stellar-spectra
 title: "Applying Contrastive Learning to Stellar Spectra"
 slug: "contrastive-learning-stellar-spectra"
 

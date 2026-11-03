@@ -1,4 +1,8 @@
 {{ define "main" }}
+{{ if .Params.external_profile }}
+<meta http-equiv="refresh" content="0; url={{ .Params.external_profile }}">
+<p><a href="{{ .Params.external_profile }}">Visit {{ .Title }}’s website</a></p>
+{{ else }}
 
 <div class="max-w-prose mx-auto flex justify-center">
   <article class="prose prose-slate lg:prose-xl dark:prose-invert">
@@ -35,4 +39,5 @@
 
 </div>
 
+{{ end }}
 {{ end }}

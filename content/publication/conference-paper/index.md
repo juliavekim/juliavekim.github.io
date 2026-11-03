@@ -1,4 +1,5 @@
 ---
+layout: editorial-pulsating-red-giants
 title: 'Pulsating Red Giants in a Globular Cluster: omega Centauri'
 slug: pulsating-red-giants
 authors:

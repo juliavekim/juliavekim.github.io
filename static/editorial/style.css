@@ -112,3 +112,9 @@ html.project-open{overflow:hidden;scrollbar-gutter:stable}.expandable-project{cu
 .research-more{font:13px ui-monospace,monospace;border:1px solid var(--line);border-radius:4px;background:var(--bg);color:var(--ink);padding:7px 17px}.research-more:hover{border-color:var(--blush);background:var(--blush-wash)}
 
 .gallery-piece{margin:35px 0 45px}.gallery-open{display:block;width:min(100%,350px);height:auto;padding:12px;background:var(--bg);border:1px solid var(--line);box-shadow:0 8px 28px #231b2512}.gallery-open img{display:block;width:100%;height:auto}.art-dialog{width:min(960px,92vw);max-height:90vh;border:1px solid var(--line);border-radius:10px;padding:36px;background:var(--bg);color:var(--ink)}.art-dialog::backdrop{background:#17131a99;backdrop-filter:blur(5px)}.art-close{position:absolute;right:10px;top:8px;font-size:24px}.art-layout{display:grid;grid-template-columns:minmax(0,1.3fr) 1fr;gap:30px;align-items:center}.art-layout img{width:100%;height:auto;max-height:76vh;object-fit:contain}.art-layout h2{font-size:24px}@media(max-width:600px){.art-layout{grid-template-columns:1fr}.art-dialog{padding:30px 20px}.art-layout img{max-height:55vh}}
+
+/* Curved editorial invitation above the research cards. */
+.research-cue{display:flex;justify-content:flex-end;align-items:center;gap:12px;margin:-5px 8px 8px;color:var(--accent,#97577f)}
+.research-cue span{font-family:Georgia,"Times New Roman",serif;font-style:italic;font-size:22px;font-weight:400}
+.research-cue svg{width:48px;height:66px;flex:none;transform:rotate(-8deg)}
+@media(max-width:650px){.research-cue{margin:0 0 8px;gap:6px}.research-cue span{font-size:18px}.research-cue svg{width:35px;height:48px}}

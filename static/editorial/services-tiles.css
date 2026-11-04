@@ -240,3 +240,4 @@
 .service-tutoring .service-title-row{margin-bottom:24px}.sound-play-hint{position:absolute;top:26px;left:1px;display:flex;align-items:flex-end;gap:6px;pointer-events:none;color:var(--ink);font:300 italic 13px/1.4 'Bitter',serif;white-space:nowrap}.art-sound .sound-play-hint svg{width:40px;height:40px}.sound-play-hint em{font:inherit;padding-bottom:1px}.service-tutoring .art-sound{margin-bottom:46px}
 .service-outreach .service-artwork figcaption{text-align:left}
 .service-outreach .service-artwork figcaption{text-align:right}
+.service-outreach .service-artwork figcaption{display:block;width:100%;max-width:none;margin-left:0;margin-right:0;text-align:right}

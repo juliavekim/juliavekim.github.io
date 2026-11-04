@@ -126,3 +126,21 @@
 .art-flourish .magic-note path:not([fill="none"]){fill:#bdebd7}
 .art-flourish .note-stars{stroke:#def8eb;fill:#def8eb}
 .art-flourish .kiss-mark>path:first-child{fill:#d77892;stroke:#fff0e7}
+
+/* Three little butterflies with independently staggered wing beats. */
+.service-artwork .art-playful-2 .refined-art.butterfly-trio{left:40%;top:39%;width:125px;height:105px}
+.art-playful:hover .art-flourish.refined-art.butterfly-trio{animation:none;transform:none}
+.butterfly-trio>svg{position:absolute;width:57px;height:49px;left:0;top:46px}
+.butterfly-trio>svg.butterfly-lilac{width:43px;height:37px;left:58px;top:8px}
+.butterfly-trio>svg.butterfly-blush{width:33px;height:29px;left:86px;top:62px}
+.butterfly-lilac .wing-beat>path:first-child{fill:#d3bcea;stroke:#9980b5}
+.butterfly-lilac .wing-beat>g{fill:#eee1fa}
+.butterfly-blush .wing-beat>path:first-child{fill:#f0b6cc;stroke:#bb849f}
+.butterfly-blush .wing-beat>g{fill:#fce0eb}
+.art-playful:hover .butterfly-trio>svg{animation:butterfly-wander 4.6s ease-in-out infinite}
+.art-playful:hover .butterfly-trio>svg.butterfly-lilac{animation-delay:-1.5s;animation-duration:5.2s}
+.art-playful:hover .butterfly-trio>svg.butterfly-blush{animation-delay:-2.8s;animation-duration:4.1s}
+.art-playful:hover .butterfly-lilac .wing-beat{animation-delay:-.3s;animation-duration:.7s}
+.art-playful:hover .butterfly-blush .wing-beat{animation-delay:-.5s;animation-duration:.6s}
+@keyframes butterfly-wander{0%,100%{transform:translate(0,0) rotate(-7deg)}35%{transform:translate(8px,-12px) rotate(6deg)}70%{transform:translate(-4px,-5px) rotate(-3deg)}}
+@media(prefers-reduced-motion:reduce){.butterfly-trio>svg,.butterfly-trio .wing-beat{animation:none!important}}

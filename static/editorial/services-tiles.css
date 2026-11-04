@@ -106,3 +106,17 @@
 @keyframes butterfly-journey{0%{transform:translate(0,0) rotate(-15deg);opacity:0}12%{opacity:1}45%{transform:translate(40px,-55px) rotate(12deg)}80%{opacity:1;transform:translate(100px,-115px) rotate(-12deg)}100%{transform:translate(130px,-150px) rotate(8deg);opacity:0}}
 @keyframes kiss-away{0%{opacity:0;transform:translate(0,0) scale(.25)}12%{opacity:1;transform:translate(0,-2px) scale(.4)}65%{opacity:.95;transform:translate(13px,-28px) scale(.9) rotate(-12deg)}100%{opacity:0;transform:translate(25px,-50px) scale(1.15) rotate(-18deg)}}
 @media(prefers-reduced-motion:reduce){.refined-art,.refined-art *{animation:none!important}.art-playful-3:hover .refined-art{transform:scale(.5)}}
+
+/* Legible warm highlights over the paintings. */
+.service-artwork .art-playful-0 .refined-art{left:43%;top:38%;width:44px;height:38px}
+.art-flourish .magic-note path{stroke:#fff0e6;stroke-width:2.5}
+.art-flourish .magic-note path:not([fill="none"]){fill:#f6cee6}
+.art-flourish .note-stars{stroke:#fff4d6;fill:#fff4d6}
+.service-artwork .art-playful-1 .refined-art{filter:drop-shadow(0 1px 2px #6c3e56)}
+.art-flourish .kiss-mark>path:first-child{fill:#f7bdd0;stroke:#fff4eb;stroke-width:2.5}
+.service-artwork .art-playful-3 .refined-art{filter:drop-shadow(0 1px 2px #61323c)}
+.service-artwork .art-playful-2 .refined-art{width:64px;height:55px}
+.art-playful:hover .art-flourish.refined-art:has(.wing-beat){animation:butterfly-journey 7s ease-in-out infinite}
+.art-playful:hover .wing-beat{animation:wing-beat .8s ease-in-out infinite alternate}
+@keyframes wing-beat{to{transform:scaleX(.82)}}
+@keyframes butterfly-journey{0%{transform:translate(0,0) rotate(-8deg);opacity:0}10%{opacity:1}40%{transform:translate(24px,-30px) rotate(4deg)}75%{opacity:1;transform:translate(57px,-57px) rotate(-5deg)}100%{transform:translate(84px,-80px) rotate(3deg);opacity:0}}

@@ -297,3 +297,6 @@ nav>a:nth-of-type(6n+6){--marker:var(--marker-peach)}
 .learning-inspiration{background:#000!important}.learning-inspiration video{object-fit:contain!important;padding-bottom:24px}.inspiration-credit{position:absolute;bottom:6px;left:10px;color:#eee;background:#000;font:400 10px/1.3 ui-monospace,monospace;z-index:2;pointer-events:none}
 
 .section-heading{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.section-listen{flex-shrink:0}
+
+/* Keep the Misc portfolio link as light as the biography links. */
+.misc-list a.portfolio-link,.misc-list a.portfolio-link:hover,.misc-list a.portfolio-link:focus-visible{font-family:'Open Sans',sans-serif;font-weight:300!important;text-decoration:none;border-bottom:0}

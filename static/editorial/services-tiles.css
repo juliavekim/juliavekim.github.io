@@ -213,3 +213,5 @@
 .service-tile:hover .candle-flicker{animation:candle-flicker 1.4s ease-in-out infinite alternate;transform-origin:0 0}
 .service-tile:hover .refined-art:has(.kiss-mark){animation:kiss-away 3.8s ease-out infinite;transform-origin:40% 45%}
 @media(prefers-reduced-motion:reduce){.service-tile .refined-art,.service-tile .refined-art *{animation:none!important}}
+
+@media(min-width:701px){.service-web-design .service-detail-copy{transform:translateY(-14px)}}

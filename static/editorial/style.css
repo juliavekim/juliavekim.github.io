@@ -303,3 +303,7 @@ nav>a:nth-of-type(6n+6){--marker:var(--marker-peach)}
 
 /* Keep the navigation softly visible over the scrolling page. */
 .wrap>header{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--bg) 82%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 3px 12px #00000006}
+
+/* Mail colour follows its destination, independent of translated labels. */
+.intro-heading .social a[href^="mailto:"]{--social-tone:#b86b36;--social-night:#b86b36;color:#b86b36}
+html[data-theme=dark] .intro-heading .social a[href^="mailto:"],.intro-heading .social a[href^="mailto:"]:hover,.intro-heading .social a[href^="mailto:"]:focus-visible{color:#b86b36}

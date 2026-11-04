@@ -241,3 +241,4 @@
 .service-outreach .service-artwork figcaption{text-align:left}
 .service-outreach .service-artwork figcaption{text-align:right}
 .service-outreach .service-artwork figcaption{display:block;width:100%;max-width:none;margin-left:0;margin-right:0;text-align:right}
+.service-tutoring .service-artwork{position:relative}.painting-hover-hint{position:absolute;right:-115px;top:8px;display:flex;align-items:center;gap:5px;font:300 italic 12px/1.4 'Bitter',serif;pointer-events:none}.painting-hover-hint svg{width:34px;height:28px}@media(max-width:1000px){.painting-hover-hint{right:0;top:-34px}}@media(hover:none){.painting-hover-hint{display:none}}

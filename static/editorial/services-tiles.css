@@ -217,3 +217,9 @@
 @media(min-width:701px){.service-web-design .service-detail-copy{transform:translateY(-14px)}}
 
 @media(min-width:701px){.service-web-design .service-gallery{align-items:start}.service-web-design .service-detail-copy{transform:none;padding-top:0;padding-bottom:0}.service-web-design .service-detail-copy h1{margin-top:0}.service-web-design .service-artwork{margin-top:0}}
+
+.art-sound{display:flex;align-items:center;gap:10px;margin-top:8px;position:relative;text-align:left}
+.art-sound button,.art-sound summary{border:0;background:none;color:var(--ink);padding:4px 0;cursor:pointer;display:flex;align-items:center;gap:6px}
+.art-sound button{font:300 11px/1.5 'Open Sans',sans-serif}.art-sound svg{width:17px;height:17px;flex-shrink:0}.art-sound summary{list-style:none}.art-sound summary::-webkit-details-marker{display:none}
+.art-sound details{position:relative}.art-sound-credit{position:absolute;bottom:calc(100% + 9px);left:-25px;width:250px;max-width:75vw;padding:14px 16px;border:1px solid var(--line);border-radius:6px;background:var(--bg);box-shadow:0 8px 24px #0002;font:11px/1.7 'Open Sans',sans-serif;z-index:10}.art-sound-credit p{margin:7px 0 0}.art-sound-credit a{font-weight:300;color:var(--accent)}.art-sound button:focus-visible,.art-sound summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+.art-sound>button{width:auto;min-width:0;height:auto;flex:0 1 auto;white-space:nowrap}.art-sound>details{flex:0 0 auto}.art-sound>button span{white-space:normal}

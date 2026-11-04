@@ -120,3 +120,9 @@
 .art-playful:hover .wing-beat{animation:wing-beat .8s ease-in-out infinite alternate}
 @keyframes wing-beat{to{transform:scaleX(.82)}}
 @keyframes butterfly-journey{0%{transform:translate(0,0) rotate(-8deg);opacity:0}10%{opacity:1}40%{transform:translate(24px,-30px) rotate(4deg)}75%{opacity:1;transform:translate(57px,-57px) rotate(-5deg)}100%{transform:translate(84px,-80px) rotate(3deg);opacity:0}}
+
+.service-artwork .art-playful-0 .refined-art{left:41%;top:39%;width:30px;height:26px;margin-left:-15px;margin-top:-13px}
+.art-flourish .magic-note path{stroke:#e5fff3}
+.art-flourish .magic-note path:not([fill="none"]){fill:#bdebd7}
+.art-flourish .note-stars{stroke:#def8eb;fill:#def8eb}
+.art-flourish .kiss-mark>path:first-child{fill:#d77892;stroke:#fff0e7}

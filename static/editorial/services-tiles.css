@@ -215,3 +215,5 @@
 @media(prefers-reduced-motion:reduce){.service-tile .refined-art,.service-tile .refined-art *{animation:none!important}}
 
 @media(min-width:701px){.service-web-design .service-detail-copy{transform:translateY(-14px)}}
+
+@media(min-width:701px){.service-web-design .service-gallery{align-items:start}.service-web-design .service-detail-copy{transform:none;padding-top:0;padding-bottom:0}.service-web-design .service-detail-copy h1{margin-top:0}.service-web-design .service-artwork{margin-top:0}}

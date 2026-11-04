@@ -162,3 +162,12 @@
 .art-playful:hover .butterfly-trio>svg{animation:butterfly-wander 6s ease-in-out infinite}
 @keyframes butterfly-wander{0%,100%{transform:translate(0,0) rotate(var(--rest-angle))}40%{transform:translate(3px,-5px) rotate(calc(var(--rest-angle) + 4deg))}75%{transform:translate(-2px,-2px) rotate(calc(var(--rest-angle) - 3deg))}}
 @keyframes wing-beat{to{transform:scaleX(.92)}}
+
+/* Flames anchored to the three candle holders in Renoir's piano painting. */
+.service-artwork .art-playful-1 .refined-art.candle-flames{inset:0;width:100%;height:100%;margin:0;filter:none;transform:none}
+.candle-flames>svg{width:100%;height:100%}
+.art-playful:hover .candle-flicker{animation:candle-flicker 1.4s ease-in-out infinite alternate;transform-origin:0 0}
+.art-playful:hover .flame-1{animation-delay:-.5s;animation-duration:1.7s}
+.art-playful:hover .flame-2{animation-delay:-.9s;animation-duration:1.2s}
+@keyframes candle-flicker{from{transform:rotate(-4deg) scale(.96,1);opacity:.9}to{transform:rotate(5deg) scale(1.04,.92);opacity:1}}
+@media(prefers-reduced-motion:reduce){.candle-flicker{animation:none!important}}

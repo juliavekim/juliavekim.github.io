@@ -182,3 +182,5 @@
 
 .service-artwork .art-playful-2 .refined-art.perched-bird{left:84%;top:48%;width:35px;height:31px;margin-left:-17px;margin-top:-26px;filter:none}
 .art-playful:hover .refined-art.perched-bird{animation:none;transform:none}
+
+.kiss-emoji{display:block;font-family:'Apple Color Emoji','Segoe UI Emoji',sans-serif;font-size:27px;line-height:31px;text-align:center;filter:drop-shadow(1px 0 1px white) drop-shadow(-1px 0 1px #ffffffc9)}

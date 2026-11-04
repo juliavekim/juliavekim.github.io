@@ -247,3 +247,5 @@
 
 /* Keep the artwork tour alongside its title, including narrow dialogs. */
 .museum-label .service-title-row{flex-wrap:nowrap;align-items:center;gap:12px}.museum-label .service-title-row h2{flex:1 1 auto;min-width:0;margin:0}.museum-label .service-title-row .service-narrate{flex:0 0 auto;white-space:nowrap;margin:0;padding:4px 0}
+
+@media(min-width:701px){.service-detail:has(.painting-hover-hint) .service-detail-copy{transform:translateY(-24px)}}

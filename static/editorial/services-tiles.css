@@ -67,3 +67,5 @@
 .service-tile .art-flourish{display:none!important}
 
 .service-web-design .service-news-title{font:500 11px/1.7 ui-monospace,monospace;letter-spacing:.06em;margin-right:5px}@media(min-width:701px){.service-web-design .service-gallery{align-items:end}.service-web-design .service-artwork{margin-top:0}.service-web-design .service-detail-copy{padding-bottom:21px}}
+
+.service-artwork .art-playful-3 .art-flourish{top:26%;bottom:auto;right:45%;width:72px;height:64px}.art-playful-3 .art-flourish svg{filter:drop-shadow(0 1px 2px #fff7dfb3)}.art-playful:hover .bee-flight{animation:bee-float 3s ease-in-out infinite;transform-origin:center}.art-playful:hover .bee-wings{animation:bee-wings .3s ease-in-out infinite alternate;transform-box:fill-box;transform-origin:bottom center}@keyframes bee-float{0%,100%{transform:translate(0,1px) rotate(-4deg)}50%{transform:translate(5px,-5px) rotate(3deg)}}@keyframes bee-wings{to{transform:scaleY(.75)}}@media(prefers-reduced-motion:reduce){.bee-flight,.bee-wings{animation:none!important}}

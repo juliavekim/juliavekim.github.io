@@ -230,3 +230,7 @@
 .service-teaching .service-artwork{position:relative}
 .service-teaching .art-sound{position:absolute;left:0;bottom:calc(100% + 8px);margin:0}
 .service-narrate{display:inline-flex;align-items:center;gap:6px;width:auto;height:auto;border:0;background:none;padding:0;margin:-8px 0 18px;color:var(--ink);font:300 11px/1.5 'Open Sans',sans-serif;cursor:pointer}.service-narrate svg{width:17px;height:17px}.service-narrate:focus-visible{outline:2px solid var(--accent);outline-offset:4px}.museum-label .service-narrate{margin:0 0 14px}
+
+.service-tutoring .service-narrate{position:relative;margin-bottom:42px}
+.narration-hint{position:absolute;left:8px;top:25px;display:flex;align-items:center;gap:7px;white-space:nowrap;pointer-events:none;font:300 italic 12px/1.2 'Bitter',serif;color:var(--ink)}
+.service-narrate .narration-hint svg{width:30px;height:30px;overflow:visible}

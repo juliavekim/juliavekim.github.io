@@ -198,3 +198,6 @@
 .perched-bird svg>path:nth-child(1){fill:#a5cbdc}
 .perched-bird svg>path:nth-child(2){fill:#c7e1eb}
 .perched-bird svg>path:nth-child(3){fill:#a2c5d7}
+
+/* Keep the curved heart tip directed back toward the mouth as it rises right. */
+.art-playful-3 .kiss-mark{transform:rotate(40deg);transform-origin:29px 32px}

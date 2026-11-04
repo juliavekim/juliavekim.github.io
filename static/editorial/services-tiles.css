@@ -225,3 +225,7 @@
 .art-sound>button{width:auto;min-width:0;height:auto;flex:0 1 auto;white-space:nowrap}.art-sound>details{flex:0 0 auto}.art-sound>button span{white-space:normal}
 
 .art-sound-credit{border-radius:2px;box-shadow:0 5px 18px #00000012;padding:15px 18px;font-weight:300}.art-sound-credit strong{display:inline-block;font:400 italic 13px/1.55 'Bitter',serif;margin-bottom:5px}.art-sound-credit a{display:block;width:fit-content;font:400 10px/1.8 ui-monospace,SFMono-Regular,Menlo,monospace;text-decoration:none;margin-top:4px}
+
+/* Place the piano control in the existing space above the image. */
+.service-teaching .service-artwork{position:relative}
+.service-teaching .art-sound{position:absolute;left:0;bottom:calc(100% + 8px);margin:0}

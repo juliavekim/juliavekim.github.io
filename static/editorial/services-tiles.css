@@ -176,3 +176,6 @@
 
 .service-artwork .art-playful-2 .refined-art.butterfly-trio{left:65%;top:17%}
 .butterfly-trio>svg,.butterfly-trio>svg.butterfly-lilac,.butterfly-trio>svg.butterfly-blush{opacity:1}
+
+.art-flourish .kiss-mark>path.kiss-upper{fill:#c95776;stroke:#fff0e7;stroke-width:1.1}.art-flourish .kiss-mark>path.kiss-lower{fill:#dc7891;stroke:#fff0e7;stroke-width:1.1}
+@keyframes kiss-away{0%{opacity:0;transform:translate(0,0) scale(.3)}12%{opacity:1;transform:translate(0,-2px) scale(.45)}65%{opacity:1;transform:translate(10px,-32px) scale(1)}100%{opacity:0;transform:translate(17px,-60px) scale(1.25)}}

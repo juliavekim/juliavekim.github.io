@@ -1,0 +1,5 @@
+(()=>{
+const slug=location.pathname.split('/').filter(Boolean).pop();if(!['tutoring','teaching','website-design','outreach'].includes(slug))return;
+function attach(){document.querySelectorAll('.service-detail-copy h1,.museum-label h2').forEach(h=>{if(h.nextElementSibling?.classList.contains('service-narrate'))return;const b=document.createElement('button');b.type='button';b.className='bio-listen service-narrate notranslate';b.dataset.speech='service-'+slug;b.setAttribute('aria-pressed','false');const lang=document.documentElement.lang;const label=lang==='fr'?'Écouter':lang==='tr'?'Dinle':'Listen';b.setAttribute('aria-label',label);b.innerHTML='<svg viewBox="0 0 24 24" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/></svg><span>'+label+'</span>';h.after(b);});}
+new MutationObserver(attach).observe(document.body,{childList:true,subtree:true});document.addEventListener('close',e=>{if(e.target.matches('.museum-dialog'))document.dispatchEvent(new CustomEvent('art-sound-start'));},true);attach();
+})();

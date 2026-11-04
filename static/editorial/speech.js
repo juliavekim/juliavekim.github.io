@@ -2,6 +2,7 @@
  const buttons=()=>[...document.querySelectorAll('.bio-listen')];
  const audio=new Audio();audio.preload='none';
  const labels={en:{play:'Listen',pause:'Pause',stop:'Pause narration',error:'Try again',sections:{bio:'my bio',research:'research highlights',news:'news and updates',misc:'a few things about me',services:'my services'},prefix:'Listen to '},fr:{play:'Écouter',pause:'Pause',stop:'Mettre en pause',error:'Réessayer',sections:{bio:'ma présentation',research:'mes recherches',news:'les actualités',misc:'quelques mots sur moi',services:'mes services'},prefix:'Écouter '},tr:{play:'Dinle',pause:'Duraklat',stop:'Seslendirmeyi duraklat',error:'Tekrar dene',sections:{bio:'Biyografimi',research:'Araştırmalarımı',news:'Haberleri',misc:'Hakkımda birkaç bilgiyi',services:'Hizmetlerimi'},prefix:''}};
+ for(const [lang,name] of Object.entries({en:'the service and painting description',fr:'la présentation du service et du tableau',tr:'Hizmet ve resim açıklamasını'})){for(const slug of ['tutoring','teaching','website-design','outreach'])labels[lang].sections['service-'+slug]=name;}
  const speaker='<path d="M11 5 6 9H3v6h3l5 4V5Z"/><path d="M15 8a6 6 0 0 1 0 8m3-11a10 10 0 0 1 0 14"/>';
  let lang='',active=null,failed=false,request=0;
  const section=b=>b.dataset.speech||'bio';

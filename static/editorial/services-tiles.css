@@ -229,3 +229,4 @@
 /* Place the piano control in the existing space above the image. */
 .service-teaching .service-artwork{position:relative}
 .service-teaching .art-sound{position:absolute;left:0;bottom:calc(100% + 8px);margin:0}
+.service-narrate{display:inline-flex;align-items:center;gap:6px;width:auto;height:auto;border:0;background:none;padding:0;margin:-8px 0 18px;color:var(--ink);font:300 11px/1.5 'Open Sans',sans-serif;cursor:pointer}.service-narrate svg{width:17px;height:17px}.service-narrate:focus-visible{outline:2px solid var(--accent);outline-offset:4px}.museum-label .service-narrate{margin:0 0 14px}

@@ -1,0 +1,24 @@
+{
+  "service": "Inworld",
+  "voice": "Hélène",
+  "model": "inworld-tts-2",
+  "language": "fr-FR",
+  "delivery": "STABLE",
+  "direction": "Natural metropolitan French with a Parisian accent; warm, clear, relaxed conversational delivery",
+  "updated": "2026-11-04",
+  "recordings": [
+    "artwork-website-design-fr.mp3",
+    "artwork-tutoring-fr.mp3",
+    "service-teaching-fr.mp3",
+    "service-outreach-fr.mp3",
+    "service-website-design-fr.mp3",
+    "service-tutoring-fr.mp3",
+    "artwork-teaching-fr.mp3",
+    "services-fr.mp3",
+    "artwork-outreach-fr.mp3",
+    "news-fr.mp3",
+    "bio-fr.mp3",
+    "misc-fr.mp3",
+    "research-fr.mp3"
+  ]
+}

@@ -83,3 +83,5 @@
 .art-flourish .butterfly-doodle{--doodle-fill:#e6d7f1}
 .art-flourish .butterfly-wings>path:first-child{fill:#e6d7f1!important;fill-opacity:1}
 .service-artwork .art-playful-3 .art-flourish{display:none!important}
+
+@media(min-width:701px){.service-teaching .service-artwork{margin-top:36px}}

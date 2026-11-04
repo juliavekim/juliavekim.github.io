@@ -171,3 +171,5 @@
 .art-playful:hover .flame-2{animation-delay:-.9s;animation-duration:1.2s}
 @keyframes candle-flicker{from{transform:rotate(-4deg) scale(.96,1);opacity:.9}to{transform:rotate(5deg) scale(1.04,.92);opacity:1}}
 @media(prefers-reduced-motion:reduce){.candle-flicker{animation:none!important}}
+
+.service-artwork .art-playful-0 .refined-art{left:37%;top:65%;width:30px;height:26px;margin-left:-15px;margin-top:-13px}

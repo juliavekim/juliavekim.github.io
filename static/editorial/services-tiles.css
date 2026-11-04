@@ -144,3 +144,11 @@
 .art-playful:hover .butterfly-blush .wing-beat{animation-delay:-.5s;animation-duration:.6s}
 @keyframes butterfly-wander{0%,100%{transform:translate(0,0) rotate(-7deg)}35%{transform:translate(8px,-12px) rotate(6deg)}70%{transform:translate(-4px,-5px) rotate(-3deg)}}
 @media(prefers-reduced-motion:reduce){.butterfly-trio>svg,.butterfly-trio .wing-beat{animation:none!important}}
+
+/* Pointed upper wings and scalloped hindwings, following the drawn reference. */
+.butterfly-lilac .wing-beat>path:first-child{fill:#e6d7f2;stroke:#a18cb7}
+.butterfly-blush .wing-beat>path:first-child{fill:#f6d3df;stroke:#bb8da0}
+.butterfly-lilac .wing-beat>path:nth-child(2){stroke:#b5a2c9}
+.butterfly-blush .wing-beat>path:nth-child(2){stroke:#cea5b7}
+
+.butterfly-lilac .wing-beat>path:nth-child(2){stroke:#dfb18a}.butterfly-blush .wing-beat>path:nth-child(2){stroke:#cc94bf}

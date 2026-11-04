@@ -65,3 +65,5 @@
 .art-playful-3 .art-flourish{top:auto;bottom:23%;right:30%;width:68px;height:61px}.service-artwork .art-playful-3 .art-flourish{top:auto;bottom:24%;right:30%;width:76px;height:68px}
 
 .service-tile .art-flourish{display:none!important}
+
+.service-web-design .service-news-title{font:500 11px/1.7 ui-monospace,monospace;letter-spacing:.06em;margin-right:5px}@media(min-width:701px){.service-web-design .service-gallery{align-items:end}.service-web-design .service-artwork{margin-top:0}.service-web-design .service-detail-copy{padding-bottom:21px}}

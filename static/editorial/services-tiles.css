@@ -85,3 +85,24 @@
 .service-artwork .art-playful-3 .art-flourish{display:none!important}
 
 @media(min-width:701px){.service-teaching .service-artwork{margin-top:36px}}
+
+/* Painting-specific, anchored gestures. The overview cards stay unadorned. */
+.service-artwork .art-flourish.refined-art{display:block!important;bottom:auto;right:auto;transform:none;width:64px;height:55px;transition:opacity .25s;filter:drop-shadow(0 1px 1px #fff7e699)}
+.service-artwork .art-playful-0 .refined-art{left:66%;top:13%;width:53px;height:46px}
+.service-artwork .art-playful-1 .refined-art{left:64%;top:29%;width:76px;height:65px}
+.service-artwork .art-playful-2 .refined-art{left:43%;top:57%;width:58px;height:50px}
+.service-artwork .art-playful-3 .refined-art{left:23.6%;top:54.8%;width:36px;height:31px;margin-left:-18px;margin-top:-15px}
+.art-playful:hover .refined-art,.art-playful:focus-visible .refined-art{opacity:1}
+.art-playful:hover .bulb-glow{animation:idea-glow 1.8s ease-in-out infinite alternate}
+.art-playful:hover .magic-note{animation:magic-rise 2.8s ease-in-out infinite;transform-origin:center}
+.art-playful:hover .n2{animation-delay:.6s}
+.art-playful:hover .note-stars{animation:idea-glow 1.3s ease-in-out infinite alternate}
+.art-playful:hover .art-flourish.refined-art:has(.wing-beat){animation:butterfly-journey 5s ease-in-out infinite}
+.art-playful:hover .wing-beat{animation:wing-beat .55s ease-in-out infinite alternate;transform-origin:41px 38px}
+.art-playful:hover .art-flourish.refined-art:has(.kiss-mark){animation:kiss-away 3.8s ease-out infinite;transform-origin:40% 45%}
+@keyframes idea-glow{from{opacity:.65}to{opacity:1;filter:drop-shadow(0 0 3px #fff0b6)}}
+@keyframes magic-rise{0%,100%{transform:translateY(3px) rotate(-4deg)}50%{transform:translateY(-13px) rotate(5deg)}}
+@keyframes wing-beat{to{transform:scaleX(.55)}}
+@keyframes butterfly-journey{0%{transform:translate(0,0) rotate(-15deg);opacity:0}12%{opacity:1}45%{transform:translate(40px,-55px) rotate(12deg)}80%{opacity:1;transform:translate(100px,-115px) rotate(-12deg)}100%{transform:translate(130px,-150px) rotate(8deg);opacity:0}}
+@keyframes kiss-away{0%{opacity:0;transform:translate(0,0) scale(.25)}12%{opacity:1;transform:translate(0,-2px) scale(.4)}65%{opacity:.95;transform:translate(13px,-28px) scale(.9) rotate(-12deg)}100%{opacity:0;transform:translate(25px,-50px) scale(1.15) rotate(-18deg)}}
+@media(prefers-reduced-motion:reduce){.refined-art,.refined-art *{animation:none!important}.art-playful-3:hover .refined-art{transform:scale(.5)}}

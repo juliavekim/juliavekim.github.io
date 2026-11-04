@@ -203,3 +203,13 @@
 .art-playful-3 .kiss-mark{transform:rotate(40deg);transform-origin:29px 32px}
 
 .service-artwork .art-playful-3 .refined-art{left:22.4%;top:56.1%}
+
+/* Hover artwork sits below the original coloured veil and its text. */
+.card-art-scene{position:absolute;inset:0;overflow:hidden;border-radius:18px;z-index:1;pointer-events:none}
+.service-tile .service-veil{z-index:2}.service-card-label{z-index:3}
+.service-tile .card-art-scene .art-flourish{display:block!important}
+.service-tile:hover .card-art-scene .art-flourish,.service-tile:focus-visible .card-art-scene .art-flourish{opacity:1;transform:none}
+.service-tile:hover .bulb-glow{animation:idea-glow 1.8s ease-in-out infinite alternate}
+.service-tile:hover .candle-flicker{animation:candle-flicker 1.4s ease-in-out infinite alternate;transform-origin:0 0}
+.service-tile:hover .refined-art:has(.kiss-mark){animation:kiss-away 3.8s ease-out infinite;transform-origin:40% 45%}
+@media(prefers-reduced-motion:reduce){.service-tile .refined-art,.service-tile .refined-art *{animation:none!important}}

@@ -253,3 +253,6 @@
 .service-detail .service-detail-copy .service-title-row>h1,.museum-label .service-title-row>h2{margin-block:0}.service-title-row>.service-narrate{align-self:center;display:inline-flex;align-items:center;margin-block:0}
 
 .museum-label .museum-links a{color:var(--accent)}
+
+/* Keep the painting invitation above the artwork, clear of translated titles. */
+.service-artwork .painting-hover-hint{top:-48px;right:auto}

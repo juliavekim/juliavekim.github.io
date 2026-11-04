@@ -173,3 +173,6 @@
 @media(prefers-reduced-motion:reduce){.candle-flicker{animation:none!important}}
 
 .service-artwork .art-playful-0 .refined-art{left:37%;top:65%;width:30px;height:26px;margin-left:-15px;margin-top:-13px}
+
+.service-artwork .art-playful-2 .refined-art.butterfly-trio{left:65%;top:17%}
+.butterfly-trio>svg,.butterfly-trio>svg.butterfly-lilac,.butterfly-trio>svg.butterfly-blush{opacity:1}

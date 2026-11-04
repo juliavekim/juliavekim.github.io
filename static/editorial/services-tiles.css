@@ -234,3 +234,5 @@
 .service-tutoring .service-narrate{position:relative;margin-bottom:42px}
 .narration-hint{position:absolute;left:8px;top:25px;display:flex;align-items:center;gap:7px;white-space:nowrap;pointer-events:none;font:300 italic 12px/1.2 'Bitter',serif;color:var(--ink)}
 .service-narrate .narration-hint svg{width:30px;height:30px;overflow:visible}
+
+.service-title-row{display:flex;align-items:center;flex-wrap:wrap;gap:8px 16px;margin-bottom:24px}.service-title-row h1,.service-title-row h2{margin:0}.service-title-row .service-narrate{margin:0;padding:4px 8px;min-height:36px;font:400 12px/1.4 ui-monospace,monospace;border:0;background:transparent;border-radius:0}.service-title-row .service-narrate svg{width:18px;height:18px}.service-tutoring .service-title-row{margin-bottom:42px}.service-narrate .narration-hint{font:300 italic 12px/1.2 'Bitter',serif;top:32px}.service-narrate .narration-hint svg{width:30px;height:30px}.museum-label .service-title-row{margin-bottom:12px}

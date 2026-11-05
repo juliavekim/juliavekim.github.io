@@ -286,7 +286,7 @@
 
 .service-tiles .tile-0 { --service-label: #efc3a4; }
 .service-tiles .tile-1 { --service-label: #efdbab; --service-crop: 1.08; }
-.service-tiles .tile-2 { --service-label: #45583b; --service-label-blend: multiply; --service-crop: 1.065; }
+.service-tiles .tile-2 { --service-label: #805469; --service-label-blend: multiply; --service-crop: 1.065; }
 .service-tiles .tile-3 { --service-label: #f3cbb6; }
 
 .service-tiles .service-veil {

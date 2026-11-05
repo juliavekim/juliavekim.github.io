@@ -11,14 +11,13 @@ function add(){prepareTiles();document.querySelectorAll('.service-artwork>a,.car
 if (i === 2 && a.classList.contains('card-art-plane')) {
   el.classList.replace('perched-bird', 'flying-bluebird');
   el.innerHTML = `<svg viewBox="0 0 80 70" stroke-linejoin="round">
-    <path class="bluebird-far-wing" d="M44 40C44 23 37 11 24 4c0 13 4 27 15 38Z" fill="#6fa9d2" stroke="#476e9e" stroke-width="1.4"/>
-    <path d="M31 43 8 54l12 1-5 8 24-13Z" fill="#6598c4" stroke="#476e9e" stroke-width="1.4"/>
-    <path d="M24 47c8-7 11-18 22-19 2-8 8-13 15-11 7 2 10 8 8 15-4 12-15 20-28 21-7 1-13-1-17-6Z" fill="#89c7ee" stroke="#476e9e" stroke-width="1.4"/>
-    <path d="M67 30c-3 12-15 21-28 21-4 0-7-1-10-2 12-1 20-6 25-13 3-5 8-7 13-6Z" fill="#fff0d8"/>
+    <path class="bluebird-far-wing" d="M44 40C44 23 37 11 24 4c0 13 4 27 15 38Z" fill="#82a7b6" stroke="#567786" stroke-width="1.4"/>
+    <path d="M31 43 8 54l12 1-5 8 24-13Z" fill="#7294a4" stroke="#567786" stroke-width="1.4"/>
+    <path d="M24 47c8-7 11-18 22-19 2-8 8-13 15-11 7 2 10 8 8 15-4 12-15 20-28 21-7 1-13-1-17-6Z" fill="#8db4c4" stroke="#567786" stroke-width="1.4"/>
+    <path d="M67 30c-3 12-15 21-28 21-4 0-7-1-10-2 12-1 20-6 25-13 3-5 8-7 13-6Z" fill="#e3dbbd"/>
     <path d="m68 24 10 2-9 5Z" fill="#eab16d" stroke="#996647" stroke-width="1"/>
-    <path class="bluebird-near-wing" d="M47 39C42 24 29 13 12 9c2 7 7 13 13 17l-6-1c4 6 10 9 16 10l-6 1c6 5 13 6 18 3Z" fill="#b4dff6" stroke="#557fab" stroke-width="1.4"/>
-    <ellipse cx="62" cy="24" rx="2.5" ry="3" fill="#263f62"/>
-    <circle cx="62.6" cy="23" r=".8" fill="#fff"/>
+    <path class="bluebird-near-wing" d="M47 39C42 24 29 13 12 9c2 7 7 13 13 17l-6-1c4 6 10 9 16 10l-6 1c6 5 13 6 18 3Z" fill="#a6c2c9" stroke="#668692" stroke-width="1.4"/>
+    <ellipse cx="62" cy="24" rx="2.5" ry="3" fill="#354e5a"/>
   </svg>`;
 }
 a.append(el);});}

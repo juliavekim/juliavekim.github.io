@@ -265,6 +265,9 @@ nav>a:nth-of-type(6n+3){--marker:var(--marker-lemon)}
 nav>a:nth-of-type(6n+4){--marker:var(--marker-lavender)}
 nav>a:nth-of-type(6n+5){--marker:var(--marker-lime)}
 nav>a:nth-of-type(6n+6){--marker:var(--marker-peach)}
+nav>a[href="#main"]{--marker:var(--marker-lime)}
+.bio-copy a[href="https://orc.mit.edu/"]{--marker:#e0edf4}
+
 
 .research-cue .single-leaf{width:19px;height:19px;flex:none;align-self:center;margin-left:9px;margin-right:3px;transform:rotate(-8deg)}
 .research-cue .single-leaf path{stroke-dasharray:none;stroke-dashoffset:0;animation:none}

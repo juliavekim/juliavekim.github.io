@@ -314,3 +314,58 @@
 @media (prefers-reduced-motion: reduce) {
   .service-tiles .service-tile > img { transition: none; }
 }
+
+/* Keep the motion anchored to the portrait crops on the overview cards. */
+.service-tiles .card-art-scene {
+  border-radius: 0;
+}
+
+.service-tiles .card-art-plane {
+  transform: scale(var(--service-crop, 1));
+  transition: transform .45s ease;
+}
+
+.service-tiles .card-art-plane .refined-art {
+  opacity: 1;
+}
+
+.service-tiles .card-art-plane.art-playful-3 .refined-art {
+  left: 42%;
+  top: 53%;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .service-tiles .service-tile:hover .card-art-plane {
+    transform: scale(calc(var(--service-crop, 1) + .045));
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .card-art-plane .bulb-glow {
+    animation: idea-glow 1.8s ease-in-out infinite alternate;
+  }
+
+  .card-art-plane .candle-flicker {
+    animation: candle-flicker 1.4s ease-in-out infinite alternate;
+    transform-origin: 0 0;
+  }
+
+  .service-tiles .card-art-plane .refined-art:has(.kiss-mark) {
+    animation: kiss-away 3.8s ease-out infinite;
+    transform-origin: 40% 45%;
+  }
+
+  .card-art-plane .knitting-needle {
+    animation: knitting-stitch 1.8s ease-in-out infinite alternate;
+    transform-origin: 25px 25px;
+  }
+
+  .card-art-plane .needle-right {
+    animation-direction: alternate-reverse;
+  }
+}
+
+@keyframes knitting-stitch {
+  from { transform: rotate(-9deg) translateY(-1px); }
+  to { transform: rotate(9deg) translateY(1px); }
+}

@@ -10,14 +10,11 @@ function prepareTiles(){document.querySelectorAll('.service-tile').forEach(tile=
 function add(){prepareTiles();document.querySelectorAll('.service-artwork>a,.card-art-plane').forEach(a=>{if(a.querySelector('.art-flourish'))return;const i=slugs.indexOf(a.dataset.artSlug||location.pathname.split('/').filter(Boolean).pop());if(i<0)return;a.classList.add('art-playful','art-playful-'+i);const el=document.createElement('span');el.className='art-flourish refined-art';el.setAttribute('aria-hidden','true');el.innerHTML='<svg viewBox="0 0 84 72" fill="none" stroke="#806b75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'+drawings[i]+'</svg>';if(i===3){el.innerHTML='<svg viewBox="0 0 60 70"><g class="kiss-mark"><path d="M28 20C23 5 5 10 7 25c2 12 18 18 30 27-6-12-3-16 4-23C57 12 38 3 28 20Z" fill="#d87997" stroke="#b46584" stroke-width="1.3"/></g></svg>';}if(i===1){el.classList.add('candle-flames');const svg=el.querySelector('svg');svg.setAttribute('viewBox','0 0 488 624');const flame='<path d="M0 0C-9-5-6-12-1-19c-1 7 7 9 6 14Q5 0 0 0Z" fill="#ffd984" stroke="#dba14d" stroke-width="1.2"/><path d="M0-2Q-4-5 0-10 4-5 0-2Z" fill="#fff4cb" stroke="none"/>';svg.innerHTML=[[291,292],[326,299],[361,301]].map(([x,y],n)=>'<g transform="translate('+x+' '+y+')"><g class="candle-flicker flame-'+n+'">'+flame+'</g></g>').join('');}if(i===2){el.classList.add('perched-bird');el.innerHTML='<svg viewBox="0 0 80 70" fill="none" stroke="#668a9e" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M42 39q12 10 29 7-11 10-28 0" fill="#97c5db"/><path d="M29 17c-9-5-17 4-13 11 3 6 1 14 7 19 8 7 23 0 24-8-9 0-12-7-13-13q0-6-5-9Z" fill="#bedeea"/><path d="M29 29q12 1 15 12-13 3-15-12Z" fill="#92bdd3"/><path d="m16 23-9 3 9 2" fill="#e8cda2" stroke="#ac9476" stroke-width=".8"/><circle cx="24" cy="21" r="1.3" fill="#466477" stroke="none"/><path d="m28 48 1 11m9-13-3 13m-9 0h7m0 0h7" stroke="#927c65" stroke-width="1.2"/></svg>' ;}
 if (i === 2 && a.classList.contains('card-art-plane')) {
   el.classList.replace('perched-bird', 'flying-bluebird');
-  el.innerHTML = `<svg viewBox="0 0 80 70" stroke-linejoin="round">
-    <path class="bluebird-far-wing" d="M44 40C44 23 37 11 24 4c0 13 4 27 15 38Z" fill="#82a7b6" stroke="#567786" stroke-width="1.4"/>
-    <path d="M31 43 8 54l12 1-5 8 24-13Z" fill="#7294a4" stroke="#567786" stroke-width="1.4"/>
-    <path d="M24 47c8-7 11-18 22-19 2-8 8-13 15-11 7 2 10 8 8 15-4 12-15 20-28 21-7 1-13-1-17-6Z" fill="#8db4c4" stroke="#567786" stroke-width="1.4"/>
-    <path d="M67 30c-3 12-15 21-28 21-4 0-7-1-10-2 12-1 20-6 25-13 3-5 8-7 13-6Z" fill="#e3dbbd"/>
-    <path d="m68 24 10 2-9 5Z" fill="#eab16d" stroke="#996647" stroke-width="1"/>
-    <path class="bluebird-near-wing" d="M47 39C42 24 29 13 12 9c2 7 7 13 13 17l-6-1c4 6 10 9 16 10l-6 1c6 5 13 6 18 3Z" fill="#a6c2c9" stroke="#668692" stroke-width="1.4"/>
-    <ellipse cx="62" cy="24" rx="2.5" ry="3" fill="#354e5a"/>
+  el.innerHTML = `<svg viewBox="0 0 80 70" stroke="#657d85" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M25 44 11 48l8 4-3 6 19-7c16 3 30-7 33-18 3-9-2-16-10-16-7 0-12 5-14 12-8 1-14 7-19 15Z" fill="#b9d4dd"/>
+    <path d="m68 25 8 3-8 3" fill="#e9c28e"/>
+    <path class="bluebird-wing" d="M45 39C39 28 28 21 16 20c3 12 12 21 22 22 3 0 5-1 7-3Z" fill="#d6e6eb"/>
+    <circle cx="60" cy="25" r="2.2" fill="#52666d" stroke="none"/>
   </svg>`;
 }
 a.append(el);});}

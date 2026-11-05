@@ -378,13 +378,9 @@
     animation: service-bird-flight 4s ease-out infinite;
   }
 
-  .service-tile:is(:hover, :focus-visible) .card-art-plane .flying-bluebird :is(.bluebird-near-wing, .bluebird-far-wing) {
-    animation: service-bird-wing .23s ease-in-out infinite alternate;
+  .service-tile:is(:hover, :focus-visible) .card-art-plane .flying-bluebird .bluebird-wing {
+    animation: service-bird-wing .33s ease-in-out infinite alternate;
     transform-origin: 43px 38px;
-  }
-
-  .service-tile:is(:hover, :focus-visible) .card-art-plane .bluebird-far-wing {
-    animation-delay: -.08s;
   }
 }
 
@@ -397,8 +393,8 @@
 }
 
 @keyframes service-bird-wing {
-  from { transform: rotate(22deg) scaleY(1.1); }
-  to { transform: rotate(-57deg) scaleY(.82); }
+  from { transform: rotate(23deg); }
+  to { transform: rotate(-30deg) scaleY(.72); }
 }
 
 @keyframes outreach-heart-rise {

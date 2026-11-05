@@ -375,26 +375,27 @@
   }
 
   .service-tiles .service-tile:is(:hover, :focus-visible) .card-art-plane .flying-bluebird {
-    animation: service-bird-flight 4s ease-out infinite;
+    animation: service-bird-flight 2.8s ease-in-out infinite;
   }
 
   .service-tile:is(:hover, :focus-visible) .card-art-plane .flying-bluebird .bluebird-wing {
-    animation: service-bird-wing .33s ease-in-out infinite alternate;
-    transform-origin: 43px 38px;
+    animation: service-bird-wing .36s ease-in-out infinite;
+    transform-origin: 43px 39px;
   }
 }
 
 @keyframes service-bird-flight {
-  0% { opacity: 0; left: 55%; top: 37%; transform: rotate(-8deg); }
-  10% { opacity: 1; left: 56%; top: 34%; }
-  36% { opacity: 1; left: 60%; top: 25%; transform: rotate(-26deg); }
-  63% { opacity: 1; left: 65%; top: 15%; transform: rotate(-15deg); }
-  84%, 100% { opacity: 0; left: 69%; top: 8%; transform: rotate(-9deg); }
+  0% { opacity: 0; left: 55%; top: 37%; transform: rotate(-24deg); }
+  10% { opacity: 1; }
+  30% { opacity: 1; left: 57%; top: 27%; transform: rotate(-34deg); }
+  57% { opacity: 1; left: 61%; top: 14%; transform: rotate(-29deg); }
+  80%, 100% { opacity: 0; left: 66%; top: 2%; transform: rotate(-24deg); }
 }
 
 @keyframes service-bird-wing {
-  from { transform: rotate(23deg); }
-  to { transform: rotate(-30deg) scaleY(.72); }
+  0%, 100% { transform: rotate(8deg) scaleY(1.05); }
+  40% { transform: rotate(-12deg) scaleY(-.9); }
+  62% { transform: rotate(-10deg) scaleY(-.65); }
 }
 
 @keyframes outreach-heart-rise {

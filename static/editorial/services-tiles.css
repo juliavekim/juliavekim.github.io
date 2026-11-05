@@ -341,7 +341,7 @@
 
 .service-tiles .card-art-plane.art-playful-2 .perched-bird {
   left: 65%;
-  top: 38%;
+  top: 40%;
 }
 
 .service-tiles .card-art-plane.art-playful-3 .refined-art {
@@ -371,15 +371,25 @@
   }
 
   .service-tile:is(:hover, :focus-visible) .card-art-plane .perched-bird svg {
-    animation: perched-bird-bob 3.2s ease-in-out infinite;
-    transform-origin: 40% 85%;
+    animation: service-bird-flight 3.8s ease-in-out infinite;
+  }
+
+  .service-tile:is(:hover, :focus-visible) .card-art-plane .perched-bird svg > path:nth-child(3) {
+    animation: service-bird-wing .28s ease-in-out infinite alternate;
+    transform-origin: 30px 33px;
   }
 }
 
-@keyframes perched-bird-bob {
-  0%, 65%, 100% { transform: translateY(0); }
-  78% { transform: translateY(-3px) rotate(-5deg); }
-  90% { transform: translateY(0) rotate(2deg); }
+@keyframes service-bird-flight {
+  0% { opacity: 0; transform: translate(4px, 9px) rotate(4deg); }
+  16% { opacity: 1; }
+  72% { opacity: 1; transform: translate(-28px, -35px) rotate(9deg); }
+  100% { opacity: 0; transform: translate(-47px, -57px) rotate(11deg); }
+}
+
+@keyframes service-bird-wing {
+  from { transform: rotate(-28deg) scaleY(1.2); }
+  to { transform: rotate(19deg) scaleY(.55); }
 }
 
 @keyframes outreach-heart-rise {

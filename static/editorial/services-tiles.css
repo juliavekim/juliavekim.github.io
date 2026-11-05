@@ -330,8 +330,8 @@
 }
 
 .service-tiles .card-art-plane.art-playful-3 .refined-art {
-  left: 42%;
-  top: 53%;
+  left: 45.5%;
+  top: 34%;
 }
 
 @media (hover: hover) and (prefers-reduced-motion: no-preference) {
@@ -351,7 +351,7 @@
   }
 
   .service-tiles .card-art-plane .refined-art:has(.kiss-mark) {
-    animation: kiss-away 3.8s ease-out infinite;
+    animation: outreach-heart-rise 3.8s ease-out infinite;
     transform-origin: 40% 45%;
   }
 
@@ -368,4 +368,11 @@
 @keyframes knitting-stitch {
   from { transform: rotate(-9deg) translateY(-1px); }
   to { transform: rotate(9deg) translateY(1px); }
+}
+
+@keyframes outreach-heart-rise {
+  0% { opacity: 0; transform: translateY(0) scale(.3); }
+  18% { opacity: 1; transform: translateY(-4px) scale(.45); }
+  70% { opacity: 1; transform: translate(3px, -22px) scale(.65); }
+  100% { opacity: 0; transform: translate(5px, -38px) scale(.75); }
 }

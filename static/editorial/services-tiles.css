@@ -317,6 +317,17 @@
 /* Keep the motion anchored to the portrait crops on the overview cards. */
 .service-tiles .card-art-scene {
   border-radius: 0;
+  visibility: hidden;
+}
+
+.service-tiles .service-tile:focus-visible .card-art-scene {
+  visibility: visible;
+}
+
+@media (hover: hover) {
+  .service-tiles .service-tile:hover .card-art-scene {
+    visibility: visible;
+  }
 }
 
 .service-tiles .card-art-plane {
@@ -345,21 +356,21 @@
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .card-art-plane .bulb-glow {
+  .service-tile:is(:hover, :focus-visible) .card-art-plane .bulb-glow {
     animation: idea-glow 1.8s ease-in-out infinite alternate;
   }
 
-  .card-art-plane .candle-flicker {
+  .service-tile:is(:hover, :focus-visible) .card-art-plane .candle-flicker {
     animation: candle-flicker 1.4s ease-in-out infinite alternate;
     transform-origin: 0 0;
   }
 
-  .service-tiles .card-art-plane .refined-art:has(.kiss-mark) {
+  .service-tiles .service-tile:is(:hover, :focus-visible) .card-art-plane .refined-art:has(.kiss-mark) {
     animation: outreach-heart-rise 3.8s ease-out infinite;
     transform-origin: 40% 45%;
   }
 
-  .card-art-plane .perched-bird svg {
+  .service-tile:is(:hover, :focus-visible) .card-art-plane .perched-bird svg {
     animation: perched-bird-bob 3.2s ease-in-out infinite;
     transform-origin: 40% 85%;
   }

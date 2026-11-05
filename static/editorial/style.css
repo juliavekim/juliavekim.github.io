@@ -307,3 +307,16 @@ nav>a:nth-of-type(6n+6){--marker:var(--marker-peach)}
 /* Mail colour follows its destination, independent of translated labels. */
 .intro-heading .social a[href^="mailto:"]{--social-tone:#b86b36;--social-night:#b86b36;color:#b86b36}
 html[data-theme=dark] .intro-heading .social a[href^="mailto:"],.intro-heading .social a[href^="mailto:"]:hover,.intro-heading .social a[href^="mailto:"]:focus-visible{color:#b86b36}
+
+.bio-career-highlight {
+  background: linear-gradient(transparent 18%, #f9d4e7 18%, #f9d4e7 92%, transparent 92%);
+  color: #54263e;
+  padding-inline: .15em;
+  -webkit-box-decoration-break: clone;
+  box-decoration-break: clone;
+}
+
+html[data-theme="dark"] .bio-career-highlight {
+  background: linear-gradient(transparent 18%, #60334e 18%, #60334e 92%, transparent 92%);
+  color: #ffe2f0;
+}

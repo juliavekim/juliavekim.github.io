@@ -11,13 +11,13 @@ function add(){prepareTiles();document.querySelectorAll('.service-artwork>a,.car
 if (i === 2) {
   const blossom = el.cloneNode(false);
   blossom.classList.replace('perched-bird', 'hat-blossom');
-  blossom.innerHTML = `<svg viewBox="0 0 32 32">
+  blossom.innerHTML = `<svg viewBox="0 0 32 32" stroke="#a36d73" stroke-opacity=".65" stroke-width=".85" stroke-linejoin="round">
     <path d="M16 15C7 9 12 3 16 6c3-5 10-1 3 9Z" fill="#efd0ca"/>
     <path d="M17 16c6-9 14-6 10-1 5 3-1 9-9 4Z" fill="#dcaaa7"/>
     <path d="M17 18c10 1 10 9 5 8-1 5-8 2-7-7Z" fill="#cf9493"/>
     <path d="M15 18c2 9-6 12-7 7-5 0-4-7 5-9Z" fill="#e4b3af"/>
     <path d="M14 17C4 21 1 13 6 12c-1-5 7-5 10 3Z" fill="#f0c6bf"/>
-    <circle cx="16" cy="16.5" r="2.2" fill="#b98668"/>
+    <circle cx="16" cy="16.5" r="2.2" fill="#b98668" stroke="none"/>
   </svg>`;
   a.append(blossom);
   if (a.classList.contains('card-art-plane')) return;

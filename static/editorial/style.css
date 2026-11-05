@@ -160,7 +160,7 @@ html[data-theme=dark] .news-cue{color:var(--ink)}
 .gallery-grid .gallery-open img{width:100%;height:100%;max-height:100%;object-fit:contain;display:block}
 
 /* Marker strokes and small editorial gestures. */
-.bio-copy a,.bio-copy strong,.news-row p a,.misc-list a,nav>a,.bio-career-highlight{--marker:#ffdab5;background-image:linear-gradient(174deg,transparent 25%,var(--marker) 27%,var(--marker) 83%,transparent 86%);background-size:0% 100%;background-repeat:no-repeat;transition:background-size .35s ease,color .2s;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.bio-copy a,.bio-copy strong,.news-row p a,.misc-list a,nav>a,.services-nav-menu>summary,.bio-career-highlight{--marker:#ffdab5;background-image:linear-gradient(174deg,transparent 25%,var(--marker) 27%,var(--marker) 83%,transparent 86%);background-size:0% 100%;background-repeat:no-repeat;transition:background-size .35s ease,color .2s;box-decoration-break:clone;-webkit-box-decoration-break:clone}
 .bio-copy a:nth-of-type(2n),nav>a:nth-of-type(2n){--marker:#d9e9ec}.bio-copy strong{--marker:#f1edb9}.misc-list a,.news-row p a{--marker:#dfe9cf}
 .bio-copy a:hover,.bio-copy strong:hover,.news-row p a:hover,.misc-list a:hover,nav>a:hover{background-size:100% 100%;color:#292929}
 .research-more{background-image:linear-gradient(105deg,#ffdab5,#f1edb9);background-repeat:no-repeat;background-size:0% 100%;transition:background-size .4s ease,color .2s}
@@ -264,11 +264,13 @@ html[data-theme=dark] .news-cue{color:var(--ink)}
 nav>a:is([href="#main"],[href="/#main"]){--marker:var(--marker-lime)}
 nav>a:is([href="#research"],[href="/#research"]){--marker:var(--marker-blue)}
 nav>a:is([href="#news"],[href="/#news"]){--marker:var(--marker-lemon)}
-nav>a:is([href="#services"],[href="/#services"]),nav .services-nav-menu{--marker:var(--marker-lavender)}
+nav>a:is([href="#services"],[href="/#services"]),nav .services-nav-menu>summary{--marker:var(--marker-lavender)}
 nav>a:is([href="#misc"],[href="/#misc"]){--marker:var(--marker-peach)}
 nav>a[href="/uploads/resume.pdf"]{--marker:var(--marker-pink)}
 nav>a:is([href="#contact"],[href="/#contact"]){--marker:var(--marker-mint)}
-nav>a:focus-visible{background-size:100% 100%;color:#292929}
+nav>a:focus-visible,
+.services-nav-menu>summary:is(:hover,:focus-visible),
+.services-nav-menu[open]>summary{background-size:100% 100%;color:#292929}
 .bio-copy a[href="https://orc.mit.edu/"]{--marker:#e0edf4}
 
 
@@ -287,7 +289,6 @@ nav>a:focus-visible{background-size:100% 100%;color:#292929}
 .project-grid>article.project:nth-child(6n+4),.gallery-piece:nth-child(6n+4) .gallery-open{--card-accent:var(--marker-pink)}
 .project-grid>article.project:nth-child(6n+5),.gallery-piece:nth-child(6n+5) .gallery-open{--card-accent:var(--marker-peach)}
 .project-grid>article.project:nth-child(6n+6),.gallery-piece:nth-child(6n+6) .gallery-open{--card-accent:var(--marker-lemon)}
-#research .section-title::before{background:var(--marker-blue)}
 #research .project-grid>article.project:nth-child(7n+1){--card-accent:var(--marker-blue)}
 #research .project-grid>article.project:nth-child(7n+2){--card-accent:var(--marker-lavender)}
 #research .project-grid>article.project:nth-child(7n+3){--card-accent:var(--marker-lime)}

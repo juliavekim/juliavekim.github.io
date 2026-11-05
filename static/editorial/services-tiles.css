@@ -339,9 +339,12 @@
   opacity: 1;
 }
 
-.service-tiles .card-art-plane.art-playful-2 .perched-bird {
+.service-tiles .card-art-plane.art-playful-2 .flying-bluebird {
   left: 46%;
   top: 61%;
+  width: 46px;
+  height: 40px;
+  margin: -20px 0 0 -23px;
 }
 
 .service-tiles .card-art-plane.art-playful-3 .refined-art {
@@ -370,21 +373,17 @@
     transform-origin: 40% 45%;
   }
 
-  .service-tiles .service-tile:is(:hover, :focus-visible) .card-art-plane .perched-bird {
+  .service-tiles .service-tile:is(:hover, :focus-visible) .card-art-plane .flying-bluebird {
     animation: service-bird-flight 4s ease-out infinite;
   }
 
-  .card-art-plane .perched-bird svg {
-    transform: scaleX(-1);
+  .service-tile:is(:hover, :focus-visible) .card-art-plane .flying-bluebird :is(.bluebird-near-wing, .bluebird-far-wing) {
+    animation: service-bird-wing .23s ease-in-out infinite alternate;
+    transform-origin: 43px 38px;
   }
 
-  .card-art-plane .perched-bird svg > path:last-child {
-    display: none;
-  }
-
-  .service-tile:is(:hover, :focus-visible) .card-art-plane .perched-bird svg > path:nth-child(3) {
-    animation: service-bird-wing .28s ease-in-out infinite alternate;
-    transform-origin: 30px 33px;
+  .service-tile:is(:hover, :focus-visible) .card-art-plane .bluebird-far-wing {
+    animation-delay: -.08s;
   }
 }
 
@@ -397,8 +396,8 @@
 }
 
 @keyframes service-bird-wing {
-  from { transform: rotate(-28deg) scaleY(1.2); }
-  to { transform: rotate(19deg) scaleY(.55); }
+  from { transform: rotate(22deg) scaleY(1.1); }
+  to { transform: rotate(-57deg) scaleY(.82); }
 }
 
 @keyframes outreach-heart-rise {

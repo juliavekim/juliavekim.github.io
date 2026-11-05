@@ -310,7 +310,10 @@ html[data-theme=dark] .intro-heading .social a[href^="mailto:"],.intro-heading .
 
 .bio-career-highlight {
   --marker: var(--marker-pink);
+  background-image: linear-gradient(179.8deg, transparent 2%, var(--marker) 5%, var(--marker) 95%, transparent 98%);
   background-color: transparent;
+  border-radius: 4px 2px 3px 2px;
+  padding-inline: .12em;
   background-size: 100% 100%;
   color: var(--ink);
 }

@@ -259,13 +259,16 @@ html[data-theme=dark] .news-cue{color:var(--ink)}
 :root{--marker-pink:#f9e7ff;--marker-lavender:#e4bef0;--marker-blue:#caf2f3;--marker-peach:#ffe3c8;--marker-lemon:#feffcd;--marker-lime:#ebffda}
 .project h3 a,.project h3 a:hover{background-image:none;background-size:auto;transition:color .2s}
 .project h3 a:hover{color:var(--accent)}
-nav>a:nth-of-type(6n+1){--marker:var(--marker-pink)}
-nav>a:nth-of-type(6n+2){--marker:var(--marker-blue)}
-nav>a:nth-of-type(6n+3){--marker:var(--marker-lemon)}
-nav>a:nth-of-type(6n+4){--marker:var(--marker-lavender)}
-nav>a:nth-of-type(6n+5){--marker:var(--marker-lime)}
-nav>a:nth-of-type(6n+6){--marker:var(--marker-peach)}
-nav>a[href="#main"]{--marker:var(--marker-lime)}
+/* Navigation defines the seven accents available to Research Highlights. */
+:root{--marker-mint:#cdebe1}
+nav>a:is([href="#main"],[href="/#main"]){--marker:var(--marker-lime)}
+nav>a:is([href="#research"],[href="/#research"]){--marker:var(--marker-blue)}
+nav>a:is([href="#news"],[href="/#news"]){--marker:var(--marker-lemon)}
+nav>a:is([href="#services"],[href="/#services"]),nav .services-nav-menu{--marker:var(--marker-lavender)}
+nav>a:is([href="#misc"],[href="/#misc"]){--marker:var(--marker-peach)}
+nav>a[href="/uploads/resume.pdf"]{--marker:var(--marker-pink)}
+nav>a:is([href="#contact"],[href="/#contact"]){--marker:var(--marker-mint)}
+nav>a:focus-visible{background-size:100% 100%;color:#292929}
 .bio-copy a[href="https://orc.mit.edu/"]{--marker:#e0edf4}
 
 
@@ -284,6 +287,23 @@ nav>a[href="#main"]{--marker:var(--marker-lime)}
 .project-grid>article.project:nth-child(6n+4),.gallery-piece:nth-child(6n+4) .gallery-open{--card-accent:var(--marker-pink)}
 .project-grid>article.project:nth-child(6n+5),.gallery-piece:nth-child(6n+5) .gallery-open{--card-accent:var(--marker-peach)}
 .project-grid>article.project:nth-child(6n+6),.gallery-piece:nth-child(6n+6) .gallery-open{--card-accent:var(--marker-lemon)}
+#research .section-title::before{background:var(--marker-blue)}
+#research .project-grid>article.project:nth-child(7n+1){--card-accent:var(--marker-blue)}
+#research .project-grid>article.project:nth-child(7n+2){--card-accent:var(--marker-lavender)}
+#research .project-grid>article.project:nth-child(7n+3){--card-accent:var(--marker-lime)}
+#research .project-grid>article.project:nth-child(7n+4){--card-accent:var(--marker-peach)}
+#research .project-grid>article.project:nth-child(7n+5){--card-accent:var(--marker-mint)}
+#research .project-grid>article.project:nth-child(7n+6){--card-accent:var(--marker-lemon)}
+#research .project-grid>article.project:nth-child(7n){--card-accent:var(--marker-pink)}
+#research .project h3 a{
+  background-image:linear-gradient(178deg,transparent 15%,var(--card-accent) 18%,var(--card-accent) 87%,transparent 90%);
+  background-size:0% 100%;
+  background-repeat:no-repeat;
+  -webkit-box-decoration-break:clone;
+  box-decoration-break:clone;
+  transition:background-size .25s ease,color .2s;
+}
+#research .project h3 a:is(:hover,:focus-visible){background-size:100% 100%;color:#292929}
 @media(hover:hover){
  .project-grid>article.project:hover,.gallery-open:hover{transform:translateY(-4px);border-color:var(--card-accent);box-shadow:0 0 0 3px color-mix(in srgb,var(--card-accent) 65%,transparent),0 12px 28px color-mix(in srgb,var(--card-accent) 35%,transparent)}
 }

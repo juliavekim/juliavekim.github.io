@@ -160,7 +160,7 @@ html[data-theme=dark] .news-cue{color:var(--ink)}
 .gallery-grid .gallery-open img{width:100%;height:100%;max-height:100%;object-fit:contain;display:block}
 
 /* Marker strokes and small editorial gestures. */
-.bio-copy a,.bio-copy strong,.news-row p a,.misc-list a,nav>a{--marker:#ffdab5;background-image:linear-gradient(174deg,transparent 25%,var(--marker) 27%,var(--marker) 83%,transparent 86%);background-size:0% 100%;background-repeat:no-repeat;transition:background-size .35s ease,color .2s;box-decoration-break:clone;-webkit-box-decoration-break:clone}
+.bio-copy a,.bio-copy strong,.news-row p a,.misc-list a,nav>a,.bio-career-highlight{--marker:#ffdab5;background-image:linear-gradient(174deg,transparent 25%,var(--marker) 27%,var(--marker) 83%,transparent 86%);background-size:0% 100%;background-repeat:no-repeat;transition:background-size .35s ease,color .2s;box-decoration-break:clone;-webkit-box-decoration-break:clone}
 .bio-copy a:nth-of-type(2n),nav>a:nth-of-type(2n){--marker:#d9e9ec}.bio-copy strong{--marker:#f1edb9}.misc-list a,.news-row p a{--marker:#dfe9cf}
 .bio-copy a:hover,.bio-copy strong:hover,.news-row p a:hover,.misc-list a:hover,nav>a:hover{background-size:100% 100%;color:#292929}
 .research-more{background-image:linear-gradient(105deg,#ffdab5,#f1edb9);background-repeat:no-repeat;background-size:0% 100%;transition:background-size .4s ease,color .2s}
@@ -309,14 +309,12 @@ nav>a:nth-of-type(6n+6){--marker:var(--marker-peach)}
 html[data-theme=dark] .intro-heading .social a[href^="mailto:"],.intro-heading .social a[href^="mailto:"]:hover,.intro-heading .social a[href^="mailto:"]:focus-visible{color:#b86b36}
 
 .bio-career-highlight {
-  background: linear-gradient(transparent 18%, #f9d4e7 18%, #f9d4e7 92%, transparent 92%);
-  color: #54263e;
-  padding-inline: .15em;
-  -webkit-box-decoration-break: clone;
-  box-decoration-break: clone;
+  --marker: var(--marker-pink);
+  background-color: transparent;
+  background-size: 100% 100%;
+  color: var(--ink);
 }
 
 html[data-theme="dark"] .bio-career-highlight {
-  background: linear-gradient(transparent 18%, #60334e 18%, #60334e 92%, transparent 92%);
-  color: #ffe2f0;
+  --marker: #60334e;
 }

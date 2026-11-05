@@ -286,7 +286,7 @@
 
 .service-tiles .tile-0 { --service-label: #efc3a4; }
 .service-tiles .tile-1 { --service-label: #efdbab; --service-crop: 1.08; }
-.service-tiles .tile-2 { --service-label: #805469; --service-label-blend: multiply; --service-crop: 1.065; }
+.service-tiles .tile-2 { --service-label: #afc49a; --service-crop: 1.065; }
 .service-tiles .tile-3 { --service-label: #f3cbb6; }
 
 .service-tiles .service-veil {
@@ -301,7 +301,7 @@
   color: var(--service-label);
   font: 400 clamp(18px, 2.4vw, 28px)/1.1 Amiri, Georgia, serif;
   overflow-wrap: anywhere;
-  mix-blend-mode: var(--service-label-blend, screen);
+  mix-blend-mode: screen;
   opacity: .86;
 }
 

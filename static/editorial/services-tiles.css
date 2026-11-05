@@ -256,3 +256,67 @@
 
 /* Keep the painting invitation above the artwork, clear of translated titles. */
 .service-artwork .painting-hover-hint{top:-48px;right:auto}
+
+/* Portrait panels for the Services overview. */
+.service-tiles {
+  gap: clamp(8px, 1.25vw, 16px);
+}
+
+.service-tiles .service-tile {
+  aspect-ratio: 2 / 3;
+  overflow: hidden;
+  margin-bottom: 0;
+  border-radius: 0;
+  box-shadow: none;
+}
+
+.service-tiles .service-tile > img {
+  border-radius: 0;
+  clip-path: none;
+  transform: scale(var(--service-crop, 1));
+  transition: transform .45s ease;
+}
+
+@media (hover: hover) and (prefers-reduced-motion: no-preference) {
+  .service-tiles .service-tile:hover > img {
+    transform: scale(calc(var(--service-crop, 1) + .045));
+  }
+}
+
+.service-tiles .service-tile::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(transparent 21%, var(--service-label-wash) 50%, transparent 79%);
+  pointer-events: none;
+}
+
+.service-tiles .tile-0 { --service-label: #ffe6cf; --service-label-wash: #572b20a6; }
+.service-tiles .tile-1 { --service-label: #fff0c7; --service-label-wash: #4a301ba6; --service-crop: 1.08; }
+.service-tiles .tile-2 { --service-label: #f3edff; --service-label-wash: #38324ba6; --service-crop: 1.065; }
+.service-tiles .tile-3 { --service-label: #eef4de; --service-label-wash: #303d2ba6; }
+
+.service-tiles .service-veil {
+  display: none;
+}
+
+.service-tiles .service-card-label {
+  inset: 0;
+  display: grid;
+  place-items: center;
+  padding: 10px;
+  color: var(--service-label);
+  font: 400 clamp(16px, 2.65vw, 32px)/1.12 Georgia, serif;
+  overflow-wrap: anywhere;
+  text-shadow: 0 1px 5px #211a17;
+}
+
+@media (max-width: 760px) {
+  .service-tiles .service-card-label {
+    font-size: clamp(17px, 4.5vw, 25px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .service-tiles .service-tile > img { transition: none; }
+}

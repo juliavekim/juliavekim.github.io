@@ -339,7 +339,7 @@
   opacity: 1;
 }
 
-.service-tiles .card-art-plane.art-playful-2 .hat-blossom {
+.service-artwork .art-playful-2 .refined-art.hat-blossom {
   left: 42%;
   top: 22%;
   width: 20px;
@@ -374,7 +374,8 @@
     transform-origin: 40% 45%;
   }
 
-  .service-tiles .service-tile:is(:hover, :focus-visible) .card-art-plane .hat-blossom svg {
+  .service-tiles .service-tile:is(:hover, :focus-visible) .card-art-plane .hat-blossom svg,
+  .service-web-design .service-artwork > a:is(:hover, :focus-visible) .hat-blossom svg {
     animation: hat-blossom-open .65s ease-out both;
     transform-origin: 50% 72%;
   }

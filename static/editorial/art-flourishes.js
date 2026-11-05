@@ -8,9 +8,10 @@ const drawings=[
 const slugs=['tutoring','teaching','website-design','outreach'];
 function prepareTiles(){document.querySelectorAll('.service-tile').forEach(tile=>{if(tile.querySelector('.card-art-scene'))return;const img=tile.querySelector('img');if(!img)return;const scene=document.createElement('span');scene.className='card-art-scene service-artwork';const plane=document.createElement('span');plane.className='card-art-plane';plane.dataset.artSlug=tile.getAttribute('href').split('/').filter(Boolean).pop();scene.append(plane);tile.append(scene);function size(){if(!img.naturalWidth)return;const w=tile.clientWidth,h=tile.clientHeight;const scale=Math.max(w/img.naturalWidth,h/img.naturalHeight);const iw=img.naturalWidth*scale,ih=img.naturalHeight*scale;plane.style.cssText='position:absolute;width:'+iw+'px;height:'+ih+'px;left:'+((w-iw)/2)+'px;top:'+((h-ih)/2)+'px';}img.addEventListener('load',size);new ResizeObserver(size).observe(tile);size();});}
 function add(){prepareTiles();document.querySelectorAll('.service-artwork>a,.card-art-plane').forEach(a=>{if(a.querySelector('.art-flourish'))return;const i=slugs.indexOf(a.dataset.artSlug||location.pathname.split('/').filter(Boolean).pop());if(i<0)return;a.classList.add('art-playful','art-playful-'+i);const el=document.createElement('span');el.className='art-flourish refined-art';el.setAttribute('aria-hidden','true');el.innerHTML='<svg viewBox="0 0 84 72" fill="none" stroke="#806b75" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">'+drawings[i]+'</svg>';if(i===3){el.innerHTML='<svg viewBox="0 0 60 70"><g class="kiss-mark"><path d="M28 20C23 5 5 10 7 25c2 12 18 18 30 27-6-12-3-16 4-23C57 12 38 3 28 20Z" fill="#d87997" stroke="#b46584" stroke-width="1.3"/></g></svg>';}if(i===1){el.classList.add('candle-flames');const svg=el.querySelector('svg');svg.setAttribute('viewBox','0 0 488 624');const flame='<path d="M0 0C-9-5-6-12-1-19c-1 7 7 9 6 14Q5 0 0 0Z" fill="#ffd984" stroke="#dba14d" stroke-width="1.2"/><path d="M0-2Q-4-5 0-10 4-5 0-2Z" fill="#fff4cb" stroke="none"/>';svg.innerHTML=[[291,292],[326,299],[361,301]].map(([x,y],n)=>'<g transform="translate('+x+' '+y+')"><g class="candle-flicker flame-'+n+'">'+flame+'</g></g>').join('');}if(i===2){el.classList.add('perched-bird');el.innerHTML='<svg viewBox="0 0 80 70" fill="none" stroke="#668a9e" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M42 39q12 10 29 7-11 10-28 0" fill="#97c5db"/><path d="M29 17c-9-5-17 4-13 11 3 6 1 14 7 19 8 7 23 0 24-8-9 0-12-7-13-13q0-6-5-9Z" fill="#bedeea"/><path d="M29 29q12 1 15 12-13 3-15-12Z" fill="#92bdd3"/><path d="m16 23-9 3 9 2" fill="#e8cda2" stroke="#ac9476" stroke-width=".8"/><circle cx="24" cy="21" r="1.3" fill="#466477" stroke="none"/><path d="m28 48 1 11m9-13-3 13m-9 0h7m0 0h7" stroke="#927c65" stroke-width="1.2"/></svg>' ;}
-if (i === 2 && a.classList.contains('card-art-plane')) {
-  el.classList.replace('perched-bird', 'hat-blossom');
-  el.innerHTML = `<svg viewBox="0 0 32 32">
+if (i === 2) {
+  const blossom = el.cloneNode(false);
+  blossom.classList.replace('perched-bird', 'hat-blossom');
+  blossom.innerHTML = `<svg viewBox="0 0 32 32">
     <path d="M16 15C7 9 12 3 16 6c3-5 10-1 3 9Z" fill="#efd0ca"/>
     <path d="M17 16c6-9 14-6 10-1 5 3-1 9-9 4Z" fill="#dcaaa7"/>
     <path d="M17 18c10 1 10 9 5 8-1 5-8 2-7-7Z" fill="#cf9493"/>
@@ -18,6 +19,8 @@ if (i === 2 && a.classList.contains('card-art-plane')) {
     <path d="M14 17C4 21 1 13 6 12c-1-5 7-5 10 3Z" fill="#f0c6bf"/>
     <circle cx="16" cy="16.5" r="2.2" fill="#b98668"/>
   </svg>`;
+  a.append(blossom);
+  if (a.classList.contains('card-art-plane')) return;
 }
 a.append(el);});}
 new MutationObserver(add).observe(document.querySelector('main')||document.body,{childList:true,subtree:true});add();

@@ -298,7 +298,7 @@
   place-items: center;
   padding: 10px;
   color: var(--service-label);
-  font: 400 clamp(18px, 2.4vw, 28px)/1.1 Amiri, Georgia, serif;
+  font: 400 clamp(17px, 2.05vw, 24px)/1.15 Amiri, Georgia, serif;
   overflow-wrap: anywhere;
   mix-blend-mode: screen;
   opacity: .86;
@@ -306,7 +306,7 @@
 
 @media (max-width: 760px) {
   .service-tiles .service-card-label {
-    font-size: clamp(17px, 4.5vw, 25px);
+    font-size: clamp(16px, 3.8vw, 21px);
   }
 }
 

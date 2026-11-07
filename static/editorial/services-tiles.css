@@ -468,41 +468,30 @@ body .service-design-link::after {
   font-family: inherit;
 }
 
-/* Museum wall-label hierarchy. */
+
+/* Restore the full artwork panel and its original typography. */
+.museum-dialog {
+  border-radius: 12px;
+  box-shadow: 0 25px 90px #20152555;
+}
+.museum-layout { grid-template-columns: 1.15fr 1fr; }
 .museum-label {
   display: block;
-  padding: 32px 36px 38px;
-  background: var(--bg);
+  padding: 45px 35px 35px;
+  border-top: 0;
 }
+.museum-image { padding: 30px; background: var(--wash); }
+.museum-image img { max-height: 75dvh; }
 .museum-label .museum-artist {
-  margin: 0 0 22px;
-  font: 400 23px/1.35 'Open Sans', sans-serif;
-  letter-spacing: -.025em;
+  font: 400 13px/1.6 'Lettera', Menlo, monospace;
+  margin: 0 0 10px;
 }
-.museum-label .service-title-row {
-  justify-content: flex-start;
-  gap: 20px;
-}
-.museum-label h2 {
-  font: 600 15px/1.55 'Open Sans', sans-serif;
-  letter-spacing: 0;
-  margin: 0;
-}
-.museum-label .museum-year {
-  font-weight: 400;
-}
-.museum-medium {
-  font: 400 13px/1.6 'Open Sans', sans-serif;
-  margin: 4px 0 22px;
-}
-.museum-label .museum-links {
-  margin-top: 0;
-  font: 400 11px/1.6 'Lettera', Menlo, monospace;
-}
-.museum-label .service-narrate {
-  font-size: 11px;
-}
-@media (max-width: 520px) {
-  .museum-label { padding: 26px; }
-  .museum-label .museum-artist { font-size: 21px; }
+.museum-label h2 { font: 500 28px/1.3 'Bitter', serif; margin: 0 0 12px; }
+.museum-label .museum-date { font: italic 13px/1.6 'Bitter', serif; margin: 0 0 26px; }
+@media (max-width: 760px) {
+  .museum-layout { grid-template-columns: 1fr; }
+  .museum-image { padding: 22px; }
+  .museum-image img { max-height: 45dvh; }
+  .museum-label { padding: 25px; }
+  .museum-label h2 { font-size: 24px; }
 }

@@ -467,3 +467,42 @@ body .service-design-link::after {
 .service-web-design .service-news .news-letter {
   font-family: inherit;
 }
+
+/* Museum wall-label hierarchy. */
+.museum-label {
+  display: block;
+  padding: 32px 36px 38px;
+  background: var(--bg);
+}
+.museum-label .museum-artist {
+  margin: 0 0 22px;
+  font: 400 23px/1.35 'Open Sans', sans-serif;
+  letter-spacing: -.025em;
+}
+.museum-label .service-title-row {
+  justify-content: flex-start;
+  gap: 20px;
+}
+.museum-label h2 {
+  font: 600 15px/1.55 'Open Sans', sans-serif;
+  letter-spacing: 0;
+  margin: 0;
+}
+.museum-label .museum-year {
+  font-weight: 400;
+}
+.museum-medium {
+  font: 400 13px/1.6 'Open Sans', sans-serif;
+  margin: 4px 0 22px;
+}
+.museum-label .museum-links {
+  margin-top: 0;
+  font: 400 11px/1.6 'Lettera', Menlo, monospace;
+}
+.museum-label .service-narrate {
+  font-size: 11px;
+}
+@media (max-width: 520px) {
+  .museum-label { padding: 26px; }
+  .museum-label .museum-artist { font-size: 21px; }
+}

@@ -1,4 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+@font-face {
+  font-family: 'Stempel Garamond LT Pro';
+  src: url('https://cdn.shopify.com/s/files/1/2362/8029/files/garamond.woff2?v=1748537860') format('woff2');
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+}
 
 .service-tiles-section{margin:42px 0 0}.service-tiles{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:26px;margin-top:28px}.service-tile{display:block;position:relative;width:100%;height:auto;aspect-ratio:1;padding:0;overflow:hidden;border:0;border-radius:18px;box-shadow:0 8px 25px #25202b1b;background:var(--wash);isolation:isolate}.service-tile img{display:block;width:100%;height:100%;object-fit:cover}.tile-3 img{object-position:center 30%}.service-veil{position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;padding:15px;background:linear-gradient(160deg,#c38b6bd9,#ad7cadd9);color:white;opacity:0;transition:opacity .28s ease}.tile-1 .service-veil{background:linear-gradient(160deg,#779fa0db,#a58ab4db)}.tile-2 .service-veil{background:linear-gradient(160deg,#bc8e9cdb,#a183b5db)}.tile-3 .service-veil{background:linear-gradient(160deg,#c59a71db,#b4859bdb)}.service-tile:hover .service-veil,.service-tile:focus-visible .service-veil{opacity:1}.tile-name{font:400 18px/1.35 ui-monospace,monospace;text-align:center}.tile-rule{width:60%;height:2px;background:#ffffff8c;margin:16px 0}.tile-more{font:300 14px/1.4 'Open Sans',sans-serif}.service-tile:focus-visible{outline:3px solid var(--accent);outline-offset:5px}.service-tile-dialog{border:1px solid var(--line);border-radius:18px;background:var(--bg);color:var(--ink);padding:40px;width:min(500px,calc(100vw - 32px));max-height:85dvh;box-shadow:0 20px 80px #20142638}.service-tile-dialog::backdrop{background:#241c3155;backdrop-filter:blur(5px)}.service-tile-dialog h2{font-size:25px;margin:0 25px 18px 0}.service-tile-dialog p{white-space:normal;font-size:15px;line-height:1.9}.service-close{position:absolute;right:12px;top:10px;font:26px/1 sans-serif;width:36px;height:36px}.service-action{display:inline-block;font:13px/1.7 ui-monospace,monospace;border-bottom:1px solid var(--accent);margin-top:10px}.service-source{margin-top:24px;font:11px/1.6 ui-monospace,monospace}.service-source summary{cursor:pointer;list-style:none}.service-source a{display:block;margin-top:5px}@media(max-width:760px){.service-tiles{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}}@media(hover:none){.service-veil{opacity:1;background:linear-gradient(transparent 15%,#513446a6)!important;justify-content:flex-end}.tile-rule,.tile-more{display:none}.tile-name{font-size:15px}.service-tile-dialog{padding:30px 24px}}@media(prefers-reduced-motion:reduce){.service-veil{transition:none}}
 
@@ -303,7 +309,7 @@
   place-items: center;
   padding: 10px;
   color: var(--service-label);
-  font: 400 clamp(17px, 2.05vw, 24px)/1.15 Amiri, Georgia, serif;
+  font: 400 clamp(17px, 2.05vw, 24px)/1.15 'Stempel Garamond LT Pro', Georgia, serif;
   overflow-wrap: anywhere;
   mix-blend-mode: screen;
   opacity: .86;

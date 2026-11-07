@@ -657,3 +657,17 @@ body .service-design-link::after {
 @media (max-width: 700px) {
   .service-detail .service-gallery { row-gap: 18px; }
 }
+/* Left-side paintings keep their original anchor; text uses more of the row. */
+@media (min-width: 701px) {
+  .service-detail:not(.service-reversed) .service-gallery {
+    grid-template-columns: minmax(0, .85fr) minmax(0, 1.15fr);
+    column-gap: 24px;
+  }
+  .service-detail:not(.service-reversed) .service-artwork {
+    justify-self: start;
+  }
+  .service-detail:not(.service-reversed) .service-detail-copy {
+    max-width: none;
+    width: 100%;
+  }
+}

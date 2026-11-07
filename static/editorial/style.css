@@ -436,3 +436,14 @@ body .service-detail .art-source {
   line-height: 1.5;
   padding: 5px 9px;
 }
+/* Use the identical panel accent for actions in both views. */
+#research .project .links a:is(:hover, :focus-visible),
+.project-dialog .links a:is(:hover, :focus-visible),
+.project-dialog .dialog-close:is(:hover, :focus-visible) {
+  background: var(--card-accent);
+  border-color: var(--card-accent);
+  color: #292929;
+}
+.project-dialog .dialog-close:is(:hover, :focus-visible) {
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--card-accent) 65%, transparent);
+}

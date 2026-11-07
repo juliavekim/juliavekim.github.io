@@ -359,3 +359,20 @@ html[data-theme="dark"] .bio-career-highlight {
   font-weight: 400;
   letter-spacing: .02em;
 }
+
+/* Keep research bylines visually quieter than project titles. */
+.project .authors,
+.project-heading .authors {
+  font-weight: 300;
+  color: #797179;
+}
+.authors .me {
+  color: #9a7593;
+  font-weight: 300;
+}
+html[data-theme=dark] .authors {
+  color: #b9afb9;
+}
+html[data-theme=dark] .authors .me {
+  color: #c6a5bd;
+}

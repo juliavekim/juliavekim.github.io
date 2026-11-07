@@ -380,12 +380,12 @@ html[data-theme=dark] .authors .me {
 /* Lettera accents for research actions and artwork metadata. */
 .project .links a,
 .project-heading .links a,
-.service-detail .service-artwork figcaption,
-.service-detail .service-artwork figcaption cite,
-.service-detail .art-artist,
-.service-detail .art-medium,
-.service-detail .art-source,
-.service-detail .service-artwork h2 span {
+body .service-detail .service-artwork figcaption,
+body .service-detail .service-artwork figcaption cite,
+body .service-detail .art-artist,
+body .service-detail .art-medium,
+body .service-detail .art-source,
+body .service-detail .service-artwork h2 span {
   font-family: 'Lettera', Menlo, 'Courier New', monospace;
   font-style: normal;
   font-weight: 400;

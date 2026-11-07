@@ -615,3 +615,14 @@ body .service-design-link::after {
   margin-left: 0;
   font: inherit;
 }
+@font-face {
+  font-family: 'Stempel Garamond LT Pro';
+  src: url('https://lesseofficial.com/cdn/shop/t/233/assets/garamond-italic.woff?v=19799035501367380391790101359') format('woff');
+  font-style: italic;
+  font-weight: 400;
+  font-display: swap;
+}
+.museum-label .museum-medium,
+.museum-label .museum-medium .museum-year {
+  font: 400 italic 14px/1.5 'Stempel Garamond LT Pro', Georgia, serif;
+}

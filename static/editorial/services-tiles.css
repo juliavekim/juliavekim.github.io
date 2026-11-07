@@ -610,3 +610,8 @@ body .service-design-link::after {
   font: 400 11px/1.4 'Bitter', Georgia, serif;
   padding: 0;
 }
+
+.museum-label .museum-medium .museum-year {
+  margin-left: 0;
+  font: inherit;
+}

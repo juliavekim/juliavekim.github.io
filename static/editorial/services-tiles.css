@@ -547,3 +547,47 @@ body .service-design-link::after {
   .museum-label .museum-artist { font-size: 23px; }
   .museum-label h2 { font-size: 15px; }
 }
+/* Compact artwork heading, with the listening control tied to the title. */
+.museum-label .museum-artist {
+  font: 400 14px/1.5 'Open Sans', sans-serif;
+  letter-spacing: .015em;
+  margin: 0 0 7px;
+}
+.museum-label .service-title-row {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 16px;
+  margin: 0 0 3px;
+}
+.museum-label .service-title-row > h2 {
+  flex: 0 1 auto;
+  font: 400 27px/1.2 'Stempel Garamond LT Pro', Georgia, serif;
+  margin: 0;
+}
+.museum-label .museum-year {
+  display: inline-block;
+  font: 400 12px/1.5 'Open Sans', sans-serif;
+  white-space: nowrap;
+  margin-left: 3px;
+}
+.museum-label .service-title-row .service-narrate {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  flex: 0 0 auto;
+  gap: 5px;
+  margin: 0;
+  padding: 3px 0;
+  font: 400 10px/1.4 'Open Sans', sans-serif;
+}
+.museum-label .service-narrate svg { width: 15px; height: 15px; }
+.museum-label .museum-medium {
+  font: 400 italic 12px/1.5 'Bitter', Georgia, serif;
+  margin: 4px 0 19px;
+}
+@media (max-width: 520px) {
+  .museum-label .service-title-row { gap: 12px; }
+  .museum-label .service-title-row > h2 { font-size: 25px; }
+}

@@ -591,3 +591,22 @@ body .service-design-link::after {
   .museum-label .service-title-row { gap: 12px; }
   .museum-label .service-title-row > h2 { font-size: 25px; }
 }
+/* A quieter artist credit and an aligned Bitter listening label. */
+.museum-label .museum-artist {
+  font: 400 12px/1.5 'Lettera', Menlo, monospace;
+  letter-spacing: .025em;
+  margin-bottom: 6px;
+}
+.museum-label .museum-year {
+  font: 400 italic 11px/1.5 'Bitter', Georgia, serif;
+  margin-left: 5px;
+}
+.museum-label .service-title-row {
+  align-items: baseline;
+  gap: 12px;
+}
+.museum-label .service-title-row .service-narrate {
+  align-self: baseline;
+  font: 400 11px/1.4 'Bitter', Georgia, serif;
+  padding: 0;
+}

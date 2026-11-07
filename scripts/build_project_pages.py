@@ -40,7 +40,10 @@ for i,(folder,slug) in enumerate(projects):
   url=resource.get('url','')
   if not url or ('href="'+url+'"') in links: continue
   label=resource.get('name') or resource.get('type','resource').title()
-  links=links.replace('</div>',f'<a href="{html.escape(url)}">{html.escape(label)}</a></div>')
+  if label.lower() == 'poster':
+   label = 'poster'
+  resource_icon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h14v18H5zM8 7h8M8 11h8M8 15h5"/></svg>' if label == 'poster' else ''
+  links=links.replace('</div>',f'<a href="{html.escape(url)}">{resource_icon}{html.escape(label)}</a></div>')
  if i==3:
   links=links.replace('</div>','<a href="/publication/pulsating-red-giants/cite.bib" download>BibTeX</a></div>')
  date=datetime.fromisoformat(str(data['date']).replace('Z','+00:00')).strftime('%B %Y')

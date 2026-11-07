@@ -12,7 +12,7 @@ projects=[('personalised-instruction','personalised-instruction'),('egoblind-ra'
 catalog={}
 for i,(folder,slug) in enumerate(projects):
  p=root/'content/publication'/folder/'index.md'
- raw=p.read_text();data=yaml.safe_load(raw.split('---',2)[1]);card=cards[i]
+ raw=p.read_text();data=yaml.safe_load(raw.split('---',2)[1]);card=next(c for c in cards if f'<h3><a href="/publication/{slug}/"' in c)
  title=re.search(r'<h3><a[^>]*>(.*?)</a></h3>',card,re.S)[1]
  authors=re.search(r'<p class="authors">.*?</p>',card,re.S)[0]
  meta=re.search(r'<div class="meta">.*?</div>',card,re.S)[0]
@@ -20,8 +20,6 @@ for i,(folder,slug) in enumerate(projects):
  credit=re.search(r'<details class="photo-credit">.*?</details>|<small class="footage-credit">.*?</small>',card,re.S)
  links=re.search(r'<div class="links">.*?</div>',card,re.S)[0]
  if i==0:
-  links=re.sub(r'<a href="/publication/personalised-instruction/">.*?</a>', '', links)
-  links=links.replace('</div>','<a href="https://github.com/juliavekim/personalized_instruction"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m8 6-6 6 6 6m8-12 6 6-6 6m-3-15-2 18"/></svg>code</a></div>')
   abstract=data['abstract']
   raw=re.sub(r'\n\*\*Manuscript in preparation.*', '\n'+abstract+'\n',raw,flags=re.S)
  else: abstract=data['abstract']
@@ -35,23 +33,9 @@ for i,(folder,slug) in enumerate(projects):
  abstract=re.sub(r'\*(.*?)\*',r'<em>\1</em>',abstract)
  abstract=''.join('<p>'+part.replace('\n',' ')+'</p>' for part in abstract.split('\n\n'))
  d=details[i] if i<len(details) else {}
- # Restore publication resources from the source metadata, including slides and posters.
- for resource in data.get('links',[]):
-  url=resource.get('url','')
-  if not url or ('href="'+url+'"') in links: continue
-  label=resource.get('name') or resource.get('type','resource').title()
-  if label.lower() in ('poster', 'slides'):
-   label = label.lower()
-  resource_icon = '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 3h14v18H5zM8 7h8M8 11h8M8 15h5"/></svg>' if label == 'poster' else '<svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h18v12H3zM8 21h8M12 16v5"/></svg>' if label == 'slides' else ''
-  links=links.replace('</div>',f'<a href="{html.escape(url)}">{resource_icon}{html.escape(label)}</a></div>')
- if i==3:
-  links=links.replace('</div>','<a href="/publication/pulsating-red-giants/cite.bib" download>BibTeX</a></div>')
  date=datetime.fromisoformat(str(data['date']).replace('Z','+00:00')).strftime('%B %Y')
  topics=''.join('<span class="topic-'+str(j%4)+'">'+html.escape(t)+'</span>' for j,t in enumerate(data.get('tags',[])))
  topic_list=f'<div class="topic-list" aria-label="Research topics">{topics}</div>'
- if i==0:
-  links=links.replace('>demo</a>','>Interactive demo</a>').replace('>code</a>','>GitHub</a>')
-  links=links.replace('</div>','<span class="publication-pending"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 3H6a2 2 0 0 0-2 2v14a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V9zM14 3v6h6M8 13h8M8 17h5"/></svg>Publication coming soon</span></div>')
  # Abstract first; footage and all attachments follow together.
  body=f'''<main id="main" class="project-page compact-publication"><a class="back-research" href="/#research">← Research highlights</a><header class="project-heading">{meta}<h1>{title}</h1>{authors}{topic_list}</header><section id="abstract" class="project-overview"><h2>Abstract</h2>{abstract}</section><div class="project-materials"><figure class="project detail-figure">{media}{credit[0] if credit else ''}</figure><div class="attachment-links">{links}</div></div></main>'''
 

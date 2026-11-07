@@ -423,3 +423,16 @@ body .service-detail .art-source {
   border-color: var(--card-accent, var(--marker-blue));
   color: var(--ink);
 }
+/* Shared action sizing in cards and project dialogs. */
+.project-grid .project .links a,
+.project-dialog .links a,
+.project-page .project-materials .links a {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: 'Lettera', Menlo, 'Courier New', monospace;
+  font-size: 11px;
+  font-weight: 400;
+  line-height: 1.5;
+  padding: 5px 9px;
+}

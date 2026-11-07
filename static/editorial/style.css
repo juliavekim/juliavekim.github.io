@@ -411,3 +411,9 @@ body .service-detail .art-source {
   border-color: var(--card-accent);
   color: var(--ink);
 }
+.sample-lesson .portfolio-link,
+.project-page .portfolio-link,
+.dialog-content .portfolio-link {
+  font-family: 'Lettera', Menlo, 'Courier New', monospace;
+  font-weight: 400;
+}

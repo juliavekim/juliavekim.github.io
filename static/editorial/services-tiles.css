@@ -638,3 +638,22 @@ body .service-design-link::after {
 .museum-label .museum-description {
   margin-top: 0;
 }
+@media (min-width: 701px) {
+  .service-detail .service-gallery {
+    column-gap: 24px;
+  }
+  .service-detail .service-artwork {
+    justify-self: end;
+    width: fit-content;
+    max-width: 100%;
+  }
+  .service-detail.service-reversed .service-artwork {
+    justify-self: start;
+  }
+  .service-detail.service-reversed .service-artwork > a {
+    margin-left: 0;
+  }
+}
+@media (max-width: 700px) {
+  .service-detail .service-gallery { row-gap: 18px; }
+}

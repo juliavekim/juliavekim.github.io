@@ -626,3 +626,15 @@ body .service-design-link::after {
 .museum-label .museum-medium .museum-year {
   font: 400 italic 14px/1.5 'Stempel Garamond LT Pro', Georgia, serif;
 }
+.museum-label dl {
+  font: 400 11px/1.6 'Lettera', Menlo, 'Courier New', monospace;
+  row-gap: 4px;
+  margin-bottom: 14px;
+}
+.museum-label dt,
+.museum-label dd {
+  font-weight: 400;
+}
+.museum-label .museum-description {
+  margin-top: 0;
+}

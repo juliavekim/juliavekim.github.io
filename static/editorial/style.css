@@ -417,3 +417,9 @@ body .service-detail .art-source {
   font-family: 'Lettera', Menlo, 'Courier New', monospace;
   font-weight: 400;
 }
+
+.project-dialog .links a:is(:hover, :focus-visible) {
+  background: color-mix(in srgb, var(--card-accent, var(--marker-blue)) 58%, var(--bg));
+  border-color: var(--card-accent, var(--marker-blue));
+  color: var(--ink);
+}

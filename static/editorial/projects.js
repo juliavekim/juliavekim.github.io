@@ -45,6 +45,8 @@
       if (!fromHistory) returnHash = location.hash || '#research';
     }
     disposeContent();
+    const sourceCard = (trigger || document.querySelector(`[data-project-slug="${slug}"]`))?.closest('.project');
+    if (sourceCard) dialog.style.setProperty('--card-accent', getComputedStyle(sourceCard).getPropertyValue('--card-accent'));
     content.innerHTML = project.html;
     const title = content.querySelector('h1');
     if (title) title.id = 'project-dialog-title';

@@ -391,3 +391,11 @@ body .service-detail .service-artwork h2 span {
   font-weight: 400;
   letter-spacing: .01em;
 }
+
+/* Consistent typography for research topics and news tags. */
+.topic-list span,
+.news-tag {
+  font-family: 'Lettera', Menlo, 'Courier New', monospace;
+  font-weight: 400;
+  letter-spacing: .01em;
+}

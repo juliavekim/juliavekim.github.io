@@ -405,3 +405,9 @@ body .service-detail .art-source {
   font-weight: 400;
   letter-spacing: .01em;
 }
+/* Research actions echo the containing panel's glow. */
+#research .project .links a:is(:hover, :focus-visible) {
+  background: color-mix(in srgb, var(--card-accent) 58%, var(--bg));
+  border-color: var(--card-accent);
+  color: var(--ink);
+}

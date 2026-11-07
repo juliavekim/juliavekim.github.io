@@ -396,10 +396,12 @@ body .service-detail .art-source {
   letter-spacing: .01em;
 }
 
-/* Music controls share the small Lettera accents. */
-body .art-sound button,
-body .art-sound summary {
+
+/* Include research materials inside the project dialog. */
+.project-materials .links a,
+.resources .links a,
+.dialog-content .links a {
   font-family: 'Lettera', Menlo, 'Courier New', monospace;
   font-weight: 400;
-  font-style: normal;
+  letter-spacing: .01em;
 }

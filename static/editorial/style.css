@@ -323,7 +323,7 @@ nav>a:focus-visible,
 .section-heading{display:flex;align-items:center;gap:14px;flex-wrap:wrap}.section-listen{flex-shrink:0}
 
 /* Keep the Misc portfolio link as light as the biography links. */
-.misc-list a.portfolio-link,.misc-list a.portfolio-link:hover,.misc-list a.portfolio-link:focus-visible{font-family:'Open Sans',sans-serif;font-weight:300!important;text-decoration:none;border-bottom:0}
+.misc-list a.portfolio-link,.misc-list a.portfolio-link:hover,.misc-list a.portfolio-link:focus-visible{font-family:ui-monospace,monospace;font-weight:400;text-decoration:none;border-bottom:0}
 
 /* Keep the navigation softly visible over the scrolling page. */
 .wrap>header{position:sticky;top:0;z-index:40;background:color-mix(in srgb,var(--bg) 82%,transparent);-webkit-backdrop-filter:blur(14px);backdrop-filter:blur(14px);box-shadow:0 3px 12px #00000006}

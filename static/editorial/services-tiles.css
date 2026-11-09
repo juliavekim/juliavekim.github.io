@@ -268,66 +268,8 @@
   margin-top: 42px;
 }
 
-/* Portrait panels for the Services overview. */
-.service-tiles {
-  gap: clamp(8px, 1.25vw, 16px);
-}
-
-.service-tiles .service-tile {
-  aspect-ratio: 2 / 3;
-  overflow: hidden;
-  margin-bottom: 0;
-  border-radius: 0;
-  box-shadow: none;
-}
-
-.service-tiles .service-tile > img {
-  border-radius: 0;
-  clip-path: none;
-  transform: scale(var(--service-crop, 1));
-  transition: transform .45s ease;
-}
-
-@media (hover: hover) and (prefers-reduced-motion: no-preference) {
-  .service-tiles .service-tile:hover > img {
-    transform: scale(calc(var(--service-crop, 1) + .045));
-  }
-}
-
-.service-tiles .tile-0 { --service-label: #efc3a4; }
-.service-tiles .tile-1 { --service-label: #efdbab; --service-crop: 1.08; }
-.service-tiles .tile-2 { --service-label: #afc49a; --service-crop: 1.065; }
-.service-tiles .tile-3 { --service-label: #f3cbb6; }
-
-.service-tiles .service-veil {
-  display: none;
-}
-
-.service-tiles .service-card-label {
-  inset: 0;
-  display: grid;
-  place-items: center;
-  padding: 10px;
-  color: var(--service-label);
-  font: 400 clamp(17px, 2.05vw, 24px)/1.15 'Stempel Garamond LT Pro', Georgia, serif;
-  overflow-wrap: anywhere;
-  mix-blend-mode: screen;
-  opacity: .86;
-}
-
-@media (max-width: 760px) {
-  .service-tiles .service-card-label {
-    font-size: clamp(16px, 3.8vw, 21px);
-  }
-}
-
-@media (prefers-reduced-motion: reduce) {
-  .service-tiles .service-tile > img { transition: none; }
-}
-
-/* Keep the motion anchored to the portrait crops on the overview cards. */
+/* Show artwork effects on hover and keyboard focus. */
 .service-tiles .card-art-scene {
-  border-radius: 0;
   visibility: hidden;
 }
 
@@ -669,5 +611,32 @@ body .service-design-link::after {
   .service-detail:not(.service-reversed) .service-detail-copy {
     max-width: none;
     width: 100%;
+  }
+}
+
+@media (max-width: 760px) {
+  .service-tiles .service-tile {
+    margin-bottom: 40px;
+  }
+  .service-tiles .service-card-label {
+    top: calc(100% + 9px);
+    overflow-wrap: anywhere;
+  }
+  .service-detail .service-title-row,
+  .museum-label .service-title-row {
+    flex-wrap: wrap;
+    gap: 4px 12px;
+  }
+  .service-detail .service-title-row > h1,
+  .museum-label .service-title-row > h2 {
+    min-width: 0;
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+}
+@media (max-width: 700px) {
+  .service-teaching .art-sound {
+    position: static;
+    margin: 0 0 8px;
   }
 }
